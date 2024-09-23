@@ -1,7 +1,160 @@
+allow-lan: true
+authentication:
+- ''
+dns:
+  cache-algorithm: arc
+  enable: true
+  enhanced-mode: fake-ip
+  fake-ip-filter:
+  - '*.lan'
+  - '*.localdomain'
+  - '*.example'
+  - '*.invalid'
+  - '*.localhost'
+  - '*.test'
+  - '*.local'
+  - '*.home.arpa'
+  - time.*.com
+  - time.*.gov
+  - time.*.edu.cn
+  - time.*.apple.com
+  - time-ios.apple.com
+  - time1.*.com
+  - time2.*.com
+  - time3.*.com
+  - time4.*.com
+  - time5.*.com
+  - time6.*.com
+  - time7.*.com
+  - ntp.*.com
+  - ntp1.*.com
+  - ntp2.*.com
+  - ntp3.*.com
+  - ntp4.*.com
+  - ntp5.*.com
+  - ntp6.*.com
+  - ntp7.*.com
+  - '*.time.edu.cn'
+  - '*.ntp.org.cn'
+  - +.pool.ntp.org
+  - time1.cloud.tencent.com
+  - music.163.com
+  - '*.music.163.com'
+  - '*.126.net'
+  - musicapi.taihe.com
+  - music.taihe.com
+  - songsearch.kugou.com
+  - trackercdn.kugou.com
+  - '*.kuwo.cn'
+  - api-jooxtt.sanook.com
+  - api.joox.com
+  - joox.com
+  - y.qq.com
+  - '*.y.qq.com'
+  - streamoc.music.tc.qq.com
+  - mobileoc.music.tc.qq.com
+  - isure.stream.qqmusic.qq.com
+  - dl.stream.qqmusic.qq.com
+  - aqqmusic.tc.qq.com
+  - amobile.music.tc.qq.com
+  - '*.xiami.com'
+  - '*.music.migu.cn'
+  - music.migu.cn
+  - +.msftconnecttest.com
+  - +.msftncsi.com
+  - localhost.ptlogin2.qq.com
+  - localhost.sec.qq.com
+  - localhost.work.weixin.qq.com
+  - +.qq.com
+  - +.tencent.com
+  - +.steamcontent.com
+  - +.srv.nintendo.net
+  - '*.n.n.srv.nintendo.net'
+  - +.cdn.nintendo.net
+  - +.stun.playstation.net
+  - xbox.*.*.microsoft.com
+  - '*.*.xboxlive.com'
+  - xbox.*.microsoft.com
+  - xnotify.xboxlive.com
+  - +.battlenet.com.cn
+  - +.wotgame.cn
+  - +.wggames.cn
+  - +.wowsgame.cn
+  - +.wargaming.net
+  - proxy.golang.org
+  - stun.*.*
+  - stun.*.*.*
+  - +.stun.*.*
+  - +.stun.*.*.*
+  - +.stun.*.*.*.*
+  - +.stun.*.*.*.*.*
+  - heartbeat.belkin.com
+  - '*.linksys.com'
+  - '*.linksyssmartwifi.com'
+  - '*.router.asus.com'
+  - mesu.apple.com
+  - swscan.apple.com
+  - swquery.apple.com
+  - swdownload.apple.com
+  - swcdn.apple.com
+  - swdist.apple.com
+  - lens.l.google.com
+  - stun.l.google.com
+  - na.b.g-tun.com
+  - +.nflxvideo.net
+  - '*.square-enix.com'
+  - '*.finalfantasyxiv.com'
+  - '*.ffxiv.com'
+  - '*.ff14.sdo.com'
+  - ff.dorado.sdo.com
+  - '*.mcdn.bilivideo.cn'
+  - +.media.dssott.com
+  - shark007.net
+  - +.market.xiaomi.com
+  - +.cmbchina.com
+  - +.cmbimg.com
+  - adguardteam.github.io
+  - adrules.top
+  - anti-ad.net
+  - local.adguard.org
+  - static.adtidy.org
+  - +.sandai.net
+  - +.n0808.com
+  - +.3gppnetwork.org
+  - +.uu.163.com
+  - ps.res.netease.com
+  - +.oray.com
+  - +.orayimg.com
+  fake-ip-range: 198.18.0.1/16
+  fallback: []
+  ipv6: false
+  listen: 0.0.0.0:1053
+  nameserver:
+  - 223.5.5.5
+  - 223.6.6.6
+  use-hosts: false
+  use-system-hosts: false
+experimental:
+  ignore-resolve-fail: true
+  interface-name: en0
+external-controller: 0.0.0.0:9097
+external-ui: ui
+find-process-mode: 'off'
+hosts:
+  localhost: 127.0.0.1
+  root: 127.0.1.1
+  time.android.com: 203.107.6.88
+  time.facebook.com: 203.107.6.88
+ipv6: false
+log-level: info
+mixed-port: 7890
+mode: Rule
+profile:
+  store-selected: true
 proxies:
 - alterId: 0
   cipher: auto
-  name: proxy1
+  name: US1
   network: ws
   port: 2086
   server: 23.227.38.3
@@ -16,7 +169,7 @@ proxies:
     path: /github.com/Alvin9999
 - alterId: 0
   cipher: auto
-  name: proxy2
+  name: US2
   network: ws
   port: 2086
   server: 172.67.74.112
@@ -31,7 +184,7 @@ proxies:
     path: /github.com/Alvin9999
 - alterId: 0
   cipher: auto
-  name: proxy3
+  name: US3
   network: ws
   port: 2086
   server: 104.26.0.56
@@ -46,7 +199,7 @@ proxies:
     path: /github.com/Alvin9999
 - alterId: 0
   cipher: auto
-  name: proxy4
+  name: US4
   network: ws
   port: 2086
   server: 104.26.7.132
@@ -61,7 +214,7 @@ proxies:
     path: /github.com/Alvin9999
 - alterId: 0
   cipher: auto
-  name: proxy5
+  name: US5
   network: ws
   port: 2086
   server: 23.227.38.8
@@ -76,7 +229,7 @@ proxies:
     path: /github.com/Alvin9999
 - alterId: 0
   cipher: auto
-  name: proxy6
+  name: US6
   network: ws
   port: 2086
   server: 104.26.10.11
@@ -91,7 +244,7 @@ proxies:
     path: /github.com/Alvin9999
 - alterId: 0
   cipher: auto
-  name: proxy7
+  name: US7
   network: ws
   port: 2086
   server: 104.26.13.31
@@ -106,7 +259,7 @@ proxies:
     path: /github.com/Alvin9999
 - alterId: 0
   cipher: auto
-  name: proxy8
+  name: US8
   network: ws
   port: 2086
   server: 104.26.8.156
@@ -121,7 +274,7 @@ proxies:
     path: /github.com/Alvin9999
 - alterId: 0
   cipher: auto
-  name: proxy9
+  name: US9
   network: ws
   port: 2086
   server: 104.26.9.156
@@ -136,7 +289,7 @@ proxies:
     path: /github.com/Alvin9999
 - alterId: 0
   cipher: auto
-  name: proxy10
+  name: US10
   network: ws
   port: 2086
   server: 104.26.5.123
@@ -151,7 +304,7 @@ proxies:
     path: /github.com/Alvin9999
 - alterId: 0
   cipher: auto
-  name: proxy11
+  name: US11
   network: ws
   port: 2086
   server: 104.26.5.113
@@ -166,7 +319,7 @@ proxies:
     path: /github.com/Alvin9999
 - alterId: 0
   cipher: auto
-  name: proxy12
+  name: US12
   network: ws
   port: 2086
   server: 104.26.5.67
@@ -181,7 +334,7 @@ proxies:
     path: /github.com/Alvin9999
 - alterId: 0
   cipher: auto
-  name: proxy13
+  name: US13
   network: ws
   port: 2086
   server: 104.26.5.112
@@ -196,7 +349,7 @@ proxies:
     path: /github.com/Alvin9999
 - alterId: 0
   cipher: auto
-  name: proxy14
+  name: US14
   network: ws
   port: 2086
   server: 104.26.5.103
@@ -211,7 +364,7 @@ proxies:
     path: /github.com/Alvin9999
 - alterId: 0
   cipher: auto
-  name: proxy15
+  name: US15
   network: ws
   port: 2086
   server: 104.26.5.56
@@ -226,7 +379,7 @@ proxies:
     path: /github.com/Alvin9999
 - alterId: 0
   cipher: auto
-  name: proxy16
+  name: US16
   network: ws
   port: 2086
   server: 104.26.5.88
@@ -241,7 +394,7 @@ proxies:
     path: /github.com/Alvin9999
 - alterId: 0
   cipher: auto
-  name: proxy17
+  name: US17
   network: ws
   port: 2086
   server: 104.18.15.19
@@ -256,7 +409,7 @@ proxies:
     path: /github.com/Alvin9999
 - alterId: 0
   cipher: auto
-  name: proxy18
+  name: US18
   network: ws
   port: 2086
   server: 104.18.14.19
@@ -271,7 +424,7 @@ proxies:
     path: /github.com/Alvin9999
 - alterId: 0
   cipher: auto
-  name: proxy19
+  name: US19
   network: ws
   port: 2086
   server: 104.26.12.140
@@ -286,7 +439,7 @@ proxies:
     path: /github.com/Alvin9999
 - alterId: 0
   cipher: auto
-  name: proxy20
+  name: US20
   network: ws
   port: 2086
   server: 162.159.140.77
@@ -301,7 +454,7 @@ proxies:
     path: /github.com/Alvin9999
 - alterId: 0
   cipher: auto
-  name: proxy21
+  name: US21
   network: ws
   port: 2086
   server: 162.159.140.56
@@ -316,7 +469,7 @@ proxies:
     path: /github.com/Alvin9999
 - alterId: 0
   cipher: auto
-  name: proxy22
+  name: US22
   network: ws
   port: 2086
   server: 162.159.140.45
@@ -331,22 +484,7 @@ proxies:
     path: /github.com/Alvin9999
 - alterId: 0
   cipher: auto
-  name: proxy23
-  network: ws
-  port: 2086
-  server: 162.159.140.66
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
-  ws-opts:
-    headers:
-      Host: ip1.1789034.xyz
-    path: /github.com/Alvin9999
-- alterId: 0
-  cipher: auto
-  name: proxy24
+  name: US23
   network: ws
   port: 2086
   server: 162.159.140.91
@@ -361,7 +499,7 @@ proxies:
     path: /github.com/Alvin9999
 - alterId: 0
   cipher: auto
-  name: proxy25
+  name: US24
   network: ws
   port: 2086
   server: 162.159.140.89
@@ -376,22 +514,7 @@ proxies:
     path: /github.com/Alvin9999
 - alterId: 0
   cipher: auto
-  name: proxy26
-  network: ws
-  port: 2086
-  server: 162.159.140.93
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
-  ws-opts:
-    headers:
-      Host: ip1.1789034.xyz
-    path: /github.com/Alvin9999
-- alterId: 0
-  cipher: auto
-  name: proxy27
+  name: US25
   network: ws
   port: 2086
   server: 162.159.140.33
@@ -406,7 +529,7 @@ proxies:
     path: /github.com/Alvin9999
 - alterId: 0
   cipher: auto
-  name: proxy28
+  name: US26
   network: ws
   port: 2086
   server: 162.159.140.19
@@ -421,7 +544,7 @@ proxies:
     path: /github.com/Alvin9999
 - alterId: 0
   cipher: auto
-  name: proxy29
+  name: US27
   network: ws
   port: 2086
   server: 172.67.75.194
@@ -436,7 +559,7 @@ proxies:
     path: /github.com/Alvin9999
 - alterId: 0
   cipher: auto
-  name: proxy30
+  name: US28
   network: ws
   port: 2086
   server: 104.26.12.31
@@ -451,7 +574,7 @@ proxies:
     path: /github.com/Alvin9999
 - alterId: 0
   cipher: auto
-  name: proxy31
+  name: US29
   network: ws
   port: 2086
   server: 104.16.149.244
@@ -466,7 +589,7 @@ proxies:
     path: /github.com/Alvin9999
 - alterId: 0
   cipher: auto
-  name: proxy32
+  name: US30
   network: ws
   port: 2086
   server: 104.26.0.50
@@ -481,7 +604,7 @@ proxies:
     path: /github.com/Alvin9999
 - alterId: 0
   cipher: auto
-  name: proxy33
+  name: US31
   network: ws
   port: 2086
   server: 104.26.5.145
@@ -496,7 +619,7 @@ proxies:
     path: /github.com/Alvin9999
 - alterId: 0
   cipher: auto
-  name: proxy34
+  name: US32
   network: ws
   port: 2086
   server: 104.26.5.57
@@ -511,7 +634,7 @@ proxies:
     path: /github.com/Alvin9999
 - alterId: 0
   cipher: auto
-  name: proxy35
+  name: US33
   network: ws
   port: 2086
   server: 104.26.5.66
@@ -526,7 +649,7 @@ proxies:
     path: /github.com/Alvin9999
 - alterId: 0
   cipher: auto
-  name: proxy36
+  name: US34
   network: ws
   port: 2086
   server: 104.26.5.90
@@ -540,7 +663,7 @@ proxies:
       Host: ip1.1789034.xyz
     path: /github.com/Alvin9999
 - cipher: chacha20-ietf-poly1305
-  name: proxy37
+  name: US35
   password: 5cp9Z3iWnJZ2
   port: 443
   server: 205.134.180.151
@@ -549,7 +672,7 @@ proxies:
   udp: true
 - alterId: 0
   cipher: auto
-  name: proxy38
+  name: FR1
   network: ws
   port: 2082
   server: 172.67.130.140
@@ -565,7 +688,7 @@ proxies:
 - cipher: chacha20-ietf-poly1305
   client-fingerprint: chrome
   delay: 731
-  name: proxy39
+  name: CN1
   password: 7efd4673-1d09-4be0-858b-7ee5d8b33dcd
   port: 41370
   server: gdyddx500.xiyunchen.cn
@@ -575,7 +698,7 @@ proxies:
   udp: true
 - alterId: 0
   delay: 2921
-  name: proxy40
+  name: TW1
   password: 464d3eff-ddd0-4622-991b-9cf42ba6c9c9
   port: 11125
   server: 36.231.79.94
@@ -585,7 +708,7 @@ proxies:
   udp: true
 - country: 🇹🇼 TW
   delay: 613
-  name: proxy41
+  name: TW2
   password: 464d3eff-ddd0-4622-991b-9cf42ba6c9c9
   port: 6678
   server: 111.250.100.69
@@ -593,7 +716,7 @@ proxies:
   type: trojan
   udp: true
 - delay: 523
-  name: proxy42
+  name: TW3
   network: ws
   port: 81
   server: 118.163.37.32
@@ -608,7 +731,7 @@ proxies:
       Host: a.ssll.gay
     path: /Telegram🇨🇳+@WangCai2+/?ed=2048
 - delay: 640
-  name: proxy43
+  name: TW4
   network: ws
   port: 10004
   server: 114.34.202.224
@@ -623,7 +746,7 @@ proxies:
       Host: a.ssll.gay
     path: /Telegram🇨🇳+@WangCai2+/?ed=2048
 - delay: 1091
-  name: proxy44
+  name: TW5
   network: ws
   port: 81
   server: 220.135.37.112
@@ -638,7 +761,7 @@ proxies:
       Host: a.ssll.gay
     path: /Telegram🇨🇳+@WangCai2+/?ed=2048
 - delay: 443
-  name: proxy45
+  name: TW6
   network: ws
   password: 95b
   port: 81
@@ -652,7 +775,7 @@ proxies:
       Host: 8582b6f2-7192-4da8-a4cb-c480b71e6c58.e8e54e0f-6317-448a-9999-95f6e16f7117.ooguy.com
     path: /trojan-6qo.pages.dev/?ed=2560?ed=2560
 - delay: 672
-  name: proxy46
+  name: HK1
   network: ws
   port: 23278
   server: 161.81.234.137
@@ -667,7 +790,7 @@ proxies:
       Host: global2.ccdd.site
     path: /?ed=2560
 - delay: 863
-  name: proxy47
+  name: HK2
   network: ws
   port: 32378
   server: 161.81.233.147
@@ -682,7 +805,7 @@ proxies:
       Host: global2.ccdd.site
     path: /?ed=2560
 - delay: 1814
-  name: proxy48
+  name: HK3
   network: ws
   port: 23555
   server: 112.119.49.206
@@ -697,7 +820,7 @@ proxies:
       Host: a.ssll.gay
     path: /Telegram🇨🇳+@WangCai2+/?ed=2048
 - delay: 866
-  name: proxy49
+  name: HK4
   network: ws
   port: 30002
   server: 83.229.124.185
@@ -712,7 +835,7 @@ proxies:
       Host: a.ssll.gay
     path: /Telegram🇨🇳+@WangCai2+/?ed=2048
 - delay: 302
-  name: proxy50
+  name: HK5
   network: ws
   port: 19527
   server: 45.87.103.78
@@ -727,7 +850,7 @@ proxies:
       Host: a.ssll.gay
     path: /Telegram🇨🇳+@WangCai2+/?ed=2048
 - delay: 596
-  name: proxy51
+  name: HK6
   network: ws
   port: 32633
   server: 223.122.233.66
@@ -745,7 +868,7 @@ proxies:
   cipher: auto
   delay: 2053
   disable-sni: true
-  name: proxy52
+  name: HK7
   network: tcp
   port: 31778
   server: 183.236.48.161
@@ -758,7 +881,7 @@ proxies:
 - alterId: 64
   cipher: auto
   delay: 1276
-  name: proxy53
+  name: HK8
   port: 45020
   server: 183.236.51.23
   skip-cert-verify: true
@@ -768,7 +891,7 @@ proxies:
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - cipher: chacha20-ietf-poly1305
   delay: 1230
-  name: proxy54
+  name: UA1
   password: 70747514-fb14-4f31-8390-e1f0453eff6d
   port: 20025
   server: 14.215.169.69
@@ -777,7 +900,7 @@ proxies:
   udp: true
 - cipher: aes-256-cfb
   delay: 1380
-  name: proxy55
+  name: EC1
   password: f8f7aCzcPKbsF8p3
   port: 989
   server: 179.49.5.114
@@ -786,7 +909,7 @@ proxies:
   udp: true
 - cipher: chacha20-ietf-poly1305
   delay: 923
-  name: proxy56
+  name: DE1
   password: 70747514-fb14-4f31-8390-e1f0453eff6d
   port: 20024
   server: 14.215.169.69
@@ -795,7 +918,7 @@ proxies:
   udp: true
 - cipher: chacha20-ietf-poly1305
   delay: 285
-  name: proxy57
+  name: SG1
   password: 70747514-fb14-4f31-8390-e1f0453eff6d
   port: 20009
   server: 14.215.169.69
@@ -803,7 +926,7 @@ proxies:
   type: ss
   udp: true
 - delay: 1171
-  name: proxy58
+  name: JP1
   network: ws
   port: 11481
   server: 119.197.126.220
@@ -818,7 +941,7 @@ proxies:
       Host: global2.ccdd.site
     path: /?ed=2560
 - delay: 1068
-  name: proxy59
+  name: JP2
   network: ws
   port: 11965
   server: 59.29.116.20
@@ -833,7 +956,7 @@ proxies:
       Host: global2.ccdd.site
     path: /?ed=2560
 - delay: 1071
-  name: proxy60
+  name: JP3
   network: ws
   port: 18080
   server: 220.92.184.206
@@ -849,7 +972,7 @@ proxies:
     path: /?ed=2560
 - cipher: aes-256-cfb
   delay: 288
-  name: proxy61
+  name: JP4
   password: amazonskr05
   port: 443
   server: 43.207.213.253
@@ -857,7 +980,7 @@ proxies:
   type: ss
   udp: true
 - delay: 1037
-  name: proxy62
+  name: JP5
   network: ws
   port: 10049
   server: 125.141.125.11
@@ -872,7 +995,7 @@ proxies:
       Host: global2.ccdd.site
     path: /?ed=2560
 - delay: 1541
-  name: proxy63
+  name: JP6
   network: ws
   port: 56421
   server: 172.84.92.86
@@ -887,7 +1010,7 @@ proxies:
       Host: a.ssll.gay
     path: /Telegram🇨🇳+@WangCai2+/?ed=2048
 - delay: 1902
-  name: proxy64
+  name: JP7
   network: ws
   port: 8882
   server: 103.20.199.196
@@ -902,7 +1025,7 @@ proxies:
       Host: a.ssll.gay
     path: /Telegram🇨🇳+@WangCai2+/?ed=2048
 - delay: 1067
-  name: proxy65
+  name: JP8
   network: ws
   port: 57956
   server: 176.119.148.14
@@ -917,7 +1040,7 @@ proxies:
       Host: a.ssll.gay
     path: /Telegram🇨🇳+@WangCai2+/?ed=2048
 - delay: 1113
-  name: proxy66
+  name: JP9
   network: ws
   port: 10000
   server: 14.48.49.133
@@ -932,7 +1055,7 @@ proxies:
       Host: global2.ccdd.site
     path: /?ed=2560
 - delay: 1147
-  name: proxy67
+  name: JP10
   network: ws
   port: 20202
   server: 175.199.146.29
@@ -947,7 +1070,7 @@ proxies:
       Host: a.ssll.gay
     path: /Telegram🇨🇳+@WangCai2+/?ed=2048
 - delay: 1133
-  name: proxy68
+  name: JP11
   network: ws
   port: 19100
   server: 121.181.128.153
@@ -963,7 +1086,7 @@ proxies:
     path: /Telegram🇨🇳+@WangCai2+/?ed=2048
 - cipher: chacha20-ietf-poly1305
   delay: 1136
-  name: proxy69
+  name: FR2
   password: 70747514-fb14-4f31-8390-e1f0453eff6d
   port: 20028
   server: 14.215.169.69
@@ -971,7 +1094,7 @@ proxies:
   type: ss
   udp: true
 - delay: 1017
-  name: proxy70
+  name: US36
   network: ws
   port: 9443
   server: 154.40.32.15
@@ -986,7 +1109,7 @@ proxies:
       Host: a.ssll.gay
     path: /Telegram🇨🇳+@WangCai2+/?ed=2048
 - delay: 919
-  name: proxy71
+  name: US37
   network: ws
   port: 50003
   server: 23.165.40.187
@@ -1001,7 +1124,7 @@ proxies:
       Host: a.ssll.gay
     path: /Telegram🇨🇳+@WangCai2+/?ed=2048
 - delay: 1074
-  name: proxy72
+  name: US38
   network: ws
   port: 22389
   server: 23.165.248.56
@@ -1016,7 +1139,7 @@ proxies:
       Host: a.ssll.gay
     path: /Telegram🇨🇳+@WangCai2+/?ed=2048
 - delay: 1041
-  name: proxy73
+  name: US39
   network: ws
   port: 34237
   server: 23.236.68.152
@@ -1031,7 +1154,7 @@ proxies:
       Host: a.ssll.gay
     path: /Telegram🇨🇳+@WangCai2+/?ed=2048
 - delay: 1046
-  name: proxy74
+  name: US40
   network: ws
   port: 23391
   server: 154.17.21.37
@@ -1047,7 +1170,7 @@ proxies:
     path: /Telegram🇨🇳+@WangCai2+/?ed=2048
 - alterId: 0
   delay: 1046
-  name: proxy75
+  name: US41
   network: ws
   password: Watashi_VPN
   port: 2053
@@ -1059,7 +1182,7 @@ proxies:
   ws-opts:
     path: /
 - delay: 1024
-  name: proxy76
+  name: US42
   network: ws
   port: 38908
   server: 45.59.184.16
@@ -1075,7 +1198,7 @@ proxies:
     path: /Telegram🇨🇳+@WangCai2+/?ed=2048
 - client-fingerprint: chrome
   delay: 1502
-  name: proxy77
+  name: DE2
   network: ws
   port: 2083
   server: 66.81.247.19
@@ -1090,7 +1213,7 @@ proxies:
       Host: a.ssll.gay
     path: /twitter苏小柠security
 - delay: 1157
-  name: proxy78
+  name: GB1
   network: ws
   port: 2053
   server: 130.250.137.196
@@ -1105,7 +1228,7 @@ proxies:
       Host: a.ssll.gay
     path: /?ed=2048
 - delay: 870
-  name: proxy79
+  name: US43
   network: ws
   port: 2095
   server: 188.114.96.3
@@ -1119,22 +1242,8 @@ proxies:
     headers:
       Host: WORker-LUCKY-SOUND-244a.VOdabaJ775.worKeRS.deV
     path: /3d4gHs5YyJDolcB0?ed=2560
-- delay: 2296
-  name: proxy80
-  network: ws
-  password: 95b
-  port: 10511
-  server: 65.75.194.43
-  skip-cert-verify: true
-  sni: 2022585a-86a7-4231-b3a0-eeda14f77f4d.8f18237c-8e5f-4ffb-a434-1b2948c87be3.ddnsfree.com
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: 2022585a-86a7-4231-b3a0-eeda14f77f4d.8f18237c-8e5f-4ffb-a434-1b2948c87be3.ddnsfree.com
-    path: /trojan-6qo.pages.dev/?ed=2560?ed=2560
 - delay: 1371
-  name: proxy81
+  name: GB2
   network: ws
   port: 4397
   server: 38.59.224.99
@@ -1150,7 +1259,7 @@ proxies:
     path: /Telegram🇨🇳+@WangCai2+/?ed=2048
 - cipher: chacha20-ietf-poly1305
   delay: 1065
-  name: proxy82
+  name: NL1
   password: 70747514-fb14-4f31-8390-e1f0453eff6d
   port: 20030
   server: 14.215.169.69
@@ -1158,7 +1267,7 @@ proxies:
   type: ss
   udp: true
 - delay: 1007
-  name: proxy83
+  name: KR1
   network: ws
   port: 16072
   server: 118.131.41.202
@@ -1173,7 +1282,7 @@ proxies:
       Host: a.ssll.gay
     path: /Telegram🇨🇳+@WangCai2+/?ed=2048
 - delay: 895
-  name: proxy84
+  name: KR2
   network: ws
   port: 50000
   server: 117.123.31.2
@@ -1188,7 +1297,7 @@ proxies:
       Host: a.ssll.gay
     path: /Telegram🇨🇳+@WangCai2+/?ed=2048
 - delay: 1099
-  name: proxy85
+  name: KR3
   network: ws
   port: 30063
   server: 121.182.55.77
@@ -1203,7 +1312,7 @@ proxies:
       Host: global2.ccdd.site
     path: /?ed=2560
 - delay: 1140
-  name: proxy86
+  name: KR4
   network: ws
   port: 10007
   server: 121.158.231.203
@@ -1218,7 +1327,7 @@ proxies:
       Host: a.ssll.gay
     path: /Telegram🇨🇳+@WangCai2+/?ed=2048
 - delay: 1125
-  name: proxy87
+  name: KR5
   network: ws
   port: 30001
   server: 119.203.125.236
@@ -1233,7 +1342,7 @@ proxies:
       Host: a.ssll.gay
     path: /Telegram🇨🇳+@WangCai2+/?ed=2048
 - delay: 1038
-  name: proxy88
+  name: KR6
   network: ws
   port: 10116
   server: 220.126.127.139
@@ -1248,7 +1357,7 @@ proxies:
       Host: a.ssll.gay
     path: /Telegram🇨🇳+@WangCai2+/?ed=2048
 - delay: 1115
-  name: proxy89
+  name: KR7
   network: ws
   port: 10333
   server: 59.30.19.182
@@ -1263,7 +1372,7 @@ proxies:
       Host: a.ssll.gay
     path: /Telegram🇨🇳+@WangCai2+/?ed=2048
 - delay: 948
-  name: proxy90
+  name: KR8
   network: ws
   password: 95b
   port: 30061
@@ -1277,7 +1386,7 @@ proxies:
       Host: 30388d70-6f5c-4d7c-8daa-9d3df7c5c526.9150e878-8296-4798-a172-c3fe66b8dee5.ddnsgeek.com
     path: /trojan-6qo.pages.dev/?ed=2560?ed=2560
 - delay: 1275
-  name: proxy91
+  name: KR9
   network: ws
   port: 32202
   server: 211.196.226.172
@@ -1292,7 +1401,7 @@ proxies:
       Host: global2.ccdd.site
     path: /?ed=2560
 - delay: 1149
-  name: proxy92
+  name: KR10
   network: ws
   port: 16053
   server: 118.33.22.133
@@ -1307,7 +1416,7 @@ proxies:
       Host: a.ssll.gay
     path: /Telegram🇨🇳+@WangCai2+/?ed=2048
 - delay: 1379
-  name: proxy93
+  name: KR11
   network: ws
   port: 30011
   server: 124.80.55.214
@@ -1322,7 +1431,7 @@ proxies:
       Host: a.ssll.gay
     path: /Telegram🇨🇳+@WangCai2+/?ed=2048
 - delay: 1250
-  name: proxy94
+  name: KR12
   network: ws
   port: 34237
   server: 61.111.251.245
@@ -1337,7 +1446,7 @@ proxies:
       Host: a.ssll.gay
     path: /Telegram🇨🇳+@WangCai2+/?ed=2048
 - delay: 1136
-  name: proxy95
+  name: KR13
   network: ws
   port: 30046
   server: 125.133.233.48
@@ -1352,7 +1461,7 @@ proxies:
       Host: a.ssll.gay
     path: /Telegram🇨🇳+@WangCai2+/?ed=2048
 - delay: 1322
-  name: proxy96
+  name: KR14
   network: ws
   port: 10911
   server: 183.98.53.177
@@ -1367,7 +1476,7 @@ proxies:
       Host: a.ssll.gay
     path: /Telegram🇨🇳+@WangCai2+/?ed=2048
 - delay: 1072
-  name: proxy97
+  name: KR15
   network: ws
   port: 18016
   server: 118.130.23.168
@@ -1382,7 +1491,7 @@ proxies:
       Host: global2.ccdd.site
     path: /?ed=2560
 - delay: 1424
-  name: proxy98
+  name: KR16
   network: ws
   port: 12198
   server: 158.180.69.78
@@ -1397,7 +1506,7 @@ proxies:
       Host: a.ssll.gay
     path: /Telegram🇨🇳+@WangCai2+/?ed=2048
 - delay: 1322
-  name: proxy99
+  name: KR17
   network: ws
   port: 27017
   server: 121.165.36.130
@@ -1412,7 +1521,7 @@ proxies:
       Host: a.ssll.gay
     path: /Telegram🇨🇳+@WangCai2+/?ed=2048
 - delay: 1333
-  name: proxy100
+  name: KR18
   network: ws
   port: 10018
   server: 211.248.216.119
@@ -1427,7 +1536,7 @@ proxies:
       Host: a.ssll.gay
     path: /Telegram🇨🇳+@WangCai2+/?ed=2048
 - delay: 1534
-  name: proxy101
+  name: KR19
   network: ws
   port: 35389
   server: 114.199.156.104
@@ -1442,7 +1551,7 @@ proxies:
       Host: global2.ccdd.site
     path: /?ed=2560
 - delay: 1195
-  name: proxy102
+  name: KR20
   network: ws
   port: 30032
   server: 115.88.75.154
@@ -1458,7 +1567,7 @@ proxies:
     path: /?ed=2560
 - alterId: 0
   cipher: auto
-  name: proxy103
+  name: US44
   network: ws
   port: 2095
   server: 104.19.45.220
@@ -1473,7 +1582,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: proxy104
+  name: US45
   network: ws
   port: 2095
   server: 104.19.45.83
@@ -1488,7 +1597,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: proxy105
+  name: US46
   network: ws
   port: 2095
   server: 104.19.45.34
@@ -1503,7 +1612,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: proxy106
+  name: KR21
   network: ws
   port: 8080
   server: 104.19.44.151
@@ -1516,24 +1625,9 @@ proxies:
     headers:
       Host: amd2.720208.xyz
     path: /?ed=2048&Telegram🇨🇳 @WangCai_8
-- alterId: 0
-  cipher: auto
-  name: proxy107
-  network: ws
-  port: 2095
-  server: 104.19.45.7
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 7a737f41-b792-4260-94ff-3d864da67b80
-  ws-opts:
-    headers:
-      Host: onea.flha.ru
-    path: /
 - alterId: 64
   cipher: auto
-  name: proxy108
+  name: US47
   port: 35601
   server: 120.232.153.40
   skip-cert-verify: true
@@ -1543,7 +1637,7 @@ proxies:
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - alterId: 0
   cipher: auto
-  name: proxy109
+  name: US48
   network: ws
   port: 2095
   server: 104.19.45.33
@@ -1558,37 +1652,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: proxy110
-  network: ws
-  port: 2095
-  server: 104.19.45.194
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 7a737f41-b792-4260-94ff-3d864da67b80
-  ws-opts:
-    headers:
-      Host: onea.flha.ru
-    path: /
-- alterId: 0
-  cipher: auto
-  name: proxy111
-  network: ws
-  port: 2095
-  server: 104.19.45.203
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 7a737f41-b792-4260-94ff-3d864da67b80
-  ws-opts:
-    headers:
-      Host: onea.flha.ru
-    path: /
-- alterId: 0
-  cipher: auto
-  name: proxy112
+  name: US49
   network: ws
   port: 2095
   server: 104.19.45.204
@@ -1603,22 +1667,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: proxy113
-  network: ws
-  port: 2095
-  server: 104.19.45.2
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 7a737f41-b792-4260-94ff-3d864da67b80
-  ws-opts:
-    headers:
-      Host: onea.flha.ru
-    path: /
-- alterId: 0
-  cipher: auto
-  name: proxy114
+  name: US50
   network: ws
   port: 2095
   server: 104.19.45.196
@@ -1632,7 +1681,7 @@ proxies:
       Host: onea.flha.ru
     path: /
 - client-fingerprint: random
-  name: proxy115
+  name: JP12
   network: ws
   port: 12212
   server: 45.159.48.192
@@ -1647,7 +1696,7 @@ proxies:
       Host: toujiediansigema.666888.lol
     path: /TG@mianfeicf
 - client-fingerprint: random
-  name: proxy116
+  name: JP13
   network: ws
   port: 50001
   server: 140.245.67.101
@@ -1661,7 +1710,7 @@ proxies:
     headers:
       Host: toujiediansigema.666888.lol
     path: /TG@mianfeicf
-- name: proxy117
+- name: TW7
   network: ws
   port: 46832
   server: 103.137.63.5
@@ -1676,7 +1725,7 @@ proxies:
       Host: pages.dnsorg.filegear-sg.me
     path: /?proxyip=oracle.gitgoogle.com
 - cipher: rc4-md5
-  name: proxy118
+  name: IN1
   password: 14fFPrbezE3HDZzsMOr6
   port: 8080
   server: 159.65.149.67
@@ -1684,7 +1733,7 @@ proxies:
   type: ss
   udp: true
 - client-fingerprint: random
-  name: proxy119
+  name: KR22
   network: ws
   port: 12199
   server: 152.69.234.137
@@ -1699,7 +1748,7 @@ proxies:
       Host: toujiediansigema.666888.lol
     path: /TG@mianfeicf
 - client-fingerprint: random
-  name: proxy120
+  name: KR23
   network: ws
   port: 12199
   server: 158.179.194.146
@@ -1714,7 +1763,7 @@ proxies:
       Host: toujiediansigema.666888.lol
     path: /TG@mianfeicf
 - client-fingerprint: random
-  name: proxy121
+  name: KR24
   network: ws
   port: 50051
   server: 150.230.252.47
@@ -1729,7 +1778,7 @@ proxies:
       Host: toujiediansigema.666888.lol
     path: /TG@mianfeicf
 - client-fingerprint: random
-  name: proxy122
+  name: HK9
   network: ws
   port: 2096
   server: 104.19.57.183
@@ -1744,7 +1793,7 @@ proxies:
       Host: toujiediansigema.666888.lol
     path: /TG@mianfeicf
 - client-fingerprint: random
-  name: proxy123
+  name: GB3
   network: ws
   port: 44340
   server: 185.217.108.162
@@ -1759,7 +1808,7 @@ proxies:
       Host: toujiediansigema.666888.lol
     path: /TG@mianfeicf
 - client-fingerprint: random
-  name: proxy124
+  name: US51
   network: ws
   port: 17475
   server: 37.123.193.101
@@ -1774,7 +1823,7 @@ proxies:
       Host: toujiediansigema.666888.lol
     path: /TG@mianfeicf
 - client-fingerprint: random
-  name: proxy125
+  name: US52
   network: ws
   port: 52050
   server: 37.123.193.178
@@ -1789,7 +1838,7 @@ proxies:
       Host: toujiediansigema.666888.lol
     path: /TG@mianfeicf
 - cipher: aes-256-cfb
-  name: proxy126
+  name: JP14
   password: amazonskr05
   port: 443
   server: 18.183.174.153
@@ -1797,7 +1846,7 @@ proxies:
   type: ss
   udp: true
 - client-fingerprint: random
-  name: proxy127
+  name: SG2
   network: ws
   port: 42235
   server: 13.229.72.179
@@ -1811,7 +1860,7 @@ proxies:
     headers:
       Host: toujiediansigema.666888.lol
     path: /TG@mianfeicf
-- name: proxy128
+- name: JP15
   network: ws
   port: 17658
   server: 117.123.234.199
@@ -1828,7 +1877,7 @@ proxies:
 - alpn:
   - h3
   client-fingerprint: random
-  name: proxy129
+  name: KR25
   network: ws
   port: 30042
   server: 210.91.8.234
@@ -1843,7 +1892,7 @@ proxies:
       Host: TG.CMLiussss.giize.com
     path: /?proxyip=proxyip.kr.fxxk.dedyn.io
 - cipher: aes-256-cfb
-  name: proxy130
+  name: US53
   password: amazonskr05
   port: 443
   server: 34.222.136.21
@@ -1851,7 +1900,7 @@ proxies:
   type: ss
   udp: true
 - client-fingerprint: random
-  name: proxy131
+  name: GB4
   network: ws
   port: 2053
   server: 51.91.215.11
@@ -1865,7 +1914,7 @@ proxies:
     headers:
       Host: toujiediansigema.666888.lol
     path: /TG@mianfeicf
-- name: proxy132
+- name: US54
   network: ws
   password: FLorg
   port: 36342
@@ -1878,7 +1927,7 @@ proxies:
     headers:
       Host: trojan.tcorg.filegear-sg.me
     path: /?ed=2048
-- name: proxy133
+- name: US55
   network: ws
   password: FLorg
   port: 15110
@@ -1891,7 +1940,7 @@ proxies:
     headers:
       Host: trojan.tcorg.filegear-sg.me
     path: /?ed=2048
-- name: proxy134
+- name: US56
   network: ws
   password: FLorg
   port: 39562
@@ -1905,7 +1954,7 @@ proxies:
       Host: trojan.tcorg.filegear-sg.me
     path: /?ed=2048
 - client-fingerprint: random
-  name: proxy135
+  name: US57
   network: ws
   port: 2087
   server: 172.67.74.9
@@ -1920,7 +1969,7 @@ proxies:
       Host: toujiediansigema.666888.lol
     path: /TG@mianfeicf
 - cipher: rc4-md5
-  name: proxy136
+  name: US58
   password: 14fFPrbezE3HDZzsMOr6
   port: 8080
   server: 98.98.79.197
@@ -1928,14 +1977,14 @@ proxies:
   type: ss
   udp: true
 - cipher: aes-256-cfb
-  name: proxy137
+  name: US59
   password: amazonskr05
   port: 443
   server: 35.93.49.236
   skip-cert-verify: true
   type: ss
   udp: true
-- name: proxy138
+- name: CZ1
   network: ws
   port: 20102
   server: 5.39.202.173
@@ -1947,7 +1996,7 @@ proxies:
   ws-opts:
     path: /
 - cipher: aes-256-cfb
-  name: proxy139
+  name: JP16
   password: amazonskr05
   port: 443
   server: 35.77.104.14
@@ -1957,7 +2006,7 @@ proxies:
 - alpn:
   - http%2F1.1
   client-fingerprint: random
-  name: proxy140
+  name: KR26
   network: ws
   port: 30061
   server: 124.80.55.214
@@ -1972,7 +2021,7 @@ proxies:
       Host: pages.dnsorg.filegear-sg.me
     path: /?ed=2048
 - cipher: aes-256-cfb
-  name: proxy141
+  name: KR27
   password: qwerREWQ@@
   port: 19647
   server: p220.panda001.net
@@ -1980,7 +2029,7 @@ proxies:
   type: ss
   udp: true
 - cipher: aes-256-cfb
-  name: proxy142
+  name: KR28
   password: qwerREWQ@@
   port: 61080
   server: p110.panda001.net
@@ -1988,7 +2037,7 @@ proxies:
   type: ss
   udp: true
 - cipher: rc4-md5
-  name: proxy143
+  name: ZA1
   password: 14fFPrbezE3HDZzsMOr6
   port: 8080
   server: 139.84.235.47
@@ -1996,7 +2045,7 @@ proxies:
   type: ss
   udp: true
 - client-fingerprint: random
-  name: proxy144
+  name: GB5
   network: ws
   port: 32335
   server: 185.217.111.103
@@ -2011,7 +2060,7 @@ proxies:
       Host: toujiediansigema.666888.lol
     path: /TG@mianfeicf
 - cipher: aes-256-cfb
-  name: proxy145
+  name: KR29
   password: amazonskr05
   port: 443
   server: 3.38.212.89
@@ -2019,7 +2068,7 @@ proxies:
   type: ss
   udp: true
 - cipher: aes-256-cfb
-  name: proxy146
+  name: US60
   password: amazonskr05
   port: 443
   server: 35.166.208.40
@@ -2027,7 +2076,7 @@ proxies:
   type: ss
   udp: true
 - cipher: aes-256-cfb
-  name: proxy147
+  name: KR30
   password: amazonskr05
   port: 443
   server: 3.38.255.233
@@ -2035,7 +2084,7 @@ proxies:
   type: ss
   udp: true
 - cipher: aes-256-cfb
-  name: proxy148
+  name: US61
   password: amazonskr05
   port: 443
   server: 34.221.180.94
@@ -2043,7 +2092,7 @@ proxies:
   type: ss
   udp: true
 - cipher: aes-256-cfb
-  name: proxy149
+  name: US62
   password: amazonskr05
   port: 443
   server: 52.32.13.25
@@ -2053,7 +2102,7 @@ proxies:
 - alpn:
   - http%2F1.1
   client-fingerprint: random
-  name: proxy150
+  name: JP17
   network: ws
   port: 58723
   server: 172.84.92.152
@@ -2070,7 +2119,7 @@ proxies:
 - alpn:
   - http%2F1.1
   client-fingerprint: random
-  name: proxy151
+  name: JP18
   network: ws
   port: 12999
   server: 103.20.199.118
@@ -2085,7 +2134,7 @@ proxies:
       Host: pages.dnsorg.filegear-sg.me
     path: /?ed=2048
 - cipher: rc4-md5
-  name: proxy152
+  name: IN2
   password: 14fFPrbezE3HDZzsMOr6
   port: 8080
   server: 142.93.209.240
@@ -2093,7 +2142,7 @@ proxies:
   type: ss
   udp: true
 - cipher: rc4-md5
-  name: proxy153
+  name: IN3
   password: 14fFPrbezE3HDZzsMOr6
   port: 8080
   server: 159.89.160.243
@@ -2101,7 +2150,7 @@ proxies:
   type: ss
   udp: true
 - cipher: aes-256-cfb
-  name: proxy154
+  name: SG3
   password: amazonskr05
   port: 443
   server: 13.229.232.1
@@ -2110,7 +2159,7 @@ proxies:
   udp: true
 - alterId: 0
   cipher: none
-  name: proxy155
+  name: AU1
   network: ws
   port: 443
   server: n1723960458.ryjml.cn
@@ -2123,7 +2172,7 @@ proxies:
   ws-opts:
     path: /
 - cipher: chacha20-ietf-poly1305
-  name: proxy156
+  name: HK10
   password: 7efd4673-1d09-4be0-858b-7ee5d8b33dcd
   port: 59096
   server: gdyddx500.xiyunchen.cn
@@ -2132,7 +2181,7 @@ proxies:
   udp: true
 - alterId: 0
   cipher: auto
-  name: proxy157
+  name: US63
   network: ws
   port: 2086
   server: 104.19.21.63
@@ -2147,7 +2196,7 @@ proxies:
     path: /github.com/Alvin9999
 - alterId: 0
   cipher: auto
-  name: proxy158
+  name: US64
   network: ws
   port: 2095
   server: 104.19.45.172
@@ -2162,7 +2211,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: proxy159
+  name: US65
   network: ws
   port: 2095
   server: 104.19.45.129
@@ -2177,7 +2226,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: proxy160
+  name: US66
   network: ws
   port: 2095
   server: 104.19.45.13
@@ -2190,37 +2239,14 @@ proxies:
     headers:
       Host: onea.flha.ru
     path: /
-- name: proxy161
+- name: FR3
   password: 5c7941b5-c393-4eea-a76d-d44b59baf8a0
   port: 2053
   server: 185.234.64.146
   skip-cert-verify: true
   type: trojan
   udp: true
-- alterId: 0
-  cipher: auto
-  name: proxy162
-  network: ws
-  port: 2086
-  server: 104.19.47.36
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
-  ws-opts:
-    headers:
-      Host: ip2.1457230.xyz
-    path: /github.com/Alvin9999
-- cipher: chacha20-ietf-poly1305
-  name: proxy163
-  password: 36fdc73d-0bff-4d66-9759-e81c63de16b6
-  port: 10809
-  server: yd1.qianggewangluo.buzz
-  skip-cert-verify: true
-  type: ss
-  udp: true
-- name: proxy164
+- name: HK11
   network: ws
   port: 2087
   server: visa.cn
@@ -2236,7 +2262,7 @@ proxies:
       Host: global2.ccdd.site
     path: /?ed=2560
 - cipher: aes-128-gcm
-  name: proxy165
+  name: GB6
   password: shadowsocks
   port: 443
   server: uk-dc1.yangon.club
@@ -2245,7 +2271,7 @@ proxies:
   udp: true
 - country: 🇹🇼 TW
   delay: 1516
-  name: proxy166
+  name: TW8
   password: 464d3eff-ddd0-4622-991b-9cf42ba6c9c9
   port: 703
   server: 118.167.11.28
@@ -2253,7 +2279,7 @@ proxies:
   type: trojan
   udp: true
 - delay: 1010
-  name: proxy167
+  name: TW9
   network: ws
   port: 7
   server: 203.198.16.91
@@ -2268,7 +2294,7 @@ proxies:
       Host: a.ssll.gay
     path: /Telegram🇨🇳+@WangCai2+/?ed=2048
 - delay: 654
-  name: proxy168
+  name: TW10
   network: ws
   port: 7
   server: 112.120.127.246
@@ -2284,7 +2310,7 @@ proxies:
     path: /Telegram🇨🇳+@WangCai2+/?ed=2048
 - country: 🇨🇳 CN
   delay: 2054
-  name: proxy169
+  name: HK12
   password: lNOcIAxy
   port: 36442
   server: 36.151.192.239
@@ -2294,7 +2320,7 @@ proxies:
 - cipher: chacha20-ietf-poly1305
   country: 🇨🇳CN
   delay: 2441
-  name: proxy170
+  name: CA1
   password: dd29d7ad-5fda-4f64-a57e-716ca6010e65
   port: 10712
   server: yidong1.liulangdiqiu.life
@@ -2302,7 +2328,7 @@ proxies:
   type: ss
   udp: true
 - delay: 858
-  name: proxy171
+  name: JP19
   network: ws
   port: 12233
   server: 106.240.98.130
@@ -2319,7 +2345,7 @@ proxies:
 - cipher: chacha20-ietf-poly1305
   country: 🇷🇺 RU
   delay: 717
-  name: proxy172
+  name: FR4
   password: pBlVQa3yBhazZUpGTAXMRq
   port: 51476
   server: 46.226.167.36
@@ -2327,7 +2353,7 @@ proxies:
   type: ss
   udp: true
 - delay: 1504
-  name: proxy173
+  name: PL1
   network: ws
   port: 443
   server: 45.144.48.50
@@ -2342,7 +2368,7 @@ proxies:
       Host: global2.ccdd.site
     path: /?ed=2560
 - delay: 829
-  name: proxy174
+  name: US67
   network: ws
   password: 95b
   port: 37070
@@ -2356,7 +2382,7 @@ proxies:
       Host: a17cabb5-3f13-4056-b0ce-476143491d4b.blackbeautifulman.cloudns.org
     path: /trojan-6qo.pages.dev/?ed=2560?ed=2560
 - delay: 944
-  name: proxy175
+  name: GB7
   network: ws
   port: 443
   server: 217.163.76.75
@@ -2371,7 +2397,7 @@ proxies:
       Host: cfed.tgzdyz2.top
     path: /tg@zdyz2
 - delay: 1490
-  name: proxy176
+  name: KR31
   network: ws
   port: 12461
   server: 115.20.144.210
@@ -2386,7 +2412,7 @@ proxies:
       Host: a.ssll.gay
     path: /Telegram🇨🇳+@WangCai2+/?ed=2048
 - delay: 1042
-  name: proxy177
+  name: KR32
   network: ws
   port: 34599
   server: 118.130.241.44
@@ -2401,7 +2427,7 @@ proxies:
       Host: global2.ccdd.site
     path: /?ed=2560
 - delay: 557
-  name: proxy178
+  name: KR33
   network: ws
   password: CMLiu
   port: 443
@@ -2415,7 +2441,7 @@ proxies:
       Host: aliorg.filegear-sg.me
     path: /
 - delay: 1041
-  name: proxy179
+  name: KR34
   network: ws
   password: 95b
   port: 12461
@@ -2430,7 +2456,7 @@ proxies:
     path: /trojan-6qo.pages.dev/?ed=2560?ed=2560
 - alterId: 64
   cipher: auto
-  name: proxy180
+  name: HK13
   port: 42055
   server: 120.232.153.37
   skip-cert-verify: true
@@ -2440,37 +2466,7 @@ proxies:
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - alterId: 0
   cipher: auto
-  name: proxy181
-  network: ws
-  port: 2086
-  server: 104.19.46.233
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 29eebb60-b27b-4a9d-bba5-947763d9205e
-  ws-opts:
-    headers:
-      Host: ip005.3196772.xyz
-    path: /github.com/Alvin9999
-- alterId: 0
-  cipher: auto
-  name: proxy182
-  network: ws
-  port: 2095
-  server: 104.19.45.179
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 7a737f41-b792-4260-94ff-3d864da67b80
-  ws-opts:
-    headers:
-      Host: onea.flha.ru
-    path: /
-- alterId: 0
-  cipher: auto
-  name: proxy183
+  name: KR35
   network: ws
   port: 8080
   server: 104.19.44.174
@@ -2485,7 +2481,7 @@ proxies:
     path: /?ed=2048
 - alterId: 0
   cipher: auto
-  name: proxy184
+  name: US68
   network: ws
   port: 2095
   server: 104.19.45.150
@@ -2500,7 +2496,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: proxy185
+  name: US69
   network: ws
   port: 2095
   server: 104.19.45.205
@@ -2515,37 +2511,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: proxy186
-  network: ws
-  port: 2095
-  server: 104.19.45.238
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 7a737f41-b792-4260-94ff-3d864da67b80
-  ws-opts:
-    headers:
-      Host: onea.flha.ru
-    path: /
-- alterId: 0
-  cipher: auto
-  name: proxy187
-  network: ws
-  port: 2095
-  server: 104.19.45.80
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 7a737f41-b792-4260-94ff-3d864da67b80
-  ws-opts:
-    headers:
-      Host: onea.flha.ru
-    path: /
-- alterId: 0
-  cipher: auto
-  name: proxy188
+  name: US70
   network: ws
   port: 2095
   server: 104.19.45.114
@@ -2560,7 +2526,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: proxy189
+  name: US71
   network: ws
   port: 2095
   server: 104.19.45.176
@@ -2575,22 +2541,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: proxy190
-  network: ws
-  port: 2095
-  server: 104.19.45.50
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 7a737f41-b792-4260-94ff-3d864da67b80
-  ws-opts:
-    headers:
-      Host: onea.flha.ru
-    path: /
-- alterId: 0
-  cipher: auto
-  name: proxy191
+  name: US72
   network: ws
   port: 2095
   server: 104.19.45.146
@@ -2605,7 +2556,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: proxy192
+  name: US73
   network: ws
   port: 2095
   server: 104.19.45.144
@@ -2620,37 +2571,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: proxy193
-  network: ws
-  port: 2095
-  server: 104.19.45.241
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 7a737f41-b792-4260-94ff-3d864da67b80
-  ws-opts:
-    headers:
-      Host: onea.flha.ru
-    path: /
-- alterId: 0
-  cipher: auto
-  name: proxy194
-  network: ws
-  port: 2095
-  server: 104.19.45.19
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 7a737f41-b792-4260-94ff-3d864da67b80
-  ws-opts:
-    headers:
-      Host: onea.flha.ru
-    path: /
-- alterId: 0
-  cipher: auto
-  name: proxy195
+  name: US74
   network: ws
   port: 2095
   server: 104.19.45.14
@@ -2665,7 +2586,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: proxy196
+  name: US75
   network: ws
   port: 2095
   server: 104.19.45.245
@@ -2680,7 +2601,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: proxy197
+  name: US76
   network: ws
   port: 2095
   server: 104.19.45.178
@@ -2695,7 +2616,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: proxy198
+  name: US77
   network: ws
   port: 2095
   server: 104.19.45.139
@@ -2710,7 +2631,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: proxy199
+  name: US78
   network: ws
   port: 2095
   server: 104.19.45.191
@@ -2725,22 +2646,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: proxy200
-  network: ws
-  port: 2095
-  server: 104.19.45.237
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 7a737f41-b792-4260-94ff-3d864da67b80
-  ws-opts:
-    headers:
-      Host: onea.flha.ru
-    path: /
-- alterId: 0
-  cipher: auto
-  name: proxy201
+  name: US79
   network: ws
   port: 2095
   server: 172.67.214.33
@@ -2755,22 +2661,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: proxy202
-  network: ws
-  port: 2095
-  server: 104.19.45.5
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 7a737f41-b792-4260-94ff-3d864da67b80
-  ws-opts:
-    headers:
-      Host: onea.flha.ru
-    path: /
-- alterId: 0
-  cipher: auto
-  name: proxy203
+  name: US80
   network: ws
   port: 2095
   server: 104.19.45.175
@@ -2783,39 +2674,9 @@ proxies:
     headers:
       Host: onea.flha.ru
     path: /
-- alterId: 0
-  cipher: auto
-  name: proxy204
-  network: ws
-  port: 2095
-  server: 104.19.45.197
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 7a737f41-b792-4260-94ff-3d864da67b80
-  ws-opts:
-    headers:
-      Host: onea.flha.ru
-    path: /
-- alterId: 0
-  cipher: auto
-  name: proxy205
-  network: ws
-  port: 2095
-  server: 104.21.23.231
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 7a737f41-b792-4260-94ff-3d864da67b80
-  ws-opts:
-    headers:
-      Host: onea.flha.ru
-    path: /
 - client-fingerprint: ios
   flow: xtls-rprx-vision
-  name: proxy206
+  name: US81
   network: tcp
   port: 60001
   reality-opts:
@@ -2830,7 +2691,7 @@ proxies:
   uuid: 96dbdda4-5efc-4f0e-bb6f-2d122fd4695f
 - client-fingerprint: safari
   flow: xtls-rprx-vision
-  name: proxy207
+  name: US82
   network: tcp
   port: 60001
   reality-opts:
@@ -2845,7 +2706,7 @@ proxies:
   uuid: 96dbdda4-5efc-4f0e-bb6f-2d122fd4695f
 - client-fingerprint: firefox
   flow: xtls-rprx-vision
-  name: proxy208
+  name: US83
   network: tcp
   port: 60001
   reality-opts:
@@ -2860,7 +2721,7 @@ proxies:
   uuid: 96dbdda4-5efc-4f0e-bb6f-2d122fd4695f
 - client-fingerprint: firefox
   flow: xtls-rprx-vision
-  name: proxy209
+  name: US84
   network: tcp
   port: 60001
   reality-opts:
@@ -2875,7 +2736,7 @@ proxies:
   uuid: 96dbdda4-5efc-4f0e-bb6f-2d122fd4695f
 - client-fingerprint: firefox
   flow: xtls-rprx-vision
-  name: proxy210
+  name: JP20
   network: tcp
   port: 60001
   reality-opts:
@@ -2890,7 +2751,7 @@ proxies:
   uuid: 96dbdda4-5efc-4f0e-bb6f-2d122fd4695f
 - client-fingerprint: qq
   flow: xtls-rprx-vision
-  name: proxy211
+  name: JP21
   network: tcp
   port: 60001
   reality-opts:
@@ -2905,7 +2766,7 @@ proxies:
   uuid: 96dbdda4-5efc-4f0e-bb6f-2d122fd4695f
 - client-fingerprint: safari
   flow: xtls-rprx-vision
-  name: proxy212
+  name: JP22
   network: tcp
   port: 60001
   reality-opts:
@@ -2920,7 +2781,7 @@ proxies:
   uuid: 96dbdda4-5efc-4f0e-bb6f-2d122fd4695f
 - client-fingerprint: safari
   flow: xtls-rprx-vision
-  name: proxy213
+  name: JP23
   network: tcp
   port: 60001
   reality-opts:
@@ -2935,7 +2796,7 @@ proxies:
   uuid: 96dbdda4-5efc-4f0e-bb6f-2d122fd4695f
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: proxy214
+  name: KR36
   network: tcp
   port: 60001
   reality-opts:
@@ -2950,7 +2811,7 @@ proxies:
   uuid: 96dbdda4-5efc-4f0e-bb6f-2d122fd4695f
 - client-fingerprint: safari
   flow: xtls-rprx-vision
-  name: proxy215
+  name: KR37
   network: tcp
   port: 60001
   reality-opts:
@@ -2965,7 +2826,7 @@ proxies:
   uuid: 96dbdda4-5efc-4f0e-bb6f-2d122fd4695f
 - client-fingerprint: safari
   flow: xtls-rprx-vision
-  name: proxy216
+  name: HK14
   network: tcp
   port: 60001
   reality-opts:
@@ -2980,7 +2841,7 @@ proxies:
   uuid: 96dbdda4-5efc-4f0e-bb6f-2d122fd4695f
 - client-fingerprint: edge
   flow: xtls-rprx-vision
-  name: proxy217
+  name: HK15
   network: tcp
   port: 60001
   reality-opts:
@@ -2995,7 +2856,7 @@ proxies:
   uuid: 96dbdda4-5efc-4f0e-bb6f-2d122fd4695f
 - client-fingerprint: firefox
   flow: xtls-rprx-vision
-  name: proxy218
+  name: HK16
   network: tcp
   port: 60001
   reality-opts:
@@ -3010,7 +2871,7 @@ proxies:
   uuid: 96dbdda4-5efc-4f0e-bb6f-2d122fd4695f
 - client-fingerprint: qq
   flow: xtls-rprx-vision
-  name: proxy219
+  name: HK17
   network: tcp
   port: 60001
   reality-opts:
@@ -3025,7 +2886,7 @@ proxies:
   uuid: 96dbdda4-5efc-4f0e-bb6f-2d122fd4695f
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: proxy220
+  name: SG4
   network: tcp
   port: 60001
   reality-opts:
@@ -3040,7 +2901,7 @@ proxies:
   uuid: 96dbdda4-5efc-4f0e-bb6f-2d122fd4695f
 - client-fingerprint: firefox
   flow: xtls-rprx-vision
-  name: proxy221
+  name: GB8
   network: tcp
   port: 60001
   reality-opts:
@@ -3055,7 +2916,7 @@ proxies:
   uuid: 96dbdda4-5efc-4f0e-bb6f-2d122fd4695f
 - client-fingerprint: qq
   flow: xtls-rprx-vision
-  name: proxy222
+  name: GB9
   network: tcp
   port: 60001
   reality-opts:
@@ -3070,7 +2931,7 @@ proxies:
   uuid: 96dbdda4-5efc-4f0e-bb6f-2d122fd4695f
 - alterId: 0
   cipher: auto
-  name: proxy223
+  name: US85
   network: ws
   port: 2095
   server: 104.19.45.82
@@ -3083,38 +2944,8 @@ proxies:
     headers:
       Host: onea.flha.ru
     path: /
-- alterId: 0
-  cipher: auto
-  name: proxy224
-  network: ws
-  port: 2095
-  server: 104.19.45.137
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 7a737f41-b792-4260-94ff-3d864da67b80
-  ws-opts:
-    headers:
-      Host: onea.flha.ru
-    path: /
-- alterId: 0
-  cipher: auto
-  name: proxy225
-  network: ws
-  port: 2095
-  server: 104.19.45.248
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 7a737f41-b792-4260-94ff-3d864da67b80
-  ws-opts:
-    headers:
-      Host: onea.flha.ru
-    path: /
 - client-fingerprint: random
-  name: proxy226
+  name: HK18
   network: ws
   port: 443
   server: 219.76.13.177
@@ -3130,22 +2961,7 @@ proxies:
     path: /TG@ZDYZ2?ed=2560
 - alterId: 0
   cipher: auto
-  name: proxy227
-  network: ws
-  port: 2095
-  server: 104.19.45.236
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 7a737f41-b792-4260-94ff-3d864da67b80
-  ws-opts:
-    headers:
-      Host: onea.flha.ru
-    path: /
-- alterId: 0
-  cipher: auto
-  name: proxy228
+  name: US86
   network: ws
   port: 2095
   server: 104.19.45.135
@@ -3160,7 +2976,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: proxy229
+  name: US87
   network: ws
   port: 2095
   server: 104.19.45.117
@@ -3175,22 +2991,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: proxy230
-  network: ws
-  port: 2095
-  server: 104.19.45.232
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 7a737f41-b792-4260-94ff-3d864da67b80
-  ws-opts:
-    headers:
-      Host: onea.flha.ru
-    path: /
-- alterId: 0
-  cipher: auto
-  name: proxy231
+  name: US88
   network: ws
   port: 2095
   server: 104.19.45.16
@@ -3205,7 +3006,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: proxy232
+  name: US89
   network: ws
   port: 2095
   server: 104.19.45.36
@@ -3220,22 +3021,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: proxy233
-  network: ws
-  port: 2095
-  server: 104.19.45.254
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 7a737f41-b792-4260-94ff-3d864da67b80
-  ws-opts:
-    headers:
-      Host: onea.flha.ru
-    path: /
-- alterId: 0
-  cipher: auto
-  name: proxy234
+  name: US90
   network: ws
   port: 2095
   server: 104.19.45.8
@@ -3250,7 +3036,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: proxy235
+  name: US91
   network: ws
   port: 2095
   server: 104.19.45.112
@@ -3263,23 +3049,8 @@ proxies:
     headers:
       Host: onea.flha.ru
     path: /
-- alterId: 0
-  cipher: auto
-  name: proxy236
-  network: ws
-  port: 2095
-  server: 104.19.45.190
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 7a737f41-b792-4260-94ff-3d864da67b80
-  ws-opts:
-    headers:
-      Host: onea.flha.ru
-    path: /
 - client-fingerprint: random
-  name: proxy237
+  name: HK19
   network: ws
   port: 443
   server: Join.my.Telegram.channel.CMLiussss.to.unlock.more.premium.nodes.cf.090227.xyz
@@ -3294,7 +3065,7 @@ proxies:
       Host: subhiddify.mmdv2.host
     path: /?ed=2560
 - client-fingerprint: random
-  name: proxy238
+  name: US92
   network: ws
   port: 443
   server: qa.visamiddleeast.com
@@ -3308,22 +3079,7 @@ proxies:
     headers:
       Host: subhiddify.mmdv2.host
     path: /?ed=2560
-- client-fingerprint: edge
-  flow: xtls-rprx-vision
-  name: proxy239
-  network: tcp
-  port: 10204
-  reality-opts:
-    public-key: 7BVzXFI-E3LoOVqrT_LNe4VJ9DFYb0lGflNdTzpOZT8
-    short-id: bdf6b55f
-  server: hinet.cishanjichang.me
-  servername: cdn-dynmedia-1.microsoft.com
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 89b90001-4206-4871-a99d-1744d48f215b
-- name: proxy240
+- name: HK20
   network: ws
   password: Trevely
   port: 443
@@ -3336,7 +3092,7 @@ proxies:
     headers:
       Host: trojan.trevely.us.kg
     path: /?ed=2560
-- name: proxy241
+- name: HK21
   network: ws
   password: Trevely
   port: 12345
@@ -3349,7 +3105,7 @@ proxies:
     headers:
       Host: trojan.trevely.us.kg
     path: /?ed=2560
-- name: proxy242
+- name: HK22
   network: ws
   password: Trevely
   port: 12185
@@ -3362,7 +3118,7 @@ proxies:
     headers:
       Host: trojan.trevely.us.kg
     path: /?ed=2560
-- name: proxy243
+- name: HK23
   network: ws
   password: Trevely
   port: 119
@@ -3375,7 +3131,7 @@ proxies:
     headers:
       Host: trojan.trevely.us.kg
     path: /?ed=2560
-- name: proxy244
+- name: HK24
   network: ws
   password: Trevely
   port: 9000
@@ -3388,7 +3144,7 @@ proxies:
     headers:
       Host: trojan.trevely.us.kg
     path: /?ed=2560
-- name: proxy245
+- name: HK25
   network: ws
   password: Trevely
   port: 587
@@ -3401,7 +3157,7 @@ proxies:
     headers:
       Host: trojan.trevely.us.kg
     path: /?ed=2560
-- name: proxy246
+- name: HK26
   network: ws
   password: Trevely
   port: 10002
@@ -3414,7 +3170,7 @@ proxies:
     headers:
       Host: trojan.trevely.us.kg
     path: /?ed=2560
-- name: proxy247
+- name: HK27
   network: ws
   password: Trevely
   port: 30037
@@ -3427,7 +3183,7 @@ proxies:
     headers:
       Host: trojan.trevely.us.kg
     path: /?ed=2560
-- name: proxy248
+- name: HK28
   network: ws
   password: Trevely
   port: 25629
@@ -3440,7 +3196,7 @@ proxies:
     headers:
       Host: trojan.trevely.us.kg
     path: /?ed=2560
-- name: proxy249
+- name: HK29
   network: ws
   password: Trevely
   port: 12457
@@ -3453,7 +3209,7 @@ proxies:
     headers:
       Host: trojan.trevely.us.kg
     path: /?ed=2560
-- name: proxy250
+- name: HK30
   network: ws
   password: Trevely
   port: 587
@@ -3466,7 +3222,7 @@ proxies:
     headers:
       Host: trojan.trevely.us.kg
     path: /?ed=2560
-- name: proxy251
+- name: HK31
   network: ws
   password: Trevely
   port: 587
@@ -3479,7 +3235,7 @@ proxies:
     headers:
       Host: trojan.trevely.us.kg
     path: /?ed=2560
-- name: proxy252
+- name: HK32
   network: ws
   password: Trevely
   port: 19527
@@ -3492,7 +3248,7 @@ proxies:
     headers:
       Host: trojan.trevely.us.kg
     path: /?ed=2560
-- name: proxy253
+- name: JP24
   network: ws
   password: Trevely
   port: 555
@@ -3505,7 +3261,7 @@ proxies:
     headers:
       Host: trojan.trevely.us.kg
     path: /?ed=2560
-- name: proxy254
+- name: SG5
   network: ws
   password: Trevely
   port: 12014
@@ -3518,7 +3274,7 @@ proxies:
     headers:
       Host: trojan.trevely.us.kg
     path: /?ed=2560
-- name: proxy255
+- name: HK33
   network: ws
   password: Trevely
   port: 10116
@@ -3531,7 +3287,7 @@ proxies:
     headers:
       Host: trojan.trevely.us.kg
     path: /?ed=2560
-- name: proxy256
+- name: HK34
   network: ws
   password: Trevely
   port: 38280
@@ -3544,7 +3300,7 @@ proxies:
     headers:
       Host: trojan.trevely.us.kg
     path: /?ed=2560
-- name: proxy257
+- name: HK35
   network: ws
   password: Trevely
   port: 587
@@ -3557,7 +3313,7 @@ proxies:
     headers:
       Host: trojan.trevely.us.kg
     path: /?ed=2560
-- name: proxy258
+- name: KR38
   network: ws
   password: Trevely
   port: 10162
@@ -3570,7 +3326,7 @@ proxies:
     headers:
       Host: trojan.trevely.us.kg
     path: /?ed=2560
-- name: proxy259
+- name: KR39
   network: ws
   password: Trevely
   port: 37215
@@ -3583,7 +3339,7 @@ proxies:
     headers:
       Host: trojan.trevely.us.kg
     path: /?ed=2560
-- name: proxy260
+- name: KR40
   network: ws
   password: Trevely
   port: 587
@@ -3596,7 +3352,7 @@ proxies:
     headers:
       Host: trojan.trevely.us.kg
     path: /?ed=2560
-- name: proxy261
+- name: KR41
   network: ws
   password: Trevely
   port: 30012
@@ -3609,7 +3365,7 @@ proxies:
     headers:
       Host: trojan.trevely.us.kg
     path: /?ed=2560
-- name: proxy262
+- name: KR42
   network: ws
   password: Trevely
   port: 18443
@@ -3622,7 +3378,7 @@ proxies:
     headers:
       Host: trojan.trevely.us.kg
     path: /?ed=2560
-- name: proxy263
+- name: KR43
   network: ws
   password: Trevely
   port: 30012
@@ -3635,7 +3391,7 @@ proxies:
     headers:
       Host: trojan.trevely.us.kg
     path: /?ed=2560
-- name: proxy264
+- name: KR44
   network: ws
   password: Trevely
   port: 10002
@@ -3648,7 +3404,7 @@ proxies:
     headers:
       Host: trojan.trevely.us.kg
     path: /?ed=2560
-- name: proxy265
+- name: SG6
   network: ws
   password: Trevely
   port: 28
@@ -3662,14 +3418,14 @@ proxies:
       Host: trojan.trevely.us.kg
     path: /?ed=2560
 - cipher: aes-256-cfb
-  name: proxy266
+  name: SG7
   password: amazonskr05
   port: 443
   server: 47.129.53.7
   skip-cert-verify: true
   type: ss
   udp: true
-- name: proxy267
+- name: RU1
   password: 38571ca6-6692-4559-b901-0bc5826b7661
   port: 60194
   server: ru0195.alibabaokz.com
@@ -3679,7 +3435,7 @@ proxies:
   udp: true
 - alterId: 0
   cipher: auto
-  name: proxy268
+  name: NG1
   port: 22238
   server: wduzpt.gxcvbmj.xyz
   skip-cert-verify: true
@@ -3689,7 +3445,7 @@ proxies:
   uuid: 6ea392c2-0636-3d4f-a6a2-f38a76e216d3
 - alterId: 0
   cipher: auto
-  name: proxy269
+  name: SG8
   port: 35217
   server: dzgz.tcity8.monster
   skip-cert-verify: true
@@ -3699,7 +3455,7 @@ proxies:
   uuid: 53522a77-c55f-44c8-9b44-a7619b20d54f
 - alterId: 0
   cipher: auto
-  name: proxy270
+  name: JP25
   port: 22235
   server: jzgz.tcity8.monster
   skip-cert-verify: true
@@ -3709,7 +3465,7 @@ proxies:
   uuid: 53522a77-c55f-44c8-9b44-a7619b20d54f
 - alterId: 0
   cipher: auto
-  name: proxy271
+  name: TW11
   port: 35224
   server: dzgz.tcity8.monster
   skip-cert-verify: true
@@ -3719,7 +3475,7 @@ proxies:
   uuid: 53522a77-c55f-44c8-9b44-a7619b20d54f
 - alterId: 0
   cipher: auto
-  name: proxy272
+  name: AU2
   port: 35220
   server: dzgz.tcity8.monster
   skip-cert-verify: true
@@ -3729,7 +3485,7 @@ proxies:
   uuid: 53522a77-c55f-44c8-9b44-a7619b20d54f
 - alterId: 0
   cipher: auto
-  name: proxy273
+  name: US93
   network: ws
   port: 2086
   server: www.visa.com
@@ -3742,68 +3498,8 @@ proxies:
     headers:
       Host: ip1.1789034.xyz
     path: /github.com/Alvin9999
-- alterId: 0
-  cipher: auto
-  name: proxy274
-  network: ws
-  port: 2086
-  server: singapore.com
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
-  ws-opts:
-    headers:
-      Host: ip1.1789034.xyz
-    path: /github.com/Alvin9999
-- alterId: 0
-  cipher: auto
-  name: proxy275
-  network: ws
-  port: 2086
-  server: japan.com
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
-  ws-opts:
-    headers:
-      Host: ip1.1789034.xyz
-    path: /github.com/Alvin9999
-- alterId: 0
-  cipher: auto
-  name: proxy276
-  network: ws
-  port: 2086
-  server: fbi.gov
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
-  ws-opts:
-    headers:
-      Host: ip1.1789034.xyz
-    path: /github.com/Alvin9999
-- alterId: 0
-  cipher: auto
-  name: proxy277
-  network: ws
-  port: 2086
-  server: 172.67.2.238
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
-  ws-opts:
-    headers:
-      Host: ip1.1789034.xyz
-    path: /github.com/Alvin9999
 - cipher: aes-256-gcm
-  name: proxy278
+  name: SG9
   password: c3a87b84-6fc9-40e4-9d65-5e5866bab35a
   port: 30982
   server: gdyddx500.xiyunchen.cn
@@ -3811,7 +3507,7 @@ proxies:
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: proxy279
+  name: HK36
   password: 70747514-fb14-4f31-8390-e1f0453eff6d
   port: 20001
   server: hk1.mhw7e2.online
@@ -3820,32 +3516,7 @@ proxies:
   udp: true
 - alterId: 0
   cipher: auto
-  name: proxy280
-  port: 10031
-  server: dcumoz.cijhgvbm.xyz
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 42006f77-5c96-3f27-b059-983c064325cd
-- alterId: 0
-  cipher: auto
-  name: proxy281
-  network: ws
-  port: 2086
-  server: 104.19.46.33
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
-  ws-opts:
-    headers:
-      Host: ip2.1457230.xyz
-    path: /github.com/Alvin9999
-- alterId: 0
-  cipher: auto
-  name: proxy282
+  name: US94
   network: ws
   port: 2086
   server: 172.67.71.187
@@ -3860,22 +3531,7 @@ proxies:
     path: /github.com/Alvin9999
 - alterId: 0
   cipher: auto
-  name: proxy283
-  network: ws
-  port: 2086
-  server: 104.19.45.19
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
-  ws-opts:
-    headers:
-      Host: ip13.freegradely.xyz
-    path: /github.com/Alvin9999
-- alterId: 0
-  cipher: auto
-  name: proxy284
+  name: US95
   network: ws
   port: 2086
   server: 104.19.45.31
@@ -3890,22 +3546,7 @@ proxies:
     path: /github.com/Alvin9999
 - alterId: 0
   cipher: auto
-  name: proxy285
-  network: ws
-  port: 2086
-  server: ip.sb
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
-  ws-opts:
-    headers:
-      Host: ip1.1789034.xyz
-    path: /github.com/Alvin9999
-- alterId: 0
-  cipher: auto
-  name: proxy286
+  name: US96
   network: ws
   port: 2086
   server: 104.19.47.88
@@ -3920,7 +3561,7 @@ proxies:
     path: /github.com/Alvin9999
 - alterId: 0
   cipher: auto
-  name: proxy287
+  name: US97
   network: ws
   port: 2095
   server: onea.flha.ru
@@ -3933,37 +3574,7 @@ proxies:
     headers:
       Host: onea.flha.ru
     path: /
-- alterId: 0
-  cipher: auto
-  name: proxy288
-  network: ws
-  port: 2095
-  server: 104.19.45.242
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 7a737f41-b792-4260-94ff-3d864da67b80
-  ws-opts:
-    headers:
-      Host: onea.flha.ru
-    path: /
-- alterId: 0
-  cipher: auto
-  name: proxy289
-  network: ws
-  port: 2095
-  server: 104.19.45.226
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 7a737f41-b792-4260-94ff-3d864da67b80
-  ws-opts:
-    headers:
-      Host: onea.flha.ru
-    path: /
-- name: proxy290
+- name: US98
   password: dongtaiwang.com
   port: 3400
   server: 207.90.239.157
@@ -3972,1800 +3583,167 @@ proxies:
   tfo: false
   type: hysteria2
   udp: true
-- cipher: chacha20-ietf-poly1305
-  name: proxy291
-  password: lE9uL5fR3yR9
-  plugin: obfs
-  plugin-opts:
-    host: 026f8fd119.iqiyi.com
-    mode: http
-  port: 14101
-  server: aexgzbgp01.114837322.xyz
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: proxy292
-  password: lE9uL5fR3yR9
-  plugin: obfs
-  plugin-opts:
-    host: 026f8fd119.iqiyi.com
-    mode: http
-  port: 14102
-  server: aexgzbgp01.114837322.xyz
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: proxy293
-  password: lE9uL5fR3yR9
-  plugin: obfs
-  plugin-opts:
-    host: 026f8fd119.iqiyi.com
-    mode: http
-  port: 14103
-  server: aexgzbgp01.114837322.xyz
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: proxy294
-  password: lE9uL5fR3yR9
-  plugin: obfs
-  plugin-opts:
-    host: 026f8fd119.iqiyi.com
-    mode: http
-  port: 14104
-  server: aexgzbgp01.114837322.xyz
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: proxy295
-  password: lE9uL5fR3yR9
-  plugin: obfs
-  plugin-opts:
-    host: 026f8fd119.iqiyi.com
-    mode: http
-  port: 14105
-  server: aexgzbgp01.114837322.xyz
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: proxy296
-  password: lE9uL5fR3yR9
-  plugin: obfs
-  plugin-opts:
-    host: 026f8fd119.iqiyi.com
-    mode: http
-  port: 14106
-  server: aexgzbgp01.114837322.xyz
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: proxy297
-  password: lE9uL5fR3yR9
-  plugin: obfs
-  plugin-opts:
-    host: 026f8fd119.iqiyi.com
-    mode: http
-  port: 14107
-  server: aexgzbgp01.114837322.xyz
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: proxy298
-  password: lE9uL5fR3yR9
-  plugin: obfs
-  plugin-opts:
-    host: 026f8fd119.iqiyi.com
-    mode: http
-  port: 14108
-  server: aexgzbgp01.114837322.xyz
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: proxy299
-  password: lE9uL5fR3yR9
-  plugin: obfs
-  plugin-opts:
-    host: 026f8fd119.iqiyi.com
-    mode: http
-  port: 14111
-  server: aexgzbgp01.114837322.xyz
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: proxy300
-  password: lE9uL5fR3yR9
-  plugin: obfs
-  plugin-opts:
-    host: 026f8fd119.iqiyi.com
-    mode: http
-  port: 14112
-  server: aexgzbgp01.114837322.xyz
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: proxy301
-  password: lE9uL5fR3yR9
-  plugin: obfs
-  plugin-opts:
-    host: 026f8fd119.iqiyi.com
-    mode: http
-  port: 14113
-  server: aexgzbgp01.114837322.xyz
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: proxy302
-  password: lE9uL5fR3yR9
-  plugin: obfs
-  plugin-opts:
-    host: 026f8fd119.iqiyi.com
-    mode: http
-  port: 14114
-  server: aexgzbgp01.114837322.xyz
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: proxy303
-  password: lE9uL5fR3yR9
-  plugin: obfs
-  plugin-opts:
-    host: 026f8fd119.iqiyi.com
-    mode: http
-  port: 14115
-  server: aexgzbgp01.114837322.xyz
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: proxy304
-  password: lE9uL5fR3yR9
-  plugin: obfs
-  plugin-opts:
-    host: 026f8fd119.iqiyi.com
-    mode: http
-  port: 14131
-  server: aexshbgp01.114837322.xyz
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: proxy305
-  password: lE9uL5fR3yR9
-  plugin: obfs
-  plugin-opts:
-    host: 026f8fd119.iqiyi.com
-    mode: http
-  port: 14132
-  server: aexshbgp01.114837322.xyz
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: proxy306
-  password: lE9uL5fR3yR9
-  plugin: obfs
-  plugin-opts:
-    host: 026f8fd119.iqiyi.com
-    mode: http
-  port: 14133
-  server: aexshbgp01.114837322.xyz
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: proxy307
-  password: lE9uL5fR3yR9
-  plugin: obfs
-  plugin-opts:
-    host: 026f8fd119.iqiyi.com
-    mode: http
-  port: 14134
-  server: aexshbgp01.114837322.xyz
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: proxy308
-  password: lE9uL5fR3yR9
-  plugin: obfs
-  plugin-opts:
-    host: 026f8fd119.iqiyi.com
-    mode: http
-  port: 14135
-  server: aexshbgp01.114837322.xyz
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: proxy309
-  password: lE9uL5fR3yR9
-  plugin: obfs
-  plugin-opts:
-    host: 026f8fd119.iqiyi.com
-    mode: http
-  port: 14136
-  server: aexshbgp01.114837322.xyz
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: proxy310
-  password: lE9uL5fR3yR9
-  plugin: obfs
-  plugin-opts:
-    host: 026f8fd119.iqiyi.com
-    mode: http
-  port: 14137
-  server: aexshbgp01.114837322.xyz
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: proxy311
-  password: lE9uL5fR3yR9
-  plugin: obfs
-  plugin-opts:
-    host: 026f8fd119.iqiyi.com
-    mode: http
-  port: 14138
-  server: aexshbgp01.114837322.xyz
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: proxy312
-  password: lE9uL5fR3yR9
-  plugin: obfs
-  plugin-opts:
-    host: 026f8fd119.iqiyi.com
-    mode: http
-  port: 14139
-  server: aexshbgp01.114837322.xyz
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: proxy313
-  password: lE9uL5fR3yR9
-  plugin: obfs
-  plugin-opts:
-    host: 026f8fd119.iqiyi.com
-    mode: http
-  port: 14140
-  server: aexshbgp01.114837322.xyz
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: proxy314
-  password: lE9uL5fR3yR9
-  plugin: obfs
-  plugin-opts:
-    host: 026f8fd119.iqiyi.com
-    mode: http
-  port: 14141
-  server: aexshbgp01.114837322.xyz
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: proxy315
-  password: lE9uL5fR3yR9
-  plugin: obfs
-  plugin-opts:
-    host: 026f8fd119.iqiyi.com
-    mode: http
-  port: 14142
-  server: aexshbgp01.114837322.xyz
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: proxy316
-  password: lE9uL5fR3yR9
-  plugin: obfs
-  plugin-opts:
-    host: 026f8fd119.iqiyi.com
-    mode: http
-  port: 14151
-  server: aexgzbgp01.114837322.xyz
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: proxy317
-  password: lE9uL5fR3yR9
-  plugin: obfs
-  plugin-opts:
-    host: 026f8fd119.iqiyi.com
-    mode: http
-  port: 14152
-  server: aexgzbgp01.114837322.xyz
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: proxy318
-  password: lE9uL5fR3yR9
-  plugin: obfs
-  plugin-opts:
-    host: 026f8fd119.iqiyi.com
-    mode: http
-  port: 14121
-  server: aexshbgp01.114837322.xyz
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: proxy319
-  password: lE9uL5fR3yR9
-  plugin: obfs
-  plugin-opts:
-    host: 026f8fd119.iqiyi.com
-    mode: http
-  port: 14122
-  server: aexshbgp01.114837322.xyz
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: proxy320
-  password: lE9uL5fR3yR9
-  plugin: obfs
-  plugin-opts:
-    host: 026f8fd119.iqiyi.com
-    mode: http
-  port: 14123
-  server: aexshbgp01.114837322.xyz
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: proxy321
-  password: lE9uL5fR3yR9
-  plugin: obfs
-  plugin-opts:
-    host: 026f8fd119.iqiyi.com
-    mode: http
-  port: 14124
-  server: aexshbgp01.114837322.xyz
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: proxy322
-  password: lE9uL5fR3yR9
-  plugin: obfs
-  plugin-opts:
-    host: 026f8fd119.iqiyi.com
-    mode: http
-  port: 14125
-  server: aexshbgp01.114837322.xyz
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: proxy323
-  password: lE9uL5fR3yR9
-  plugin: obfs
-  plugin-opts:
-    host: 026f8fd119.iqiyi.com
-    mode: http
-  port: 14126
-  server: aexshbgp01.114837322.xyz
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: proxy324
-  password: lE9uL5fR3yR9
-  plugin: obfs
-  plugin-opts:
-    host: 026f8fd119.iqiyi.com
-    mode: http
-  port: 14127
-  server: aexshbgp01.114837322.xyz
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: proxy325
-  password: lE9uL5fR3yR9
-  plugin: obfs
-  plugin-opts:
-    host: 026f8fd119.iqiyi.com
-    mode: http
-  port: 14128
-  server: aexshbgp01.114837322.xyz
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: proxy326
-  password: lE9uL5fR3yR9
-  plugin: obfs
-  plugin-opts:
-    host: 026f8fd119.iqiyi.com
-    mode: http
-  port: 14001
-  server: aexgzbgp01.114837322.xyz
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: proxy327
-  password: lE9uL5fR3yR9
-  plugin: obfs
-  plugin-opts:
-    host: 026f8fd119.iqiyi.com
-    mode: http
-  port: 14002
-  server: aexgzbgp01.114837322.xyz
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: proxy328
-  password: lE9uL5fR3yR9
-  plugin: obfs
-  plugin-opts:
-    host: 026f8fd119.iqiyi.com
-    mode: http
-  port: 14003
-  server: aexgzbgp01.114837322.xyz
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: proxy329
-  password: lE9uL5fR3yR9
-  plugin: obfs
-  plugin-opts:
-    host: 026f8fd119.iqiyi.com
-    mode: http
-  port: 14011
-  server: aexgzbgp01.114837322.xyz
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: proxy330
-  password: lE9uL5fR3yR9
-  plugin: obfs
-  plugin-opts:
-    host: 026f8fd119.iqiyi.com
-    mode: http
-  port: 14012
-  server: aexgzbgp01.114837322.xyz
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: proxy331
-  password: lE9uL5fR3yR9
-  plugin: obfs
-  plugin-opts:
-    host: 026f8fd119.iqiyi.com
-    mode: http
-  port: 14013
-  server: aexgzbgp01.114837322.xyz
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: proxy332
-  password: lE9uL5fR3yR9
-  plugin: obfs
-  plugin-opts:
-    host: 026f8fd119.iqiyi.com
-    mode: http
-  port: 14031
-  server: aexshbgp01.114837322.xyz
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: proxy333
-  password: lE9uL5fR3yR9
-  plugin: obfs
-  plugin-opts:
-    host: 026f8fd119.iqiyi.com
-    mode: http
-  port: 14032
-  server: aexshbgp01.114837322.xyz
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: proxy334
-  password: lE9uL5fR3yR9
-  plugin: obfs
-  plugin-opts:
-    host: 026f8fd119.iqiyi.com
-    mode: http
-  port: 14033
-  server: aexshbgp01.114837322.xyz
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: proxy335
-  password: lE9uL5fR3yR9
-  plugin: obfs
-  plugin-opts:
-    host: 026f8fd119.iqiyi.com
-    mode: http
-  port: 14034
-  server: aexshbgp01.114837322.xyz
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: proxy336
-  password: lE9uL5fR3yR9
-  plugin: obfs
-  plugin-opts:
-    host: 026f8fd119.iqiyi.com
-    mode: http
-  port: 14035
-  server: aexshbgp01.114837322.xyz
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: proxy337
-  password: lE9uL5fR3yR9
-  plugin: obfs
-  plugin-opts:
-    host: 026f8fd119.iqiyi.com
-    mode: http
-  port: 14036
-  server: aexshbgp01.114837322.xyz
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: proxy338
-  password: lE9uL5fR3yR9
-  plugin: obfs
-  plugin-opts:
-    host: 026f8fd119.iqiyi.com
-    mode: http
-  port: 14041
-  server: aexshbgp01.114837322.xyz
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: proxy339
-  password: lE9uL5fR3yR9
-  plugin: obfs
-  plugin-opts:
-    host: 026f8fd119.iqiyi.com
-    mode: http
-  port: 14021
-  server: aexshbgp01.114837322.xyz
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: proxy340
-  password: lE9uL5fR3yR9
-  plugin: obfs
-  plugin-opts:
-    host: 026f8fd119.iqiyi.com
-    mode: http
-  port: 14022
-  server: aexshbgp01.114837322.xyz
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: proxy341
-  password: lE9uL5fR3yR9
-  plugin: obfs
-  plugin-opts:
-    host: 026f8fd119.iqiyi.com
-    mode: http
-  port: 14023
-  server: aexshbgp01.114837322.xyz
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: proxy342
-  password: lE9uL5fR3yR9
-  plugin: obfs
-  plugin-opts:
-    host: 026f8fd119.iqiyi.com
-    mode: http
-  port: 14024
-  server: aexshbgp01.114837322.xyz
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: proxy343
-  password: lE9uL5fR3yR9
-  plugin: obfs
-  plugin-opts:
-    host: 026f8fd119.iqiyi.com
-    mode: http
-  port: 14051
-  server: aexgzbgp01.114837322.xyz
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: proxy344
-  password: lE9uL5fR3yR9
-  plugin: obfs
-  plugin-opts:
-    host: 026f8fd119.iqiyi.com
-    mode: http
-  port: 14201
-  server: aexbjbgp01.114837322.xyz
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: proxy345
-  password: lE9uL5fR3yR9
-  plugin: obfs
-  plugin-opts:
-    host: 026f8fd119.iqiyi.com
-    mode: http
-  port: 14202
-  server: aexbjbgp01.114837322.xyz
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: proxy346
-  password: lE9uL5fR3yR9
-  plugin: obfs
-  plugin-opts:
-    host: 026f8fd119.iqiyi.com
-    mode: http
-  port: 14200
-  server: aexbjbgp01.114837322.xyz
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: proxy347
-  password: lE9uL5fR3yR9
-  plugin: obfs
-  plugin-opts:
-    host: 026f8fd119.iqiyi.com
-    mode: http
-  port: 14207
-  server: aexbjbgp01.114837322.xyz
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: proxy348
-  password: lE9uL5fR3yR9
-  plugin: obfs
-  plugin-opts:
-    host: 026f8fd119.iqiyi.com
-    mode: http
-  port: 14205
-  server: aexshbgp01.114837322.xyz
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: proxy349
-  password: lE9uL5fR3yR9
-  plugin: obfs
-  plugin-opts:
-    host: 026f8fd119.iqiyi.com
-    mode: http
-  port: 14212
-  server: aexshbgp01.114837322.xyz
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: proxy350
-  password: lE9uL5fR3yR9
-  plugin: obfs
-  plugin-opts:
-    host: 026f8fd119.iqiyi.com
-    mode: http
-  port: 14206
-  server: aexshbgp01.114837322.xyz
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: proxy351
-  password: lE9uL5fR3yR9
-  plugin: obfs
-  plugin-opts:
-    host: 026f8fd119.iqiyi.com
-    mode: http
-  port: 14208
-  server: aexshbgp01.114837322.xyz
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: proxy352
-  password: lE9uL5fR3yR9
-  plugin: obfs
-  plugin-opts:
-    host: 026f8fd119.iqiyi.com
-    mode: http
-  port: 14198
-  server: aexbjbgp01.114837322.xyz
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: proxy353
-  password: lE9uL5fR3yR9
-  plugin: obfs
-  plugin-opts:
-    host: 026f8fd119.iqiyi.com
-    mode: http
-  port: 14218
-  server: aexbjbgp01.114837322.xyz
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: proxy354
-  password: lE9uL5fR3yR9
-  plugin: obfs
-  plugin-opts:
-    host: 026f8fd119.iqiyi.com
-    mode: http
-  port: 14161
-  server: aexgzbgp01.114837322.xyz
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: proxy355
-  password: lE9uL5fR3yR9
-  plugin: obfs
-  plugin-opts:
-    host: 026f8fd119.iqiyi.com
-    mode: http
-  port: 14162
-  server: aexgzbgp01.114837322.xyz
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: proxy356
-  password: lE9uL5fR3yR9
-  plugin: obfs
-  plugin-opts:
-    host: 026f8fd119.iqiyi.com
-    mode: http
-  port: 14194
-  server: aexgzbgp01.114837322.xyz
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: proxy357
-  password: lE9uL5fR3yR9
-  plugin: obfs
-  plugin-opts:
-    host: 026f8fd119.iqiyi.com
-    mode: http
-  port: 14199
-  server: aexgzbgp01.114837322.xyz
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: proxy358
-  password: lE9uL5fR3yR9
-  plugin: obfs
-  plugin-opts:
-    host: 026f8fd119.iqiyi.com
-    mode: http
-  port: 14203
-  server: aexgzbgp01.114837322.xyz
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: proxy359
-  password: lE9uL5fR3yR9
-  plugin: obfs
-  plugin-opts:
-    host: 026f8fd119.iqiyi.com
-    mode: http
-  port: 14204
-  server: aexbjbgp01.114837322.xyz
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: proxy360
-  password: lE9uL5fR3yR9
-  plugin: obfs
-  plugin-opts:
-    host: 026f8fd119.iqiyi.com
-    mode: http
-  port: 14213
-  server: aexbjbgp01.114837322.xyz
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: proxy361
-  password: lE9uL5fR3yR9
-  plugin: obfs
-  plugin-opts:
-    host: 026f8fd119.iqiyi.com
-    mode: http
-  port: 14214
-  server: aexgzbgp01.114837322.xyz
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: proxy362
-  password: lE9uL5fR3yR9
-  plugin: obfs
-  plugin-opts:
-    host: 026f8fd119.iqiyi.com
-    mode: http
-  port: 14215
-  server: aexgzbgp01.114837322.xyz
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: proxy363
-  password: lE9uL5fR3yR9
-  plugin: obfs
-  plugin-opts:
-    host: 026f8fd119.iqiyi.com
-    mode: http
-  port: 14220
-  server: aexbjbgp01.114837322.xyz
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: proxy364
-  password: lE9uL5fR3yR9
-  plugin: obfs
-  plugin-opts:
-    host: 026f8fd119.iqiyi.com
-    mode: http
-  port: 14191
-  server: aexgzbgp01.114837322.xyz
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: proxy365
-  password: lE9uL5fR3yR9
-  plugin: obfs
-  plugin-opts:
-    host: 026f8fd119.iqiyi.com
-    mode: http
-  port: 14193
-  server: aexbjbgp01.114837322.xyz
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: proxy366
-  password: lE9uL5fR3yR9
-  plugin: obfs
-  plugin-opts:
-    host: 026f8fd119.iqiyi.com
-    mode: http
-  port: 14192
-  server: aexbjbgp01.114837322.xyz
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: proxy367
-  password: lE9uL5fR3yR9
-  plugin: obfs
-  plugin-opts:
-    host: 026f8fd119.iqiyi.com
-    mode: http
-  port: 14196
-  server: aexbjbgp01.114837322.xyz
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: proxy368
-  password: lE9uL5fR3yR9
-  plugin: obfs
-  plugin-opts:
-    host: 026f8fd119.iqiyi.com
-    mode: http
-  port: 14209
-  server: aexbjbgp01.114837322.xyz
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: proxy369
-  password: lE9uL5fR3yR9
-  plugin: obfs
-  plugin-opts:
-    host: 026f8fd119.iqiyi.com
-    mode: http
-  port: 14211
-  server: aexbjbgp01.114837322.xyz
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: proxy370
-  password: lE9uL5fR3yR9
-  plugin: obfs
-  plugin-opts:
-    host: 026f8fd119.iqiyi.com
-    mode: http
-  port: 14195
-  server: aexbjbgp01.114837322.xyz
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: proxy371
-  password: lE9uL5fR3yR9
-  plugin: obfs
-  plugin-opts:
-    host: 026f8fd119.iqiyi.com
-    mode: http
-  port: 14219
-  server: aexgzbgp01.114837322.xyz
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: proxy372
-  password: lE9uL5fR3yR9
-  plugin: obfs
-  plugin-opts:
-    host: 026f8fd119.iqiyi.com
-    mode: http
-  port: 14210
-  server: aexgzbgp01.114837322.xyz
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: proxy373
-  password: lE9uL5fR3yR9
-  plugin: obfs
-  plugin-opts:
-    host: 026f8fd119.iqiyi.com
-    mode: http
-  port: 14216
-  server: aexgzbgp01.114837322.xyz
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: proxy374
-  password: lE9uL5fR3yR9
-  plugin: obfs
-  plugin-opts:
-    host: 026f8fd119.iqiyi.com
-    mode: http
-  port: 14217
-  server: aexbjbgp01.114837322.xyz
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: proxy375
-  password: lE9uL5fR3yR9
-  plugin: obfs
-  plugin-opts:
-    host: 026f8fd119.iqiyi.com
-    mode: http
-  port: 14197
-  server: aexshbgp01.114837322.xyz
-  type: ss
-  udp: true
-- name: proxy376
-  password: 0b7a4d50-fc2f-4a97-8b24-66685f7307fc
-  port: 12025
-  server: cn2.cdn.xfltd-cdn.top
-  skip-cert-verify: true
-  sni: cdn.alibaba.com
-  type: trojan
-- name: proxy377
-  password: fuck
-  port: 443
-  server: 42.236.73.72
-  skip-cert-verify: true
-  sni: www.zitian.cn
-  type: trojan
-- name: proxy378
-  password: 1d7692c0-f51c-11ee-91eb-1239d0255272
-  port: 443
-  server: 51.38.65.155
-  skip-cert-verify: true
-  type: trojan
-- name: proxy379
-  password: 0b7a4d50-fc2f-4a97-8b24-66685f7307fc
-  port: 12006
-  server: cn1.cdn.xfltd-cdn.top
-  skip-cert-verify: true
-  sni: cdn.alibaba.com
-  type: trojan
-- name: proxy380
-  password: 0b7a4d50-fc2f-4a97-8b24-66685f7307fc
-  port: 12011
-  server: cn1.cdn.xfltd-cdn.top
-  skip-cert-verify: true
-  sni: cdn.alibaba.com
-  type: trojan
-- name: proxy381
-  password: 0b7a4d50-fc2f-4a97-8b24-66685f7307fc
-  port: 12035
-  server: cn2.cdn.xfltd-cdn.top
-  skip-cert-verify: true
-  sni: cdn.alibaba.com
-  type: trojan
-- name: proxy382
-  password: 669d0ac7b5b64ebbb1abb75d5d540a5c
-  port: 443
-  server: 104.17.215.2
-  skip-cert-verify: true
-  type: trojan
 - alterId: 0
   cipher: auto
-  name: proxy383
-  network: ws
-  port: 2086
-  server: skk.moe
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
-  ws-opts:
-    headers:
-      Host: ip1.1789034.xyz
-    path: github.com/Alvin9999
-- alterId: 0
-  cipher: auto
-  name: proxy384
+  name: US99
   network: ws
   port: 2086
   server: russia.com
   skip-cert-verify: true
   tls: false
   type: vmess
+  udp: true
   uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
   ws-opts:
     headers:
       Host: ip1.1789034.xyz
-    path: github.com/Alvin9999
+    path: /github.com/Alvin9999
 - alterId: 0
   cipher: auto
-  name: proxy385
-  network: ws
-  port: 2086
-  server: malaysia.com
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
-  ws-opts:
-    headers:
-      Host: ip1.1789034.xyz
-    path: github.com/Alvin9999
-- alterId: 0
-  cipher: auto
-  name: proxy386
-  network: ws
-  port: 2086
-  server: icook.tw
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
-  ws-opts:
-    headers:
-      Host: ip1.1789034.xyz
-    path: github.com/Alvin9999
-- alterId: 0
-  cipher: auto
-  name: proxy387
+  name: US100
   network: ws
   port: 2086
   server: 23.227.38.5
   skip-cert-verify: true
   tls: false
   type: vmess
+  udp: true
   uuid: 29eebb60-b27b-4a9d-bba5-947763d9205e
   ws-opts:
     headers:
       Host: ip006.freegradely.xyz
-    path: github.com/Alvin9999
+    path: /github.com/Alvin9999
 - alterId: 0
   cipher: auto
-  name: proxy388
-  network: ws
-  port: 2086
-  server: 172.64.99.22
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
-  ws-opts:
-    headers:
-      Host: ip11.freegradely.xyz
-    path: github.com/Alvin9999
-- alterId: 0
-  cipher: auto
-  name: proxy389
-  network: ws
-  port: 2086
-  server: 172.64.198.249
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
-  ws-opts:
-    headers:
-      Host: ip1.1457230.xyz
-    path: github.com/Alvin9999
-- alterId: 0
-  cipher: auto
-  name: proxy390
-  network: ws
-  port: 2086
-  server: 172.64.175.88
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
-  ws-opts:
-    headers:
-      Host: ip1.1457230.xyz
-    path: github.com/Alvin9999
-- alterId: 0
-  cipher: auto
-  name: proxy391
-  network: ws
-  port: 2086
-  server: 172.64.175.213
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
-  ws-opts:
-    headers:
-      Host: ip2.1457230.xyz
-    path: github.com/Alvin9999
-- alterId: 0
-  cipher: auto
-  name: proxy392
+  name: US101
   network: ws
   port: 2086
   server: 172.64.167.8
   skip-cert-verify: true
   tls: false
   type: vmess
+  udp: true
   uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
   ws-opts:
     headers:
       Host: ip2.1457230.xyz
-    path: github.com/Alvin9999
+    path: /github.com/Alvin9999
 - alterId: 0
   cipher: auto
-  name: proxy393
-  network: ws
-  port: 2086
-  server: 172.64.167.5
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
-  ws-opts:
-    headers:
-      Host: ip2.1457230.xyz
-    path: github.com/Alvin9999
-- alterId: 0
-  cipher: auto
-  name: proxy394
-  network: ws
-  port: 2086
-  server: 172.64.167.44
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
-  ws-opts:
-    headers:
-      Host: ip2.1457230.xyz
-    path: github.com/Alvin9999
-- alterId: 0
-  cipher: auto
-  name: proxy395
-  network: ws
-  port: 2086
-  server: 172.64.167.35
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
-  ws-opts:
-    headers:
-      Host: ip2.1457230.xyz
-    path: github.com/Alvin9999
-- alterId: 0
-  cipher: auto
-  name: proxy396
-  network: ws
-  port: 2086
-  server: 172.64.167.29
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
-  ws-opts:
-    headers:
-      Host: ip2.1457230.xyz
-    path: github.com/Alvin9999
-- alterId: 0
-  cipher: auto
-  name: proxy397
-  network: ws
-  port: 2086
-  server: 172.64.167.25
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
-  ws-opts:
-    headers:
-      Host: ip2.1457230.xyz
-    path: github.com/Alvin9999
-- alterId: 0
-  cipher: auto
-  name: proxy398
-  network: ws
-  port: 2086
-  server: 172.64.167.22
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
-  ws-opts:
-    headers:
-      Host: ip2.1457230.xyz
-    path: github.com/Alvin9999
-- alterId: 0
-  cipher: auto
-  name: proxy399
-  network: ws
-  port: 2086
-  server: 172.64.167.19
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
-  ws-opts:
-    headers:
-      Host: ip2.1457230.xyz
-    path: github.com/Alvin9999
-- alterId: 0
-  cipher: auto
-  name: proxy400
-  network: ws
-  port: 2086
-  server: 172.64.167.15
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
-  ws-opts:
-    headers:
-      Host: ip2.1457230.xyz
-    path: github.com/Alvin9999
-- alterId: 0
-  cipher: auto
-  name: proxy401
+  name: US102
   network: ws
   port: 2086
   server: 172.64.167.10
   skip-cert-verify: true
   tls: false
   type: vmess
+  udp: true
   uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
   ws-opts:
     headers:
       Host: ip2.1457230.xyz
-    path: github.com/Alvin9999
+    path: /github.com/Alvin9999
 - alterId: 0
   cipher: auto
-  name: proxy402
-  network: ws
-  port: 2086
-  server: 172.64.166.9
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
-  ws-opts:
-    headers:
-      Host: ip2.1457230.xyz
-    path: github.com/Alvin9999
-- alterId: 0
-  cipher: auto
-  name: proxy403
+  name: US103
   network: ws
   port: 2086
   server: 172.64.166.8
   skip-cert-verify: true
   tls: false
   type: vmess
+  udp: true
   uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
   ws-opts:
     headers:
       Host: ip2.1457230.xyz
-    path: github.com/Alvin9999
+    path: /github.com/Alvin9999
 - alterId: 0
   cipher: auto
-  name: proxy404
-  network: ws
-  port: 2086
-  server: 172.64.166.33
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
-  ws-opts:
-    headers:
-      Host: ip2.1457230.xyz
-    path: github.com/Alvin9999
-- alterId: 0
-  cipher: auto
-  name: proxy405
-  network: ws
-  port: 2086
-  server: 172.64.166.32
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
-  ws-opts:
-    headers:
-      Host: ip2.1457230.xyz
-    path: github.com/Alvin9999
-- alterId: 0
-  cipher: auto
-  name: proxy406
-  network: ws
-  port: 2086
-  server: 172.64.166.28
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
-  ws-opts:
-    headers:
-      Host: ip2.1457230.xyz
-    path: github.com/Alvin9999
-- alterId: 0
-  cipher: auto
-  name: proxy407
-  network: ws
-  port: 2086
-  server: 172.64.166.22
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
-  ws-opts:
-    headers:
-      Host: ip2.1457230.xyz
-    path: github.com/Alvin9999
-- alterId: 0
-  cipher: auto
-  name: proxy408
-  network: ws
-  port: 2086
-  server: 172.64.166.20
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
-  ws-opts:
-    headers:
-      Host: ip2.1457230.xyz
-    path: github.com/Alvin9999
-- alterId: 0
-  cipher: auto
-  name: proxy409
-  network: ws
-  port: 2086
-  server: 172.64.166.2
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
-  ws-opts:
-    headers:
-      Host: ip2.1457230.xyz
-    path: github.com/Alvin9999
-- alterId: 0
-  cipher: auto
-  name: proxy410
-  network: ws
-  port: 2086
-  server: 172.64.166.16
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
-  ws-opts:
-    headers:
-      Host: ip2.1457230.xyz
-    path: github.com/Alvin9999
-- alterId: 0
-  cipher: auto
-  name: proxy411
-  network: ws
-  port: 2086
-  server: 172.64.166.12
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
-  ws-opts:
-    headers:
-      Host: ip2.1457230.xyz
-    path: github.com/Alvin9999
-- alterId: 0
-  cipher: auto
-  name: proxy412
-  network: ws
-  port: 2086
-  server: 104.22.36.243
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
-  ws-opts:
-    headers:
-      Host: ip1.1789034.xyz
-    path: github.com/Alvin9999
-- alterId: 0
-  cipher: auto
-  name: proxy413
-  network: ws
-  port: 2086
-  server: 104.20.17.186
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
-  ws-opts:
-    headers:
-      Host: ip11.freegradely.xyz
-    path: github.com/Alvin9999
-- alterId: 0
-  cipher: auto
-  name: proxy414
+  name: US104
   network: ws
   port: 2086
   server: 104.19.57.4
   skip-cert-verify: true
   tls: false
   type: vmess
+  udp: true
   uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
   ws-opts:
     headers:
       Host: ip11.freegradely.xyz
-    path: github.com/Alvin9999
+    path: /github.com/Alvin9999
 - alterId: 0
   cipher: auto
-  name: proxy415
+  name: US105
   network: ws
   port: 2086
   server: 104.19.51.232
   skip-cert-verify: true
   tls: false
   type: vmess
+  udp: true
   uuid: 29eebb60-b27b-4a9d-bba5-947763d9205e
   ws-opts:
     headers:
       Host: ip006.freegradely.xyz
-    path: github.com/Alvin9999
+    path: /github.com/Alvin9999
 - alterId: 0
   cipher: auto
-  name: proxy416
+  name: US106
   network: ws
   port: 2086
   server: 104.19.47.27
   skip-cert-verify: true
   tls: false
   type: vmess
+  udp: true
   uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
   ws-opts:
     headers:
       Host: ip1.1457230.xyz
-    path: github.com/Alvin9999
+    path: /github.com/Alvin9999
 - alterId: 0
   cipher: auto
-  name: proxy417
-  network: ws
-  port: 2086
-  server: 104.19.46.59
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
-  ws-opts:
-    headers:
-      Host: ip1.1457230.xyz
-    path: github.com/Alvin9999
-- alterId: 0
-  cipher: auto
-  name: proxy418
-  network: ws
-  port: 2086
-  server: 104.19.46.42
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
-  ws-opts:
-    headers:
-      Host: ip2.1457230.xyz
-    path: github.com/Alvin9999
-- alterId: 0
-  cipher: auto
-  name: proxy419
-  network: ws
-  port: 2086
-  server: 104.19.42.49
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
-  ws-opts:
-    headers:
-      Host: ip11.freegradely.xyz
-    path: github.com/Alvin9999
-- alterId: 0
-  cipher: auto
-  name: proxy420
-  network: ws
-  port: 2086
-  server: 104.19.38.62
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: 29eebb60-b27b-4a9d-bba5-947763d9205e
-  ws-opts:
-    headers:
-      Host: ip006.freegradely.xyz
-    path: github.com/Alvin9999
-- alterId: 0
-  cipher: auto
-  name: proxy421
-  network: ws
-  port: 2086
-  server: 104.19.21.230
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
-  ws-opts:
-    headers:
-      Host: ip11.freegradely.xyz
-    path: github.com/Alvin9999
-- alterId: 0
-  cipher: auto
-  name: proxy422
-  network: ws
-  port: 2086
-  server: 104.19.123.11
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
-  ws-opts:
-    headers:
-      Host: ip2.1457230.xyz
-    path: github.com/Alvin9999
-- alterId: 0
-  cipher: auto
-  name: proxy423
-  network: ws
-  port: 2086
-  server: 104.18.57.111
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
-  ws-opts:
-    headers:
-      Host: ip11.freegradely.xyz
-    path: github.com/Alvin9999
-- alterId: 0
-  cipher: auto
-  name: proxy424
+  name: US107
   network: ws
   port: 2086
   server: 104.16.148.244
   skip-cert-verify: true
   tls: false
   type: vmess
+  udp: true
   uuid: 29eebb60-b27b-4a9d-bba5-947763d9205e
   ws-opts:
     headers:
       Host: ip006.freegradely.xyz
-    path: github.com/Alvin9999
+    path: /github.com/Alvin9999
 - alterId: 0
   cipher: auto
-  name: proxy425
+  name: US108
   network: ws
   port: 2086
   server: 104.20.19.168
   skip-cert-verify: true
   tls: false
   type: vmess
+  udp: true
   uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
   ws-opts:
     headers:
       Host: ip1.1789034.xyz
-    path: github.com/Alvin9999
-- name: proxy426
+    path: /github.com/Alvin9999
+- name: US109
   password: dcbcf3e4-eb95-4f65-9d64-44596a1e688e
   port: 12053
   server: cn2.cdn.xfltd-cdn.top
   skip-cert-verify: true
   sni: cdn.alibaba.com
   type: trojan
-- cipher: aes-256-cfb
-  name: proxy427
-  password: GA9KzeEgvfxNrgmM
-  port: 9019
-  server: 217.30.10.18
-  type: ss
-- name: proxy428
-  network: none
-  port: 443
-  reality-opts:
-    public-key: DNdTBHyztOVJOBJQX91YXEhNkWbSAntqUoTFBHc6Clw
-    short-id: 6ba85179e30d4fc2
-  server: 47.237.5.32
-  servername: assets.wogaa.sg
-  skip-cert-verify: true
-  tls: true
-  type: vless
   udp: true
-  uuid: e927b27f-e73c-4580-802e-9265fd7c40e8
-- alpn:
-  - h2
-  - http/1.1
-  client-fingerprint: randomized
-  name: proxy429
-  network: ws
-  port: 2096
-  server: 2606:4700:310c::ac42:2c6a
-  servername: 122464fb.BPb-WORKer-PAnELa-AfU.paGes.dEv
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 56b7e9b5-5d3c-4aab-a253-983fe78c0338
-  ws-opts:
-    headers:
-      Host: 122464fb.bPb-WOrkeR-PANela-aFu.pAgeS.deV
-    path: /5HJGeoAFNVHcbZr1?ed=2560
-- alpn:
-  - h2
-  - http/1.1
-  client-fingerprint: randomized
-  name: proxy430
-  network: ws
-  port: 2096
-  server: 2606:4700:310c::ac42:2f96
-  servername: 122464Fb.BPb-wORkER-pAnELA-aFu.PaGES.Dev
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 56b7e9b5-5d3c-4aab-a253-983fe78c0338
-  ws-opts:
-    headers:
-      Host: 122464FB.bpB-WOrKer-pANeLA-AFu.pAgES.Dev
-    path: /hsFYIzHze8glKDcB?ed=2560
-- alpn:
-  - h2
-  - http/1.1
-  client-fingerprint: randomized
-  name: proxy431
-  network: ws
-  port: 2083
-  server: 122464fb.bpb-worker-panela-afu.pages.dev
-  servername: 122464Fb.bpb-WORkeR-paNeLa-aFu.PagES.deV
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 56b7e9b5-5d3c-4aab-a253-983fe78c0338
-  ws-opts:
-    headers:
-      Host: 122464FB.BPB-WoRKer-PANELa-afu.PageS.Dev
-    path: /fkS2mxoUfn9Qds8p?ed=2560
-- alpn:
-  - h2
-  - http/1.1
-  client-fingerprint: randomized
-  name: proxy432
-  network: ws
-  port: 2087
-  server: 2606:4700:310c::ac42:2c6a
-  servername: 122464fb.BPb-worKer-paNELA-AFU.PAgeS.Dev
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 56b7e9b5-5d3c-4aab-a253-983fe78c0338
-  ws-opts:
-    headers:
-      Host: 122464fB.bPB-WorkER-PAnELa-Afu.paGES.DEv
-    path: /MZPlEuqq2yGOfttK?ed=2560
-- alpn:
-  - h2
-  - http/1.1
-  client-fingerprint: randomized
-  name: proxy433
-  network: ws
-  port: 2083
-  server: 2606:4700:310c::ac42:2c6a
-  servername: 122464fb.Bpb-wORkEr-PaNelA-AfU.PagEs.dEv
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 56b7e9b5-5d3c-4aab-a253-983fe78c0338
-  ws-opts:
-    headers:
-      Host: 122464FB.BPB-WoRker-panELA-AFU.pages.dEv
-    path: /iiF1HwCPKmgFUGEY?ed=2560
-- alpn:
-  - h2
-  - http/1.1
-  client-fingerprint: randomized
-  name: proxy434
-  network: ws
-  port: 2087
-  server: 2606:4700:310c::ac42:2f96
-  servername: 122464Fb.Bpb-WoRkeR-PaNEla-Afu.PAgEs.dEV
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 56b7e9b5-5d3c-4aab-a253-983fe78c0338
-  ws-opts:
-    headers:
-      Host: 122464fB.bPB-worker-PaNeLa-aFU.PAgES.dev
-    path: /Kq98LS2d6Kx8Owyl?ed=2560
-- alpn:
-  - h3
-  auth-str: dongtaiwang.com
-  down: '55'
-  name: proxy435
-  port: 11223
-  protocol: udp
-  server: 166.1.221.169
-  skip-cert-verify: true
-  sni: bing.com
-  type: hysteria
-  udp: true
-  up: '11'
 - alterId: 0
   cipher: auto
-  name: proxy436
-  network: ws
-  port: 2086
-  server: 104.19.47.122
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
-  ws-opts:
-    headers:
-      Host: ip14.freegradely.xyz
-    path: /github.com/Alvin9999
-- alterId: 0
-  cipher: auto
-  name: proxy437
-  network: ws
-  port: 2086
-  server: 104.19.21.71
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
-  ws-opts:
-    headers:
-      Host: ip11.freegradely.xyz
-    path: /github.com/Alvin9999
-- alterId: 0
-  cipher: auto
-  name: proxy438
-  network: ws
-  port: 2086
-  server: 104.19.46.63
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
-  ws-opts:
-    headers:
-      Host: ip14.freegradely.xyz
-    path: /github.com/Alvin9999
-- alterId: 0
-  cipher: auto
-  name: proxy439
-  network: ws
-  port: 2086
-  server: 104.20.25.146
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
-  ws-opts:
-    headers:
-      Host: ip11.freegradely.xyz
-    path: /github.com/Alvin9999
-- alterId: 0
-  cipher: auto
-  name: proxy440
+  name: US110
   network: ws
   port: 2086
   server: 104.19.45.11
@@ -5780,67 +3758,7 @@ proxies:
     path: /github.com/Alvin9999
 - alterId: 0
   cipher: auto
-  name: proxy441
-  network: ws
-  port: 2086
-  server: 104.19.45.35
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
-  ws-opts:
-    headers:
-      Host: ip13.freegradely.xyz
-    path: /github.com/Alvin9999
-- alterId: 0
-  cipher: auto
-  name: proxy442
-  network: ws
-  port: 2086
-  server: 104.19.46.17
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
-  ws-opts:
-    headers:
-      Host: ip13.freegradely.xyz
-    path: /github.com/Alvin9999
-- alterId: 0
-  cipher: auto
-  name: proxy443
-  network: ws
-  port: 2086
-  server: 104.19.32.88
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
-  ws-opts:
-    headers:
-      Host: ip5-4.freegradely.xyz
-    path: /github.com/Alvin9999
-- alterId: 0
-  cipher: auto
-  name: proxy444
-  network: ws
-  port: 2086
-  server: 104.19.45.47
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
-  ws-opts:
-    headers:
-      Host: ip13.freegradely.xyz
-    path: /github.com/Alvin9999
-- alterId: 0
-  cipher: auto
-  name: proxy445
+  name: US111
   network: ws
   port: 2086
   server: 104.19.47.22
@@ -5855,22 +3773,7 @@ proxies:
     path: /github.com/Alvin9999
 - alterId: 0
   cipher: auto
-  name: proxy446
-  network: ws
-  port: 2086
-  server: 104.19.38.12
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
-  ws-opts:
-    headers:
-      Host: ip2.1457230.xyz
-    path: /github.com/Alvin9999
-- alterId: 0
-  cipher: auto
-  name: proxy447
+  name: US112
   network: ws
   port: 2086
   server: 104.19.45.13
@@ -5885,7 +3788,7 @@ proxies:
     path: /github.com/Alvin9999
 - alterId: 0
   cipher: auto
-  name: proxy448
+  name: US113
   network: ws
   port: 2086
   server: 104.19.46.103
@@ -5900,52 +3803,7 @@ proxies:
     path: /github.com/Alvin9999
 - alterId: 0
   cipher: auto
-  name: proxy449
-  network: ws
-  port: 2086
-  server: 104.22.37.243
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
-  ws-opts:
-    headers:
-      Host: ip1.1789034.xyz
-    path: /github.com/Alvin9999
-- alterId: 0
-  cipher: auto
-  name: proxy450
-  network: ws
-  port: 2086
-  server: 104.19.45.15
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
-  ws-opts:
-    headers:
-      Host: ip13.freegradely.xyz
-    path: /github.com/Alvin9999
-- alterId: 0
-  cipher: auto
-  name: proxy451
-  network: ws
-  port: 2086
-  server: 104.19.46.39
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
-  ws-opts:
-    headers:
-      Host: ip13.freegradely.xyz
-    path: /github.com/Alvin9999
-- alterId: 0
-  cipher: auto
-  name: proxy452
+  name: US114
   network: ws
   port: 2095
   server: 104.19.45.70
@@ -5960,187 +3818,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: proxy453
-  network: ws
-  port: 2086
-  server: 104.19.32.216
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
-  ws-opts:
-    headers:
-      Host: ip2.1457230.xyz
-    path: /github.com/Alvin9999
-- alterId: 0
-  cipher: auto
-  name: proxy454
-  network: ws
-  port: 2086
-  server: 104.19.47.65
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
-  ws-opts:
-    headers:
-      Host: ip14.freegradely.xyz
-    path: /github.com/Alvin9999
-- alterId: 0
-  cipher: auto
-  name: proxy455
-  network: ws
-  port: 2086
-  server: 104.19.47.79
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
-  ws-opts:
-    headers:
-      Host: ip14.freegradely.xyz
-    path: /github.com/Alvin9999
-- alterId: 0
-  cipher: auto
-  name: proxy456
-  network: ws
-  port: 2086
-  server: 104.19.47.80
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
-  ws-opts:
-    headers:
-      Host: ip14.freegradely.xyz
-    path: /github.com/Alvin9999
-- alterId: 0
-  cipher: auto
-  name: proxy457
-  network: ws
-  port: 2086
-  server: 104.19.45.42
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
-  ws-opts:
-    headers:
-      Host: ip14.freegradely.xyz
-    path: /github.com/Alvin9999
-- alterId: 0
-  cipher: auto
-  name: proxy458
-  network: ws
-  port: 2086
-  server: 104.19.46.56
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
-  ws-opts:
-    headers:
-      Host: ip14.freegradely.xyz
-    path: /github.com/Alvin9999
-- alterId: 0
-  cipher: auto
-  name: proxy459
-  network: ws
-  port: 2086
-  server: 104.19.59.89
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
-  ws-opts:
-    headers:
-      Host: ip14.freegradely.xyz
-    path: /github.com/Alvin9999
-- alterId: 0
-  cipher: auto
-  name: proxy460
-  network: ws
-  port: 2086
-  server: 104.19.45.17
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
-  ws-opts:
-    headers:
-      Host: ip13.freegradely.xyz
-    path: /github.com/Alvin9999
-- alterId: 0
-  cipher: auto
-  name: proxy461
-  network: ws
-  port: 2086
-  server: 172.64.194.76
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
-  ws-opts:
-    headers:
-      Host: ip11.freegradely.xyz
-    path: /github.com/Alvin9999
-- alterId: 0
-  cipher: auto
-  name: proxy462
-  network: ws
-  port: 2086
-  server: 104.19.45.90
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
-  ws-opts:
-    headers:
-      Host: ip13.freegradely.xyz
-    path: /github.com/Alvin9999
-- alterId: 0
-  cipher: auto
-  name: proxy463
-  network: ws
-  port: 2086
-  server: 104.19.47.32
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
-  ws-opts:
-    headers:
-      Host: ip14.freegradely.xyz
-    path: /github.com/Alvin9999
-- alterId: 0
-  cipher: auto
-  name: proxy464
-  network: ws
-  port: 2086
-  server: 104.19.47.45
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
-  ws-opts:
-    headers:
-      Host: ip2.1457230.xyz
-    path: /github.com/Alvin9999
-- alterId: 0
-  cipher: auto
-  name: proxy465
+  name: US115
   network: ws
   port: 2086
   server: 104.19.55.49
@@ -6155,7 +3833,7 @@ proxies:
     path: /github.com/Alvin9999
 - alterId: 0
   cipher: auto
-  name: proxy466
+  name: US116
   network: ws
   port: 2086
   server: 104.19.46.27
@@ -6170,82 +3848,7 @@ proxies:
     path: /github.com/Alvin9999
 - alterId: 0
   cipher: auto
-  name: proxy467
-  network: ws
-  port: 2086
-  server: 104.19.46.36
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
-  ws-opts:
-    headers:
-      Host: ip13.freegradely.xyz
-    path: /github.com/Alvin9999
-- alterId: 0
-  cipher: auto
-  name: proxy468
-  network: ws
-  port: 2086
-  server: 104.19.38.8
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
-  ws-opts:
-    headers:
-      Host: ip14.freegradely.xyz
-    path: /github.com/Alvin9999
-- alterId: 0
-  cipher: auto
-  name: proxy469
-  network: ws
-  port: 2086
-  server: 104.19.58.175
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
-  ws-opts:
-    headers:
-      Host: ip14.freegradely.xyz
-    path: /github.com/Alvin9999
-- alterId: 0
-  cipher: auto
-  name: proxy470
-  network: ws
-  port: 2086
-  server: 104.19.46.22
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
-  ws-opts:
-    headers:
-      Host: ip13.freegradely.xyz
-    path: /github.com/Alvin9999
-- alterId: 0
-  cipher: auto
-  name: proxy471
-  network: ws
-  port: 2086
-  server: 104.19.47.77
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
-  ws-opts:
-    headers:
-      Host: ip14.freegradely.xyz
-    path: /github.com/Alvin9999
-- alterId: 0
-  cipher: auto
-  name: proxy472
+  name: US117
   network: ws
   port: 2095
   server: 104.19.45.85
@@ -6260,7 +3863,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: proxy473
+  name: US118
   network: ws
   port: 2095
   server: 104.19.45.104
@@ -6275,7 +3878,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: proxy474
+  name: US119
   network: ws
   port: 2086
   server: 104.17.106.151
@@ -6290,7 +3893,7 @@ proxies:
     path: /github.com/Alvin9999
 - alterId: 0
   cipher: auto
-  name: proxy475
+  name: US120
   network: ws
   port: 2095
   server: 104.19.45.51
@@ -6305,93 +3908,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: proxy476
-  network: ws
-  port: 2086
-  server: 104.19.38.88
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
-  ws-opts:
-    headers:
-      Host: ip5-4.freegradely.xyz
-    path: /github.com/Alvin9999
-- alterId: 0
-  cipher: auto
-  name: proxy477
-  network: ws
-  port: 2086
-  server: 104.19.45.50
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
-  ws-opts:
-    headers:
-      Host: ip13.freegradely.xyz
-    path: /github.com/Alvin9999
-- cipher: chacha20-ietf-poly1305
-  name: proxy478
-  password: 8c8c0e0a-8be4-401b-87ca-cc03abca6a50
-  port: 42162
-  server: cm2.xcone.xyz
-  skip-cert-verify: true
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: proxy479
-  password: 8c8c0e0a-8be4-401b-87ca-cc03abca6a50
-  port: 33107
-  server: cm.guguyun.pw
-  skip-cert-verify: true
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: proxy480
-  password: 3671471b-176a-4467-86e1-91fbd0b1367a
-  port: 58774
-  server: gdyddx500.xiyunchen.cn
-  skip-cert-verify: true
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: proxy481
-  password: 8c8c0e0a-8be4-401b-87ca-cc03abca6a50
-  port: 34508
-  server: ct2.xcone.xyz
-  skip-cert-verify: true
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: proxy482
-  password: 8c8c0e0a-8be4-401b-87ca-cc03abca6a50
-  port: 52430
-  server: ct2.xcone.xyz
-  skip-cert-verify: true
-  type: ss
-  udp: true
-- name: proxy483
-  password: z8lCAl8SOAe53DSxEDNZSyx4wFKBuacYTFRD2pCy39aOjYq30pgICRnZ73e6Xa
-  port: 443
-  server: deliver.missionsec.io
-  skip-cert-verify: true
-  sni: deliver.missionsec.io
-  type: trojan
-  udp: true
-- name: proxy484
-  password: 5xYSOAqDIpn4CeSjN3lRgXaAy8267e3czBy9TuSwC3R8FaYEFZalZD0xCDO3pK
-  port: 18331
-  server: caterpie.superpokemon.com
-  skip-cert-verify: true
-  sni: caterpie.superpokemon.com
-  type: trojan
-  udp: true
-- alterId: 0
-  cipher: auto
-  name: proxy485
+  name: US121
   network: ws
   port: 2095
   server: 104.19.45.212
@@ -6406,38 +3923,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: proxy486
-  network: ws
-  port: 443
-  server: n1721118448.ryjml.cn
-  servername: n1721118448.ryjml.cn
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  udp: true
-  uuid: 690f0d7a-4050-4b2b-9e44-a12d67905274
-  ws-opts:
-    headers:
-      Host: n1721118448.ryjml.cn
-    path: /
-- alterId: 0
-  cipher: auto
-  name: proxy487
-  network: ws
-  port: 2086
-  server: cfcdn1.sanfencdn9.com
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 01dee9d8-7147-44b4-b3df-b4fe053d18d5
-  ws-opts:
-    headers:
-      Host: us77SmSk86j.fzbqfrse.xyz
-    path: /video/Z7qdcrAGRw
-- alterId: 0
-  cipher: auto
-  name: proxy488
+  name: US122
   network: ws
   port: 2095
   server: 104.19.45.171
@@ -6450,126 +3936,8 @@ proxies:
     headers:
       Host: onea.flha.ru
     path: /
-- cipher: aes-256-gcm
-  name: proxy489
-  password: c3a87b84-6fc9-40e4-9d65-5e5866bab35a
-  port: 20001
-  server: gdyddx500.xiyunchen.cn
-  skip-cert-verify: true
-  type: ss
-  udp: true
-- cipher: aes-256-gcm
-  name: proxy490
-  password: c3a87b84-6fc9-40e4-9d65-5e5866bab35a
-  port: 40860
-  server: gdyddx500.xiyunchen.cn
-  skip-cert-verify: true
-  type: ss
-  udp: true
-- cipher: aes-256-gcm
-  name: proxy491
-  password: c3a87b84-6fc9-40e4-9d65-5e5866bab35a
-  port: 20004
-  server: gdyddx500.xiyunchen.cn
-  skip-cert-verify: true
-  type: ss
-  udp: true
-- cipher: aes-256-gcm
-  name: proxy492
-  password: c3a87b84-6fc9-40e4-9d65-5e5866bab35a
-  port: 49850
-  server: gdyddx500.xiyunchen.cn
-  skip-cert-verify: true
-  type: ss
-  udp: true
-- cipher: aes-256-gcm
-  name: proxy493
-  password: c3a87b84-6fc9-40e4-9d65-5e5866bab35a
-  port: 22222
-  server: gdyddx500.xiyunchen.cn
-  skip-cert-verify: true
-  type: ss
-  udp: true
-- cipher: aes-256-gcm
-  name: proxy494
-  password: c3a87b84-6fc9-40e4-9d65-5e5866bab35a
-  port: 20005
-  server: gdyddx500.xiyunchen.cn
-  skip-cert-verify: true
-  type: ss
-  udp: true
-- cipher: aes-256-gcm
-  name: proxy495
-  password: c3a87b84-6fc9-40e4-9d65-5e5866bab35a
-  port: 44700
-  server: gdyddx500.xiyunchen.cn
-  skip-cert-verify: true
-  type: ss
-  udp: true
-- cipher: aes-256-gcm
-  name: proxy496
-  password: c3a87b84-6fc9-40e4-9d65-5e5866bab35a
-  port: 21107
-  server: gdyddx500.xiyunchen.cn
-  skip-cert-verify: true
-  type: ss
-  udp: true
-- cipher: aes-256-gcm
-  name: proxy497
-  password: c3a87b84-6fc9-40e4-9d65-5e5866bab35a
-  port: 36388
-  server: gdyddx500.xiyunchen.cn
-  skip-cert-verify: true
-  type: ss
-  udp: true
-- alterId: 0
-  cipher: auto
-  name: proxy498
-  network: ws
-  port: 80
-  server: oracle-kr-01.av5.buzz
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 4201910c-16ea-49ca-a7a0-517c5d598e1a
-  ws-opts:
-    headers:
-      Host: nat-bra-01.t3csyun.buzz
-    path: /bra1
-- alterId: 0
-  cipher: auto
-  name: proxy499
-  network: ws
-  port: 80
-  server: visa.com
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 4201910c-16ea-49ca-a7a0-517c5d598e1a
-  ws-opts:
-    headers:
-      Host: nat-bra-01.t3csyun.buzz
-    path: /bra1
-- alterId: 0
-  cipher: auto
-  name: proxy500
-  network: ws
-  port: 2053
-  server: school.xn--vjqp6xkwblzeyv2h.cn
-  servername: dfbn.sectigo.pp.ua
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  udp: true
-  uuid: c6cd7616-e663-4f4f-b412-1f949357f801
-  ws-opts:
-    headers:
-      Host: dfbn.sectigo.pp.ua
-    path: /
 - cipher: chacha20-ietf-poly1305
-  name: proxy501
+  name: HK37
   password: 9281c38f-02d3-4aaf-b1d8-66832b217858
   port: 19762
   server: bvip.hongxingdl.vip
@@ -6577,7 +3945,7 @@ proxies:
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: proxy502
+  name: HK38
   password: 9281c38f-02d3-4aaf-b1d8-66832b217858
   port: 19762
   server: iepl.hongxingdl.vip
@@ -6585,7 +3953,7 @@ proxies:
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: proxy503
+  name: TW12
   password: 9281c38f-02d3-4aaf-b1d8-66832b217858
   port: 56697
   server: bvip.hongxingdl.vip
@@ -6593,7 +3961,7 @@ proxies:
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: proxy504
+  name: TW13
   password: 9281c38f-02d3-4aaf-b1d8-66832b217858
   port: 56697
   server: iepl.hongxingdl.vip
@@ -6601,7 +3969,7 @@ proxies:
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: proxy505
+  name: SG10
   password: 9281c38f-02d3-4aaf-b1d8-66832b217858
   port: 16965
   server: bvip.hongxingdl.vip
@@ -6609,7 +3977,7 @@ proxies:
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: proxy506
+  name: SG11
   password: 9281c38f-02d3-4aaf-b1d8-66832b217858
   port: 16965
   server: iepl.hongxingdl.vip
@@ -6617,7 +3985,7 @@ proxies:
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: proxy507
+  name: JP26
   password: 9281c38f-02d3-4aaf-b1d8-66832b217858
   port: 31297
   server: bvip.hongxingdl.vip
@@ -6625,7 +3993,7 @@ proxies:
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: proxy508
+  name: JP27
   password: 9281c38f-02d3-4aaf-b1d8-66832b217858
   port: 31297
   server: iepl.hongxingdl.vip
@@ -6633,7 +4001,7 @@ proxies:
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: proxy509
+  name: US123
   password: 9281c38f-02d3-4aaf-b1d8-66832b217858
   port: 59861
   server: bvip.hongxingdl.vip
@@ -6641,7 +4009,7 @@ proxies:
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: proxy510
+  name: US124
   password: 9281c38f-02d3-4aaf-b1d8-66832b217858
   port: 59861
   server: iepl.hongxingdl.vip
@@ -6649,7 +4017,7 @@ proxies:
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: proxy511
+  name: KR45
   password: 9281c38f-02d3-4aaf-b1d8-66832b217858
   port: 26309
   server: bvip.hongxingdl.vip
@@ -6657,7 +4025,7 @@ proxies:
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: proxy512
+  name: NL2
   password: 9281c38f-02d3-4aaf-b1d8-66832b217858
   port: 36248
   server: bvip.hongxingdl.vip
@@ -6665,7 +4033,7 @@ proxies:
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: proxy513
+  name: DE3
   password: 9281c38f-02d3-4aaf-b1d8-66832b217858
   port: 46326
   server: bvip.hongxingdl.vip
@@ -6673,7 +4041,7 @@ proxies:
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: proxy514
+  name: CO1
   password: 9281c38f-02d3-4aaf-b1d8-66832b217858
   port: 32998
   server: bvip.hongxingdl.vip
@@ -6681,7 +4049,7 @@ proxies:
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: proxy515
+  name: CL1
   password: 9281c38f-02d3-4aaf-b1d8-66832b217858
   port: 32808
   server: bvip.hongxingdl.vip
@@ -6689,7 +4057,7 @@ proxies:
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: proxy516
+  name: BR1
   password: 9281c38f-02d3-4aaf-b1d8-66832b217858
   port: 26674
   server: bvip.hongxingdl.vip
@@ -6697,7 +4065,7 @@ proxies:
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: proxy517
+  name: AE1
   password: 9281c38f-02d3-4aaf-b1d8-66832b217858
   port: 14426
   server: bvip.hongxingdl.vip
@@ -6705,7 +4073,7 @@ proxies:
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: proxy518
+  name: ZA2
   password: 9281c38f-02d3-4aaf-b1d8-66832b217858
   port: 11954
   server: bvip.hongxingdl.vip
@@ -6713,7 +4081,7 @@ proxies:
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: proxy519
+  name: SA1
   password: 9281c38f-02d3-4aaf-b1d8-66832b217858
   port: 47360
   server: bvip.hongxingdl.vip
@@ -6721,7 +4089,7 @@ proxies:
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: proxy520
+  name: IL1
   password: 9281c38f-02d3-4aaf-b1d8-66832b217858
   port: 14007
   server: bvip.hongxingdl.vip
@@ -6729,7 +4097,7 @@ proxies:
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: proxy521
+  name: GB10
   password: 9281c38f-02d3-4aaf-b1d8-66832b217858
   port: 47707
   server: bvip.hongxingdl.vip
@@ -6737,7 +4105,7 @@ proxies:
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: proxy522
+  name: CH1
   password: 9281c38f-02d3-4aaf-b1d8-66832b217858
   port: 57821
   server: bvip.hongxingdl.vip
@@ -6745,7 +4113,7 @@ proxies:
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: proxy523
+  name: SE1
   password: 9281c38f-02d3-4aaf-b1d8-66832b217858
   port: 24663
   server: bvip.hongxingdl.vip
@@ -6753,7 +4121,7 @@ proxies:
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: proxy524
+  name: ES1
   password: 9281c38f-02d3-4aaf-b1d8-66832b217858
   port: 24958
   server: bvip.hongxingdl.vip
@@ -6761,7 +4129,7 @@ proxies:
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: proxy525
+  name: IT1
   password: 9281c38f-02d3-4aaf-b1d8-66832b217858
   port: 37928
   server: bvip.hongxingdl.vip
@@ -6769,7 +4137,7 @@ proxies:
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: proxy526
+  name: DE4
   password: 9281c38f-02d3-4aaf-b1d8-66832b217858
   port: 49577
   server: bvip.hongxingdl.vip
@@ -6777,7 +4145,7 @@ proxies:
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: proxy527
+  name: FR5
   password: 9281c38f-02d3-4aaf-b1d8-66832b217858
   port: 15708
   server: bvip.hongxingdl.vip
@@ -6785,7 +4153,7 @@ proxies:
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: proxy528
+  name: MX1
   password: 9281c38f-02d3-4aaf-b1d8-66832b217858
   port: 25860
   server: bvip.hongxingdl.vip
@@ -6793,7 +4161,7 @@ proxies:
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: proxy529
+  name: CA2
   password: 9281c38f-02d3-4aaf-b1d8-66832b217858
   port: 56638
   server: bvip.hongxingdl.vip
@@ -6801,274 +4169,490 @@ proxies:
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: proxy530
+  name: IN4
   password: 9281c38f-02d3-4aaf-b1d8-66832b217858
   port: 22511
   server: bvip.hongxingdl.vip
   skip-cert-verify: true
   type: ss
   udp: true
-- cipher: chacha20-ietf-poly1305
-  name: proxy531
-  password: 35d3d4d7-101c-4fa9-aee5-8c0e65673138
-  port: 42729
-  server: ni8.gy5.wenrouyun.cn
-  skip-cert-verify: true
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: proxy532
-  password: 35d3d4d7-101c-4fa9-aee5-8c0e65673138
-  port: 52530
-  server: ni8.gy5.wenrouyun.cn
-  skip-cert-verify: true
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: proxy533
-  password: 35d3d4d7-101c-4fa9-aee5-8c0e65673138
-  port: 22225
-  server: ni8.gy5.wenrouyun.cn
-  skip-cert-verify: true
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: proxy534
-  password: 35d3d4d7-101c-4fa9-aee5-8c0e65673138
-  port: 39210
-  server: ni8.gy5.wenrouyun.cn
-  skip-cert-verify: true
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: proxy535
-  password: 35d3d4d7-101c-4fa9-aee5-8c0e65673138
-  port: 11820
-  server: ni8.ie1.wenrouyun.cn
-  skip-cert-verify: true
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: proxy536
-  password: 35d3d4d7-101c-4fa9-aee5-8c0e65673138
-  port: 38896
-  server: ni8.gy5.wenrouyun.cn
-  skip-cert-verify: true
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: proxy537
-  password: 35d3d4d7-101c-4fa9-aee5-8c0e65673138
-  port: 42481
-  server: ni8.gy5.wenrouyun.cn
-  skip-cert-verify: true
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: proxy538
-  password: 35d3d4d7-101c-4fa9-aee5-8c0e65673138
-  port: 40824
-  server: ni8.gy5.wenrouyun.cn
-  skip-cert-verify: true
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: proxy539
-  password: 35d3d4d7-101c-4fa9-aee5-8c0e65673138
-  port: 32262
-  server: ni8.gy5.wenrouyun.cn
-  skip-cert-verify: true
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: proxy540
-  password: 35d3d4d7-101c-4fa9-aee5-8c0e65673138
-  port: 16943
-  server: ni8.gy5.wenrouyun.cn
-  skip-cert-verify: true
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: proxy541
-  password: 35d3d4d7-101c-4fa9-aee5-8c0e65673138
-  port: 15092
-  server: ni8.gy5.wenrouyun.cn
-  skip-cert-verify: true
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: proxy542
-  password: 35d3d4d7-101c-4fa9-aee5-8c0e65673138
-  port: 29082
-  server: ni8.gy5.wenrouyun.cn
-  skip-cert-verify: true
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: proxy543
-  password: 35d3d4d7-101c-4fa9-aee5-8c0e65673138
-  port: 23731
-  server: ni8.gy5.wenrouyun.cn
-  skip-cert-verify: true
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: proxy544
-  password: 35d3d4d7-101c-4fa9-aee5-8c0e65673138
-  port: 21878
-  server: cloudgd.coemn.com
-  skip-cert-verify: true
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: proxy545
-  password: 35d3d4d7-101c-4fa9-aee5-8c0e65673138
-  port: 15701
-  server: ni8.gy5.wenrouyun.cn
-  skip-cert-verify: true
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: proxy546
-  password: 35d3d4d7-101c-4fa9-aee5-8c0e65673138
-  port: 2345
-  server: cmi.jp1.ni8.me
-  skip-cert-verify: true
-  type: ss
-  udp: true
-- name: proxy547
-  password: 9a93db0e-327d-4635-9677-a0e5a862c432
-  port: 12069
-  server: cn2.cdn.xfltd-cdn.top
-  skip-cert-verify: true
-  sni: cdn.alibaba.com
-  type: trojan
-- name: proxy548
-  password: 9a93db0e-327d-4635-9677-a0e5a862c432
-  port: 12061
-  server: cn2.cdn.xfltd-cdn.top
-  skip-cert-verify: true
-  sni: cdn.alibaba.com
-  type: trojan
-- name: proxy549
-  password: 9a93db0e-327d-4635-9677-a0e5a862c432
-  port: 12072
-  server: cn2.cdn.xfltd-cdn.top
-  skip-cert-verify: true
-  sni: cdn.alibaba.com
-  type: trojan
-- name: proxy550
-  password: 9a93db0e-327d-4635-9677-a0e5a862c432
-  port: 12062
-  server: cn2.cdn.xfltd-cdn.top
-  skip-cert-verify: true
-  sni: cdn.alibaba.com
-  type: trojan
-- name: proxy551
-  password: 9a93db0e-327d-4635-9677-a0e5a862c432
-  port: 12064
-  server: cn2.cdn.xfltd-cdn.top
-  skip-cert-verify: true
-  sni: cdn.alibaba.com
-  type: trojan
-- name: proxy552
-  password: 9a93db0e-327d-4635-9677-a0e5a862c432
-  port: 12076
-  server: cn2.cdn.xfltd-cdn.top
-  skip-cert-verify: true
-  sni: cdn.alibaba.com
-  type: trojan
-- name: proxy553
-  password: 9a93db0e-327d-4635-9677-a0e5a862c432
-  port: 12012
-  server: cn1.cdn.xfltd-cdn.top
-  skip-cert-verify: true
-  sni: cdn.alibaba.com
-  type: trojan
-- name: proxy554
-  password: 9a93db0e-327d-4635-9677-a0e5a862c432
-  port: 12071
-  server: cn2.cdn.xfltd-cdn.top
-  skip-cert-verify: true
-  sni: cdn.alibaba.com
-  type: trojan
-- cipher: aes-256-cfb
-  name: proxy555
-  password: amazonskr05
-  port: 443
-  server: 52.199.82.18
-  type: ss
-- name: proxy556
-  password: 9a93db0e-327d-4635-9677-a0e5a862c432
-  port: 12073
-  server: cn2.cdn.xfltd-cdn.top
-  skip-cert-verify: true
-  sni: cdn.alibaba.com
-  type: trojan
-- cipher: chacha20-ietf
-  name: proxy557
-  password: asd123456
-  port: 8388
-  server: 107.148.1.194
-  type: ss
-- name: proxy558
-  password: 9a93db0e-327d-4635-9677-a0e5a862c432
-  port: 12051
-  server: cn2.cdn.xfltd-cdn.top
-  skip-cert-verify: true
-  sni: cdn.alibaba.com
-  type: trojan
-- name: proxy559
-  password: 9a93db0e-327d-4635-9677-a0e5a862c432
-  port: 12067
-  server: cn2.cdn.xfltd-cdn.top
-  skip-cert-verify: true
-  sni: cdn.alibaba.com
-  type: trojan
-- name: proxy560
-  password: 9a93db0e-327d-4635-9677-a0e5a862c432
-  port: 12074
-  server: cn2.cdn.xfltd-cdn.top
-  skip-cert-verify: true
-  sni: cdn.alibaba.com
-  type: trojan
-- cipher: aes-256-cfb
-  name: proxy561
-  password: amazonskr05
-  port: 443
-  server: 13.124.182.43
-  type: ss
-- name: proxy562
-  password: 9a93db0e-327d-4635-9677-a0e5a862c432
-  port: 12041
-  server: cn2.cdn.xfltd-cdn.top
-  skip-cert-verify: true
-  sni: cdn.alibaba.com
-  type: trojan
-- name: proxy563
-  password: 9a93db0e-327d-4635-9677-a0e5a862c432
-  port: 12077
-  server: cn2.cdn.xfltd-cdn.top
-  skip-cert-verify: true
-  sni: cdn.alibaba.com
-  type: trojan
-- cipher: aes-256-cfb
-  name: proxy564
-  password: amazonskr05
-  port: 443
-  server: 43.201.62.188
-  type: ss
-- name: proxy565
-  password: 9a93db0e-327d-4635-9677-a0e5a862c432
-  port: 12068
-  server: cn2.cdn.xfltd-cdn.top
-  skip-cert-verify: true
-  sni: cdn.alibaba.com
-  type: trojan
-- name: proxy566
-  password: 9a93db0e-327d-4635-9677-a0e5a862c432
-  port: 12066
-  server: cn2.cdn.xfltd-cdn.top
-  skip-cert-verify: true
-  sni: cdn.alibaba.com
-  type: trojan
+proxy-groups:
+- hidden: false
+  icon: https://fastly.jsdelivr.net/gh/clash-verge-rev/clash-verge-rev.github.io@main/docs/assets/icons/adjust.svg
+  interval: 300
+  lazy: true
+  max-failed-times: 3
+  name: 节点选择
+  proxies:
+  - 故障转移
+  - 负载均衡(散列)
+  - 负载均衡(轮询)
+  - 新加坡节点
+  - 韩国节点
+  - 美国节点
+  - 香港节点
+  - 日本节点
+  - 台湾节点
+  - 手动选择
+  timeout: 3000
+  type: select
+  url: https://www.google.com/generate_204
+- hidden: false
+  icon: https://fastly.jsdelivr.net/gh/clash-verge-rev/clash-verge-rev.github.io@main/docs/assets/icons/link.svg
+  include-all: true
+  interval: 300
+  lazy: true
+  max-failed-times: 3
+  name: 手动选择
+  timeout: 3000
+  type: select
+  url: https://www.google.com/generate_204
+- hidden: false
+  icon: https://fastly.jsdelivr.net/gh/clash-verge-rev/clash-verge-rev.github.io@main/docs/assets/icons/link.svg
+  interval: 300
+  lazy: true
+  max-failed-times: 3
+  name: 全局直连
+  proxies:
+  - DIRECT
+  timeout: 3000
+  type: select
+  url: https://www.google.com/generate_204
+- hidden: false
+  icon: https://fastly.jsdelivr.net/gh/clash-verge-rev/clash-verge-rev.github.io@main/docs/assets/icons/link.svg
+  interval: 300
+  lazy: true
+  max-failed-times: 3
+  name: 新加坡节点
+  proxies:
+  - SG1
+  - SG2
+  - SG3
+  - SG4
+  - SG5
+  - SG6
+  - SG7
+  - SG8
+  - SG9
+  - SG10
+  - SG11
+  timeout: 3000
+  tolerance: 100
+  type: url-test
+  url: https://www.google.com/generate_204
+- hidden: false
+  icon: https://fastly.jsdelivr.net/gh/clash-verge-rev/clash-verge-rev.github.io@main/docs/assets/icons/link.svg
+  interval: 300
+  lazy: true
+  max-failed-times: 3
+  name: 台湾节点
+  proxies:
+  - TW1
+  - TW2
+  - TW3
+  - TW4
+  - TW5
+  - TW6
+  - TW7
+  - TW8
+  - TW9
+  - TW10
+  - TW11
+  - TW12
+  - TW13
+  timeout: 3000
+  tolerance: 100
+  type: url-test
+  url: https://www.google.com/generate_204
+- hidden: false
+  icon: https://fastly.jsdelivr.net/gh/clash-verge-rev/clash-verge-rev.github.io@main/docs/assets/icons/link.svg
+  interval: 300
+  lazy: true
+  max-failed-times: 3
+  name: 日本节点
+  proxies:
+  - JP1
+  - JP2
+  - JP3
+  - JP4
+  - JP5
+  - JP6
+  - JP7
+  - JP8
+  - JP9
+  - JP10
+  - JP11
+  - JP12
+  - JP13
+  - JP14
+  - JP15
+  - JP16
+  - JP17
+  - JP18
+  - JP19
+  - JP20
+  - JP21
+  - JP22
+  - JP23
+  - JP24
+  - JP25
+  - JP26
+  - JP27
+  timeout: 3000
+  tolerance: 100
+  type: url-test
+  url: https://www.google.com/generate_204
+- hidden: false
+  icon: https://fastly.jsdelivr.net/gh/clash-verge-rev/clash-verge-rev.github.io@main/docs/assets/icons/link.svg
+  interval: 300
+  lazy: true
+  max-failed-times: 3
+  name: 美国节点
+  proxies:
+  - US1
+  - US2
+  - US3
+  - US4
+  - US5
+  - US6
+  - US7
+  - US8
+  - US9
+  - US10
+  - US11
+  - US12
+  - US13
+  - US14
+  - US15
+  - US16
+  - US17
+  - US18
+  - US19
+  - US20
+  - US21
+  - US22
+  - US23
+  - US24
+  - US25
+  - US26
+  - US27
+  - US28
+  - US29
+  - US30
+  - US31
+  - US32
+  - US33
+  - US34
+  - US35
+  - US36
+  - US37
+  - US38
+  - US39
+  - US40
+  - US41
+  - US42
+  - US43
+  - US44
+  - US45
+  - US46
+  - US47
+  - US48
+  - US49
+  - US50
+  - US51
+  - US52
+  - US53
+  - US54
+  - US55
+  - US56
+  - US57
+  - US58
+  - US59
+  - US60
+  - US61
+  - US62
+  - US63
+  - US64
+  - US65
+  - US66
+  - US67
+  - US68
+  - US69
+  - US70
+  - US71
+  - US72
+  - US73
+  - US74
+  - US75
+  - US76
+  - US77
+  - US78
+  - US79
+  - US80
+  - US81
+  - US82
+  - US83
+  - US84
+  - US85
+  - US86
+  - US87
+  - US88
+  - US89
+  - US90
+  - US91
+  - US92
+  - US93
+  - US94
+  - US95
+  - US96
+  - US97
+  - US98
+  - US99
+  - US100
+  - US101
+  - US102
+  - US103
+  - US104
+  - US105
+  - US106
+  - US107
+  - US108
+  - US109
+  - US110
+  - US111
+  - US112
+  - US113
+  - US114
+  - US115
+  - US116
+  - US117
+  - US118
+  - US119
+  - US120
+  - US121
+  - US122
+  - US123
+  - US124
+  timeout: 3000
+  tolerance: 100
+  type: url-test
+  url: https://www.google.com/generate_204
+- hidden: false
+  icon: https://fastly.jsdelivr.net/gh/clash-verge-rev/clash-verge-rev.github.io@main/docs/assets/icons/link.svg
+  interval: 300
+  lazy: true
+  max-failed-times: 3
+  name: 韩国节点
+  proxies:
+  - KR1
+  - KR2
+  - KR3
+  - KR4
+  - KR5
+  - KR6
+  - KR7
+  - KR8
+  - KR9
+  - KR10
+  - KR11
+  - KR12
+  - KR13
+  - KR14
+  - KR15
+  - KR16
+  - KR17
+  - KR18
+  - KR19
+  - KR20
+  - KR21
+  - KR22
+  - KR23
+  - KR24
+  - KR25
+  - KR26
+  - KR27
+  - KR28
+  - KR29
+  - KR30
+  - KR31
+  - KR32
+  - KR33
+  - KR34
+  - KR35
+  - KR36
+  - KR37
+  - KR38
+  - KR39
+  - KR40
+  - KR41
+  - KR42
+  - KR43
+  - KR44
+  - KR45
+  timeout: 3000
+  tolerance: 100
+  type: url-test
+  url: https://www.google.com/generate_204
+- hidden: false
+  icon: https://fastly.jsdelivr.net/gh/clash-verge-rev/clash-verge-rev.github.io@main/docs/assets/icons/link.svg
+  interval: 300
+  lazy: true
+  max-failed-times: 3
+  name: 香港节点
+  proxies:
+  - HK1
+  - HK2
+  - HK3
+  - HK4
+  - HK5
+  - HK6
+  - HK7
+  - HK8
+  - HK9
+  - HK10
+  - HK11
+  - HK12
+  - HK13
+  - HK14
+  - HK15
+  - HK16
+  - HK17
+  - HK18
+  - HK19
+  - HK20
+  - HK21
+  - HK22
+  - HK23
+  - HK24
+  - HK25
+  - HK26
+  - HK27
+  - HK28
+  - HK29
+  - HK30
+  - HK31
+  - HK32
+  - HK33
+  - HK34
+  - HK35
+  - HK36
+  - HK37
+  - HK38
+  timeout: 3000
+  tolerance: 100
+  type: url-test
+  url: https://www.google.com/generate_204
+- hidden: false
+  icon: https://fastly.jsdelivr.net/gh/clash-verge-rev/clash-verge-rev.github.io@main/docs/assets/icons/ambulance.svg
+  include-all: true
+  interval: 300
+  lazy: true
+  max-failed-times: 3
+  name: 故障转移
+  timeout: 3000
+  type: fallback
+  url: https://www.google.com/generate_204
+- hidden: false
+  icon: https://fastly.jsdelivr.net/gh/clash-verge-rev/clash-verge-rev.github.io@main/docs/assets/icons/merry_go.svg
+  include-all: true
+  interval: 300
+  lazy: true
+  max-failed-times: 3
+  name: 负载均衡(散列)
+  strategy: consistent-hashing
+  timeout: 3000
+  type: load-balance
+  url: https://www.google.com/generate_204
+- hidden: false
+  icon: https://fastly.jsdelivr.net/gh/clash-verge-rev/clash-verge-rev.github.io@main/docs/assets/icons/balance.svg
+  include-all: true
+  interval: 300
+  lazy: true
+  max-failed-times: 3
+  name: 负载均衡(轮询)
+  strategy: round-robin
+  timeout: 3000
+  type: load-balance
+  url: https://www.google.com/generate_204
+- hidden: false
+  icon: https://fastly.jsdelivr.net/gh/clash-verge-rev/clash-verge-rev.github.io@main/docs/assets/icons/fish.svg
+  interval: 300
+  lazy: true
+  max-failed-times: 3
+  name: 漏网之鱼
+  proxies:
+  - 节点选择
+  timeout: 3000
+  type: select
+  url: https://www.google.com/generate_204
+redir-port: 7892
+routing-mark: 7894
+rule-providers:
+  applications:
+    behavior: classical
+    format: yaml
+    interval: 86400
+    path: ./rulesets/loyalsoldier/applications.yaml
+    type: http
+    url: https://fastly.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/applications.txt
+  cncidr:
+    behavior: ipcidr
+    format: yaml
+    interval: 86400
+    path: ./rulesets/loyalsoldier/cncidr.yaml
+    type: http
+    url: https://fastly.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/cncidr.txt
+  direct:
+    behavior: domain
+    format: yaml
+    interval: 86400
+    path: ./rulesets/loyalsoldier/direct.yaml
+    type: http
+    url: https://fastly.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/direct.txt
+  lancidr:
+    behavior: ipcidr
+    format: yaml
+    interval: 86400
+    path: ./rulesets/loyalsoldier/lancidr.yaml
+    type: http
+    url: https://fastly.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/lancidr.txt
+  private:
+    behavior: domain
+    format: yaml
+    interval: 86400
+    path: ./rulesets/loyalsoldier/private.yaml
+    type: http
+    url: https://fastly.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/private.txt
+rules:
+- DOMAIN-SUFFIX,plusaigpt.com,全局直连
+- DOMAIN-SUFFIX,plusai.me,全局直连
+- RULE-SET,applications,全局直连
+- RULE-SET,private,全局直连
+- RULE-SET,direct,全局直连
+- RULE-SET,lancidr,全局直连,no-resolve
+- RULE-SET,cncidr,全局直连,no-resolve
+- GEOIP,LAN,全局直连,no-resolve
+- GEOIP,CN,全局直连,no-resolve
+- MATCH,漏网之鱼
+secret: null
+sniffer:
+  enable: true
+  parse-pure-ip: true
+  skip-domain:
+  - Mijia Cloud
+  sniff:
+    http:
+      ports:
+      - 80
+      - 8080-8880
+    quic:
+      ports:
+      - 443
+      - 8443
+    tls:
+      ports:
+      - 443
+      - 8443
+tproxy-port: 7893
+tun:
+  enable: false
