@@ -1,6 +1,6 @@
 <h2>点击加入 Telegram 电报交流群：</h2>
 <blockquote>
-<p style="text-align: center;"><a href="https://t.me/skka3134C">https://t.me/skka3134C</a></p>
+<p style="text-align: center;"><a href="点击加入 Telegram 电报交流群">https://t.me/skka3134C</a></p>
 </blockquote> 
 <h2>部分节点展示：</h2>
 
