@@ -850,15 +850,6 @@ proxies:
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  delay: 923
-  name: DE1
-  password: 70747514-fb14-4f31-8390-e1f0453eff6d
-  port: 20024
-  server: 14.215.169.69
-  skip-cert-verify: true
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
   delay: 285
   name: SG1
   password: 70747514-fb14-4f31-8390-e1f0453eff6d
@@ -1095,7 +1086,7 @@ proxies:
     path: /Telegram🇨🇳+@WangCai2+/?ed=2048
 - client-fingerprint: chrome
   delay: 1502
-  name: DE2
+  name: DE1
   network: ws
   port: 2083
   server: 66.81.247.19
@@ -1124,21 +1115,6 @@ proxies:
     headers:
       Host: a.ssll.gay
     path: /?ed=2048
-- delay: 870
-  name: US40
-  network: ws
-  port: 2095
-  server: 188.114.96.3
-  servername: WORker-LUCKY-SOUND-244a.VOdabaJ775.worKeRS.deV
-  skip-cert-verify: true
-  tls: false
-  type: vless
-  udp: true
-  uuid: 89b3cbba-e6ac-485a-9481-976a0415eab9
-  ws-opts:
-    headers:
-      Host: WORker-LUCKY-SOUND-244a.VOdabaJ775.worKeRS.deV
-    path: /3d4gHs5YyJDolcB0?ed=2560
 - delay: 1371
   name: GB2
   network: ws
@@ -1435,25 +1411,10 @@ proxies:
     path: /?ed=2560
 - alterId: 0
   cipher: auto
-  name: US41
+  name: US40
   network: ws
   port: 2095
   server: 104.19.45.220
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 7a737f41-b792-4260-94ff-3d864da67b80
-  ws-opts:
-    headers:
-      Host: onea.flha.ru
-    path: /
-- alterId: 0
-  cipher: auto
-  name: US42
-  network: ws
-  port: 2095
-  server: 104.19.45.34
   skip-cert-verify: true
   tls: false
   type: vmess
@@ -1480,7 +1441,7 @@ proxies:
     path: /?ed=2048&Telegram🇨🇳 @WangCai_8
 - alterId: 64
   cipher: auto
-  name: US43
+  name: US41
   port: 35601
   server: 120.232.153.40
   skip-cert-verify: true
@@ -1490,7 +1451,7 @@ proxies:
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - alterId: 0
   cipher: auto
-  name: US44
+  name: US42
   network: ws
   port: 2095
   server: 104.19.45.204
@@ -1505,7 +1466,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: US45
+  name: US43
   network: ws
   port: 2095
   server: 104.19.45.196
@@ -1685,7 +1646,7 @@ proxies:
       Host: TG.CMLiussss.giize.com
     path: /?proxyip=proxyip.kr.fxxk.dedyn.io
 - cipher: aes-256-cfb
-  name: US46
+  name: US44
   password: amazonskr05
   port: 443
   server: 34.222.136.21
@@ -1707,7 +1668,7 @@ proxies:
     headers:
       Host: toujiediansigema.666888.lol
     path: /TG@mianfeicf
-- name: US47
+- name: US45
   network: ws
   password: FLorg
   port: 36342
@@ -1720,7 +1681,7 @@ proxies:
     headers:
       Host: trojan.tcorg.filegear-sg.me
     path: /?ed=2048
-- name: US48
+- name: US46
   network: ws
   password: FLorg
   port: 15110
@@ -1733,7 +1694,7 @@ proxies:
     headers:
       Host: trojan.tcorg.filegear-sg.me
     path: /?ed=2048
-- name: US49
+- name: US47
   network: ws
   password: FLorg
   port: 39562
@@ -1747,7 +1708,7 @@ proxies:
       Host: trojan.tcorg.filegear-sg.me
     path: /?ed=2048
 - client-fingerprint: random
-  name: US50
+  name: US48
   network: ws
   port: 2087
   server: 172.67.74.9
@@ -1762,7 +1723,7 @@ proxies:
       Host: toujiediansigema.666888.lol
     path: /TG@mianfeicf
 - cipher: rc4-md5
-  name: US51
+  name: US49
   password: 14fFPrbezE3HDZzsMOr6
   port: 8080
   server: 98.98.79.197
@@ -1770,7 +1731,7 @@ proxies:
   type: ss
   udp: true
 - cipher: aes-256-cfb
-  name: US52
+  name: US50
   password: amazonskr05
   port: 443
   server: 35.93.49.236
@@ -1844,14 +1805,6 @@ proxies:
   type: ss
   udp: true
 - cipher: aes-256-cfb
-  name: US53
-  password: amazonskr05
-  port: 443
-  server: 35.166.208.40
-  skip-cert-verify: true
-  type: ss
-  udp: true
-- cipher: aes-256-cfb
   name: KR27
   password: amazonskr05
   port: 443
@@ -1860,7 +1813,7 @@ proxies:
   type: ss
   udp: true
 - cipher: aes-256-cfb
-  name: US54
+  name: US51
   password: amazonskr05
   port: 443
   server: 34.221.180.94
@@ -1868,7 +1821,7 @@ proxies:
   type: ss
   udp: true
 - cipher: aes-256-cfb
-  name: US55
+  name: US52
   password: amazonskr05
   port: 443
   server: 52.32.13.25
@@ -1918,7 +1871,7 @@ proxies:
   udp: true
 - alterId: 0
   cipher: auto
-  name: US56
+  name: US53
   network: ws
   port: 2095
   server: 104.19.45.172
@@ -1933,25 +1886,10 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: US57
+  name: US54
   network: ws
   port: 2095
   server: 104.19.45.129
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 7a737f41-b792-4260-94ff-3d864da67b80
-  ws-opts:
-    headers:
-      Host: onea.flha.ru
-    path: /
-- alterId: 0
-  cipher: auto
-  name: US58
-  network: ws
-  port: 2095
-  server: 104.19.45.13
   skip-cert-verify: true
   tls: false
   type: vmess
@@ -2006,15 +1944,6 @@ proxies:
     headers:
       Host: a.ssll.gay
     path: /Telegram🇨🇳+@WangCai2+/?ed=2048
-- country: 🇨🇳 CN
-  delay: 2054
-  name: HK10
-  password: lNOcIAxy
-  port: 36442
-  server: 36.151.192.239
-  skip-cert-verify: true
-  type: trojan
-  udp: true
 - cipher: chacha20-ietf-poly1305
   country: 🇨🇳CN
   delay: 2441
@@ -2087,7 +2016,7 @@ proxies:
     path: /?ed=2560
 - alterId: 64
   cipher: auto
-  name: HK11
+  name: HK10
   port: 42055
   server: 120.232.153.37
   skip-cert-verify: true
@@ -2112,7 +2041,7 @@ proxies:
     path: /?ed=2048
 - alterId: 0
   cipher: auto
-  name: US59
+  name: US55
   network: ws
   port: 2095
   server: 104.19.45.150
@@ -2127,7 +2056,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: US60
+  name: US56
   network: ws
   port: 2095
   server: 104.19.45.205
@@ -2142,7 +2071,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: US61
+  name: US57
   network: ws
   port: 2095
   server: 104.19.45.176
@@ -2157,7 +2086,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: US62
+  name: US58
   network: ws
   port: 2095
   server: 104.19.45.14
@@ -2172,7 +2101,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: US63
+  name: US59
   network: ws
   port: 2095
   server: 104.19.45.178
@@ -2185,24 +2114,9 @@ proxies:
     headers:
       Host: onea.flha.ru
     path: /
-- alterId: 0
-  cipher: auto
-  name: US64
-  network: ws
-  port: 2095
-  server: 104.19.45.191
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 7a737f41-b792-4260-94ff-3d864da67b80
-  ws-opts:
-    headers:
-      Host: onea.flha.ru
-    path: /
 - client-fingerprint: ios
   flow: xtls-rprx-vision
-  name: US65
+  name: US60
   network: tcp
   port: 60001
   reality-opts:
@@ -2217,7 +2131,7 @@ proxies:
   uuid: 96dbdda4-5efc-4f0e-bb6f-2d122fd4695f
 - client-fingerprint: safari
   flow: xtls-rprx-vision
-  name: US66
+  name: US61
   network: tcp
   port: 60001
   reality-opts:
@@ -2232,7 +2146,7 @@ proxies:
   uuid: 96dbdda4-5efc-4f0e-bb6f-2d122fd4695f
 - client-fingerprint: firefox
   flow: xtls-rprx-vision
-  name: US67
+  name: US62
   network: tcp
   port: 60001
   reality-opts:
@@ -2247,7 +2161,7 @@ proxies:
   uuid: 96dbdda4-5efc-4f0e-bb6f-2d122fd4695f
 - client-fingerprint: firefox
   flow: xtls-rprx-vision
-  name: US68
+  name: US63
   network: tcp
   port: 60001
   reality-opts:
@@ -2322,7 +2236,7 @@ proxies:
   uuid: 96dbdda4-5efc-4f0e-bb6f-2d122fd4695f
 - client-fingerprint: safari
   flow: xtls-rprx-vision
-  name: HK12
+  name: HK11
   network: tcp
   port: 60001
   reality-opts:
@@ -2337,7 +2251,7 @@ proxies:
   uuid: 96dbdda4-5efc-4f0e-bb6f-2d122fd4695f
 - client-fingerprint: edge
   flow: xtls-rprx-vision
-  name: HK13
+  name: HK12
   network: tcp
   port: 60001
   reality-opts:
@@ -2352,7 +2266,7 @@ proxies:
   uuid: 96dbdda4-5efc-4f0e-bb6f-2d122fd4695f
 - client-fingerprint: firefox
   flow: xtls-rprx-vision
-  name: HK14
+  name: HK13
   network: tcp
   port: 60001
   reality-opts:
@@ -2367,7 +2281,7 @@ proxies:
   uuid: 96dbdda4-5efc-4f0e-bb6f-2d122fd4695f
 - client-fingerprint: qq
   flow: xtls-rprx-vision
-  name: HK15
+  name: HK14
   network: tcp
   port: 60001
   reality-opts:
@@ -2427,7 +2341,7 @@ proxies:
   uuid: 96dbdda4-5efc-4f0e-bb6f-2d122fd4695f
 - alterId: 0
   cipher: auto
-  name: US69
+  name: US64
   network: ws
   port: 2095
   server: 104.19.45.82
@@ -2441,7 +2355,7 @@ proxies:
       Host: onea.flha.ru
     path: /
 - client-fingerprint: random
-  name: HK16
+  name: HK15
   network: ws
   port: 443
   server: 219.76.13.177
@@ -2457,52 +2371,7 @@ proxies:
     path: /TG@ZDYZ2?ed=2560
 - alterId: 0
   cipher: auto
-  name: US70
-  network: ws
-  port: 2095
-  server: 104.19.45.135
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 7a737f41-b792-4260-94ff-3d864da67b80
-  ws-opts:
-    headers:
-      Host: onea.flha.ru
-    path: /
-- alterId: 0
-  cipher: auto
-  name: US71
-  network: ws
-  port: 2095
-  server: 104.19.45.117
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 7a737f41-b792-4260-94ff-3d864da67b80
-  ws-opts:
-    headers:
-      Host: onea.flha.ru
-    path: /
-- alterId: 0
-  cipher: auto
-  name: US72
-  network: ws
-  port: 2095
-  server: 104.19.45.36
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 7a737f41-b792-4260-94ff-3d864da67b80
-  ws-opts:
-    headers:
-      Host: onea.flha.ru
-    path: /
-- alterId: 0
-  cipher: auto
-  name: US73
+  name: US65
   network: ws
   port: 2095
   server: 104.19.45.8
@@ -2516,7 +2385,7 @@ proxies:
       Host: onea.flha.ru
     path: /
 - client-fingerprint: random
-  name: HK17
+  name: HK16
   network: ws
   port: 443
   server: Join.my.Telegram.channel.CMLiussss.to.unlock.more.premium.nodes.cf.090227.xyz
@@ -2531,7 +2400,7 @@ proxies:
       Host: subhiddify.mmdv2.host
     path: /?ed=2560
 - client-fingerprint: random
-  name: US74
+  name: US66
   network: ws
   port: 443
   server: qa.visamiddleeast.com
@@ -2545,7 +2414,7 @@ proxies:
     headers:
       Host: subhiddify.mmdv2.host
     path: /?ed=2560
-- name: HK18
+- name: HK17
   network: ws
   password: Trevely
   port: 443
@@ -2558,7 +2427,7 @@ proxies:
     headers:
       Host: trojan.trevely.us.kg
     path: /?ed=2560
-- name: HK19
+- name: HK18
   network: ws
   password: Trevely
   port: 12345
@@ -2571,7 +2440,7 @@ proxies:
     headers:
       Host: trojan.trevely.us.kg
     path: /?ed=2560
-- name: HK20
+- name: HK19
   network: ws
   password: Trevely
   port: 12185
@@ -2584,7 +2453,7 @@ proxies:
     headers:
       Host: trojan.trevely.us.kg
     path: /?ed=2560
-- name: HK21
+- name: HK20
   network: ws
   password: Trevely
   port: 119
@@ -2597,7 +2466,7 @@ proxies:
     headers:
       Host: trojan.trevely.us.kg
     path: /?ed=2560
-- name: HK22
+- name: HK21
   network: ws
   password: Trevely
   port: 9000
@@ -2610,7 +2479,7 @@ proxies:
     headers:
       Host: trojan.trevely.us.kg
     path: /?ed=2560
-- name: HK23
+- name: HK22
   network: ws
   password: Trevely
   port: 587
@@ -2623,7 +2492,7 @@ proxies:
     headers:
       Host: trojan.trevely.us.kg
     path: /?ed=2560
-- name: HK24
+- name: HK23
   network: ws
   password: Trevely
   port: 10002
@@ -2636,7 +2505,7 @@ proxies:
     headers:
       Host: trojan.trevely.us.kg
     path: /?ed=2560
-- name: HK25
+- name: HK24
   network: ws
   password: Trevely
   port: 30037
@@ -2649,7 +2518,7 @@ proxies:
     headers:
       Host: trojan.trevely.us.kg
     path: /?ed=2560
-- name: HK26
+- name: HK25
   network: ws
   password: Trevely
   port: 12457
@@ -2662,7 +2531,7 @@ proxies:
     headers:
       Host: trojan.trevely.us.kg
     path: /?ed=2560
-- name: HK27
+- name: HK26
   network: ws
   password: Trevely
   port: 587
@@ -2675,7 +2544,7 @@ proxies:
     headers:
       Host: trojan.trevely.us.kg
     path: /?ed=2560
-- name: HK28
+- name: HK27
   network: ws
   password: Trevely
   port: 587
@@ -2688,7 +2557,7 @@ proxies:
     headers:
       Host: trojan.trevely.us.kg
     path: /?ed=2560
-- name: HK29
+- name: HK28
   network: ws
   password: Trevely
   port: 19527
@@ -2727,7 +2596,7 @@ proxies:
     headers:
       Host: trojan.trevely.us.kg
     path: /?ed=2560
-- name: HK30
+- name: HK29
   network: ws
   password: Trevely
   port: 10116
@@ -2740,7 +2609,7 @@ proxies:
     headers:
       Host: trojan.trevely.us.kg
     path: /?ed=2560
-- name: HK31
+- name: HK30
   network: ws
   password: Trevely
   port: 38280
@@ -2753,7 +2622,7 @@ proxies:
     headers:
       Host: trojan.trevely.us.kg
     path: /?ed=2560
-- name: HK32
+- name: HK31
   network: ws
   password: Trevely
   port: 587
@@ -2857,14 +2726,6 @@ proxies:
     headers:
       Host: trojan.trevely.us.kg
     path: /?ed=2560
-- cipher: aes-256-cfb
-  name: SG7
-  password: amazonskr05
-  port: 443
-  server: 47.129.53.7
-  skip-cert-verify: true
-  type: ss
-  udp: true
 - name: RU1
   password: 38571ca6-6692-4559-b901-0bc5826b7661
   port: 60194
@@ -2885,7 +2746,7 @@ proxies:
   uuid: 6ea392c2-0636-3d4f-a6a2-f38a76e216d3
 - alterId: 0
   cipher: auto
-  name: US75
+  name: US67
   network: ws
   port: 2086
   server: www.visa.com
@@ -2899,7 +2760,7 @@ proxies:
       Host: ip1.1789034.xyz
     path: /github.com/Alvin9999
 - cipher: chacha20-ietf-poly1305
-  name: HK33
+  name: HK32
   password: 70747514-fb14-4f31-8390-e1f0453eff6d
   port: 20001
   server: hk1.mhw7e2.online
@@ -2908,7 +2769,7 @@ proxies:
   udp: true
 - alterId: 0
   cipher: auto
-  name: US76
+  name: US68
   network: ws
   port: 2086
   server: 172.67.71.187
@@ -2923,7 +2784,7 @@ proxies:
     path: /github.com/Alvin9999
 - alterId: 0
   cipher: auto
-  name: US77
+  name: US69
   network: ws
   port: 2086
   server: 104.19.47.88
@@ -2938,7 +2799,7 @@ proxies:
     path: /github.com/Alvin9999
 - alterId: 0
   cipher: auto
-  name: US78
+  name: US70
   network: ws
   port: 2086
   server: 23.227.38.5
@@ -2953,22 +2814,7 @@ proxies:
     path: /github.com/Alvin9999
 - alterId: 0
   cipher: auto
-  name: US79
-  network: ws
-  port: 2086
-  server: 104.19.46.103
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
-  ws-opts:
-    headers:
-      Host: ip2.1457230.xyz
-    path: /github.com/Alvin9999
-- alterId: 0
-  cipher: auto
-  name: US80
+  name: US71
   network: ws
   port: 2095
   server: 104.19.45.70
@@ -2983,7 +2829,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: US81
+  name: US72
   network: ws
   port: 2095
   server: 104.19.45.85
@@ -2998,22 +2844,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: US82
-  network: ws
-  port: 2095
-  server: 104.19.45.104
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 7a737f41-b792-4260-94ff-3d864da67b80
-  ws-opts:
-    headers:
-      Host: onea.flha.ru
-    path: /
-- alterId: 0
-  cipher: auto
-  name: US83
+  name: US73
   network: ws
   port: 2095
   server: 104.19.45.212
@@ -3028,7 +2859,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: US84
+  name: US74
   network: ws
   port: 2095
   server: 104.19.45.171
@@ -3067,7 +2898,7 @@ proxies:
   udp: true
 - cipher: chacha20-ietf-poly1305
   delay: 434
-  name: SG8
+  name: SG7
   password: 70747514-fb14-4f31-8390-e1f0453eff6d
   port: 20009
   server: tw4.mhw7e2.online
@@ -3076,7 +2907,7 @@ proxies:
   udp: true
 - cipher: chacha20-ietf-poly1305
   delay: 872
-  name: SG9
+  name: SG8
   password: 70747514-fb14-4f31-8390-e1f0453eff6d
   port: 20009
   server: jp1.mhw7e2.online
@@ -3085,7 +2916,7 @@ proxies:
   udp: true
 - cipher: chacha20-ietf-poly1305
   delay: 732
-  name: SG10
+  name: SG9
   password: 70747514-fb14-4f31-8390-e1f0453eff6d
   port: 20009
   server: tw5.mhw7e2.online
@@ -3094,7 +2925,7 @@ proxies:
   udp: true
 - cipher: chacha20-ietf-poly1305
   delay: 520
-  name: SG11
+  name: SG10
   password: 70747514-fb14-4f31-8390-e1f0453eff6d
   port: 20009
   server: sg5.mhw7e2.online
@@ -3103,7 +2934,7 @@ proxies:
   udp: true
 - cipher: chacha20-ietf-poly1305
   delay: 584
-  name: SG12
+  name: SG11
   password: 70747514-fb14-4f31-8390-e1f0453eff6d
   port: 20009
   server: tw2.mhw7e2.online
@@ -3112,7 +2943,7 @@ proxies:
   udp: true
 - cipher: chacha20-ietf-poly1305
   delay: 835
-  name: SG13
+  name: SG12
   password: 70747514-fb14-4f31-8390-e1f0453eff6d
   port: 20009
   server: sg2.mhw7e2.online
@@ -3135,7 +2966,7 @@ proxies:
       Host: a.ssll.gay
     path: /Telegram🇨🇳+@WangCai2+/?ed=2048
 - delay: 1576
-  name: US85
+  name: US75
   network: ws
   port: 443
   server: 8.222.101.17
@@ -3151,7 +2982,7 @@ proxies:
     path: /Telegram🇨🇳+@WangCai2+/?ed=2048
 - cipher: chacha20-ietf-poly1305
   delay: 2192
-  name: US86
+  name: US76
   password: 70747514-fb14-4f31-8390-e1f0453eff6d
   port: 20018
   server: tw4.mhw7e2.online
@@ -3160,7 +2991,7 @@ proxies:
   udp: true
 - cipher: chacha20-ietf-poly1305
   delay: 1264
-  name: US87
+  name: US77
   password: 70747514-fb14-4f31-8390-e1f0453eff6d
   port: 20018
   server: 14.215.169.69
@@ -3184,7 +3015,7 @@ proxies:
       Host: a.ssll.gay
     path: /Telegram🇨🇳 @WangCai_8 /?ed=2048
 - delay: 951
-  name: US88
+  name: US78
   network: ws
   password: 95b
   port: 443
@@ -3208,7 +3039,7 @@ proxies:
   udp: true
 - alterId: 0
   cipher: auto
-  name: US89
+  name: US79
   network: ws
   port: 2086
   server: 104.18.57.111
@@ -3223,97 +3054,7 @@ proxies:
     path: /github.com/Alvin9999
 - alterId: 0
   cipher: auto
-  name: US90
-  network: ws
-  port: 2086
-  server: 104.19.123.11
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
-  ws-opts:
-    headers:
-      Host: ip2.1457230.xyz
-    path: /github.com/Alvin9999
-- alterId: 0
-  cipher: auto
-  name: US91
-  network: ws
-  port: 2086
-  server: 104.19.21.230
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
-  ws-opts:
-    headers:
-      Host: ip11.freegradely.xyz
-    path: /github.com/Alvin9999
-- alterId: 0
-  cipher: auto
-  name: US92
-  network: ws
-  port: 2086
-  server: 104.19.32.216
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
-  ws-opts:
-    headers:
-      Host: ip14.freegradely.xyz
-    path: /github.com/Alvin9999
-- alterId: 0
-  cipher: auto
-  name: US93
-  network: ws
-  port: 2086
-  server: 104.19.45.15
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
-  ws-opts:
-    headers:
-      Host: ip13.freegradely.xyz
-    path: /github.com/Alvin9999
-- alterId: 0
-  cipher: auto
-  name: US94
-  network: ws
-  port: 2086
-  server: 104.19.45.19
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
-  ws-opts:
-    headers:
-      Host: ip13.freegradely.xyz
-    path: /github.com/Alvin9999
-- alterId: 0
-  cipher: auto
-  name: US95
-  network: ws
-  port: 2086
-  server: 104.19.46.27
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
-  ws-opts:
-    headers:
-      Host: ip14.freegradely.xyz
-    path: /github.com/Alvin9999
-- alterId: 0
-  cipher: auto
-  name: US96
+  name: US80
   network: ws
   port: 2086
   server: 104.19.46.42
@@ -3328,7 +3069,7 @@ proxies:
     path: /github.com/Alvin9999
 - alterId: 0
   cipher: auto
-  name: US97
+  name: US81
   network: ws
   port: 2086
   server: 104.19.46.59
@@ -3343,22 +3084,7 @@ proxies:
     path: /github.com/Alvin9999
 - alterId: 0
   cipher: auto
-  name: US98
-  network: ws
-  port: 2086
-  server: 104.20.25.146
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
-  ws-opts:
-    headers:
-      Host: ip14.freegradely.xyz
-    path: /github.com/Alvin9999
-- alterId: 0
-  cipher: auto
-  name: US99
+  name: US82
   network: ws
   port: 2086
   server: 162.159.140.66
@@ -3373,7 +3099,7 @@ proxies:
     path: /github.com/Alvin9999
 - alterId: 0
   cipher: auto
-  name: US100
+  name: US83
   network: ws
   port: 2086
   server: 162.159.140.93
@@ -3388,52 +3114,7 @@ proxies:
     path: /github.com/Alvin9999
 - alterId: 0
   cipher: auto
-  name: US101
-  network: ws
-  port: 2086
-  server: 172.64.167.10
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
-  ws-opts:
-    headers:
-      Host: ip2.1457230.xyz
-    path: /github.com/Alvin9999
-- alterId: 0
-  cipher: auto
-  name: US102
-  network: ws
-  port: 2086
-  server: 172.64.167.35
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
-  ws-opts:
-    headers:
-      Host: ip2.1457230.xyz
-    path: /github.com/Alvin9999
-- alterId: 0
-  cipher: auto
-  name: US103
-  network: ws
-  port: 2086
-  server: 172.64.167.8
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
-  ws-opts:
-    headers:
-      Host: ip2.1457230.xyz
-    path: /github.com/Alvin9999
-- alterId: 0
-  cipher: auto
-  name: US104
+  name: US84
   network: ws
   port: 2086
   server: ip.sb
@@ -3446,68 +3127,8 @@ proxies:
     headers:
       Host: ip1.1789034.xyz
     path: /github.com/Alvin9999
-- alterId: 0
-  cipher: auto
-  name: US105
-  network: ws
-  port: 2086
-  server: malaysia.com
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
-  ws-opts:
-    headers:
-      Host: ip1.1789034.xyz
-    path: /github.com/Alvin9999
-- alterId: 0
-  cipher: auto
-  name: US106
-  network: ws
-  port: 2086
-  server: russia.com
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
-  ws-opts:
-    headers:
-      Host: ip1.1789034.xyz
-    path: /github.com/Alvin9999
-- alterId: 0
-  cipher: auto
-  name: US107
-  network: ws
-  port: 2086
-  server: 172.64.194.76
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
-  ws-opts:
-    headers:
-      Host: ip14.freegradely.xyz
-    path: /github.com/Alvin9999
-- alterId: 0
-  cipher: auto
-  name: US108
-  network: ws
-  port: 2086
-  server: 104.19.21.71
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
-  ws-opts:
-    headers:
-      Host: ip11.freegradely.xyz
-    path: /github.com/Alvin9999
 - cipher: chacha20-ietf
-  name: HK34
+  name: HK33
   obfs: plain
   obfs-param: 93314254902.microsoft.com
   password: bxsnucrgk6hfish
@@ -3519,7 +3140,7 @@ proxies:
   type: ssr
   udp: true
 - cipher: chacha20-ietf
-  name: HK35
+  name: HK34
   obfs: plain
   obfs-param: 93314254902.microsoft.com
   password: bxsnucrgk6hfish
@@ -3531,7 +3152,7 @@ proxies:
   type: ssr
   udp: true
 - cipher: chacha20-ietf
-  name: HK36
+  name: HK35
   obfs: plain
   obfs-param: 93314254902.microsoft.com
   password: bxsnucrgk6hfish
@@ -3543,7 +3164,7 @@ proxies:
   type: ssr
   udp: true
 - cipher: chacha20-ietf
-  name: HK37
+  name: HK36
   obfs: plain
   obfs-param: 93314254902.microsoft.com
   password: bxsnucrgk6hfish
@@ -3579,7 +3200,7 @@ proxies:
   type: ssr
   udp: true
 - cipher: chacha20-ietf
-  name: SG14
+  name: SG13
   obfs: plain
   obfs-param: 93314254902.microsoft.com
   password: bxsnucrgk6hfish
@@ -3591,7 +3212,7 @@ proxies:
   type: ssr
   udp: true
 - cipher: chacha20-ietf
-  name: SG15
+  name: SG14
   obfs: plain
   obfs-param: 93314254902.microsoft.com
   password: bxsnucrgk6hfish
@@ -3603,7 +3224,7 @@ proxies:
   type: ssr
   udp: true
 - cipher: chacha20-ietf
-  name: US109
+  name: US85
   obfs: plain
   obfs-param: 93314254902.microsoft.com
   password: bxsnucrgk6hfish
@@ -3615,7 +3236,7 @@ proxies:
   type: ssr
   udp: true
 - cipher: chacha20-ietf
-  name: US110
+  name: US86
   obfs: plain
   obfs-param: 93314254902.microsoft.com
   password: bxsnucrgk6hfish
@@ -3627,7 +3248,7 @@ proxies:
   type: ssr
   udp: true
 - cipher: chacha20-ietf
-  name: US111
+  name: US87
   obfs: plain
   obfs-param: 93314254902.microsoft.com
   password: bxsnucrgk6hfish
@@ -3639,7 +3260,7 @@ proxies:
   type: ssr
   udp: true
 - cipher: chacha20-ietf
-  name: US112
+  name: US88
   obfs: plain
   obfs-param: 93314254902.microsoft.com
   password: bxsnucrgk6hfish
@@ -3676,37 +3297,7 @@ proxies:
   udp: true
 - alterId: 0
   cipher: auto
-  name: US113
-  network: ws
-  port: 2086
-  server: 104.19.38.12
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
-  ws-opts:
-    headers:
-      Host: ip2.1457230.xyz
-    path: /github.com/Alvin9999
-- alterId: 0
-  cipher: auto
-  name: US114
-  network: ws
-  port: 2086
-  server: 104.22.37.243
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
-  ws-opts:
-    headers:
-      Host: ip1.1789034.xyz
-    path: /github.com/Alvin9999
-- alterId: 0
-  cipher: auto
-  name: US115
+  name: US89
   network: ws
   port: 2095
   server: 104.19.45.7
@@ -3721,37 +3312,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: US116
-  network: ws
-  port: 2086
-  server: 104.19.21.63
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
-  ws-opts:
-    headers:
-      Host: ip11.freegradely.xyz
-    path: /github.com/Alvin9999
-- alterId: 0
-  cipher: auto
-  name: US117
-  network: ws
-  port: 2086
-  server: 104.19.32.88
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
-  ws-opts:
-    headers:
-      Host: ip5-4.freegradely.xyz
-    path: /github.com/Alvin9999
-- alterId: 0
-  cipher: auto
-  name: US118
+  name: US90
   network: ws
   port: 2095
   server: 104.19.45.128
@@ -3766,22 +3327,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: US119
-  network: ws
-  port: 2086
-  server: 104.20.17.186
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
-  ws-opts:
-    headers:
-      Host: ip11.freegradely.xyz
-    path: /github.com/Alvin9999
-- alterId: 0
-  cipher: auto
-  name: US120
+  name: US91
   network: ws
   port: 2095
   server: 104.19.45.83
@@ -3796,7 +3342,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: US121
+  name: US92
   network: ws
   port: 2095
   server: 104.19.45.226
@@ -3811,7 +3357,7 @@ proxies:
     path: /
 - client-fingerprint: edge
   flow: xtls-rprx-vision
-  name: SG16
+  name: SG15
   network: tcp
   port: 24021
   reality-opts:
@@ -3841,7 +3387,7 @@ proxies:
   uuid: 83512b4a-64a9-4058-80df-53d95e2fbaa0
 - client-fingerprint: ios
   flow: xtls-rprx-vision
-  name: US122
+  name: US93
   network: tcp
   port: 24021
   reality-opts:
@@ -3856,22 +3402,7 @@ proxies:
   uuid: 83512b4a-64a9-4058-80df-53d95e2fbaa0
 - alterId: 0
   cipher: auto
-  name: DE3
-  network: ws
-  port: 2095
-  server: ydtxwbcvb_cdn.hfhfb.homes
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: b001ee28-2dbf-4076-9227-a3faff40a217
-  ws-opts:
-    headers:
-      Host: decdn.fask511.cfd
-    path: /?ed=1024
-- alterId: 0
-  cipher: auto
-  name: US123
+  name: US94
   network: ws
   port: 2095
   server: afgsdvxcv_cdn.hfhfb.homes
@@ -3901,21 +3432,6 @@ proxies:
     path: /?ed=1024
 - alterId: 0
   cipher: auto
-  name: AE1
-  network: ws
-  port: 2095
-  server: rvxcstxwbcvb_cdn.hfhfb.homes
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: b001ee28-2dbf-4076-9227-a3faff40a217
-  ws-opts:
-    headers:
-      Host: kialq.hfhfb.homes
-    path: /?ed=1024
-- alterId: 0
-  cipher: auto
   name: KR39
   network: ws
   port: 2095
@@ -3931,7 +3447,7 @@ proxies:
     path: /?ed=1024
 - alterId: 0
   cipher: auto
-  name: SG17
+  name: SG16
   network: ws
   port: 2095
   server: apivgbndf_cdn.hfhfb.homes
@@ -3959,17 +3475,9 @@ proxies:
     headers:
       Host: itcdn.fask511.cfd
     path: /?ed=1024
-- name: SG18
-  password: cf8c51d3-e692-46a6-b351-4c5ef0b5efc3
-  port: 13033
-  server: naiu-sg.05vr9nyqg5.download
-  skip-cert-verify: true
-  sni: naiu-sg.05vr9nyqg5.download
-  type: trojan
-  udp: true
 - cipher: chacha20-ietf-poly1305
   delay: 2055
-  name: HK38
+  name: HK37
   password: 70747514-fb14-4f31-8390-e1f0453eff6d
   port: 20005
   server: hk2.mhw7e2.online
@@ -3985,40 +3493,2366 @@ proxies:
   skip-cert-verify: true
   type: ss
   udp: true
-- delay: 1480
-  name: US124
+- alterId: 0
+  cipher: auto
+  name: US95
   network: ws
-  port: 80
-  server: 45.80.110.201
-  servername: a.ssll.gay
+  port: 2086
+  server: 104.19.46.33
   skip-cert-verify: true
-  type: vless
+  tls: false
+  type: vmess
   udp: true
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+  uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
   ws-opts:
     headers:
-      Host: a.ssll.gay
-    path: /Twitterfreecodesfp=chrome
-- delay: 2143
-  name: US125
+      Host: ip13.freegradely.xyz
+    path: /github.com/Alvin9999
+- alterId: 0
+  cipher: auto
+  name: US96
   network: ws
-  port: 80
-  server: 45.80.110.175
-  servername: a.ssll.gay
+  port: 2086
+  server: 172.64.167.29
   skip-cert-verify: true
-  type: vless
+  tls: false
+  type: vmess
   udp: true
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+  uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
   ws-opts:
     headers:
-      Host: a.ssll.gay
-    path: /Twitterfreecodesfp=chrome
-- client-fingerprint: chrome
-  delay: 1799
-  name: US126
+      Host: ip2.1457230.xyz
+    path: /github.com/Alvin9999
+- alterId: 0
+  cipher: auto
+  name: US97
   network: ws
+  port: 2086
+  server: 104.19.47.122
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
+  ws-opts:
+    headers:
+      Host: ip2.1457230.xyz
+    path: /github.com/Alvin9999
+- alterId: 0
+  cipher: auto
+  name: US98
+  network: ws
+  port: 2086
+  server: 104.16.148.244
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
+  ws-opts:
+    headers:
+      Host: ip1.1789034.xyz
+    path: /github.com/Alvin9999
+- alterId: 0
+  cipher: auto
+  name: US99
+  network: ws
+  port: 2086
+  server: 104.19.47.32
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
+  ws-opts:
+    headers:
+      Host: ip14.freegradely.xyz
+    path: /github.com/Alvin9999
+- alterId: 0
+  cipher: auto
+  name: US100
+  network: ws
+  port: 2086
+  server: 104.19.47.79
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
+  ws-opts:
+    headers:
+      Host: ip14.freegradely.xyz
+    path: /github.com/Alvin9999
+- alterId: 0
+  cipher: auto
+  name: US101
+  network: ws
+  port: 2086
+  server: 104.19.42.49
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
+  ws-opts:
+    headers:
+      Host: ip14.freegradely.xyz
+    path: /github.com/Alvin9999
+- alterId: 0
+  cipher: auto
+  name: US102
+  network: ws
+  port: 2086
+  server: 172.64.99.22
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
+  ws-opts:
+    headers:
+      Host: ip11.freegradely.xyz
+    path: /github.com/Alvin9999
+- alterId: 0
+  cipher: auto
+  name: US103
+  network: ws
+  port: 2086
+  server: singapore.com
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
+  ws-opts:
+    headers:
+      Host: ip1.1789034.xyz
+    path: /github.com/Alvin9999
+- alterId: 0
+  cipher: auto
+  name: US104
+  network: ws
+  port: 2086
+  server: 104.19.47.22
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
+  ws-opts:
+    headers:
+      Host: ip1.1457230.xyz
+    path: /github.com/Alvin9999
+- alterId: 0
+  cipher: auto
+  name: US105
+  network: ws
+  port: 2086
+  server: japan.com
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
+  ws-opts:
+    headers:
+      Host: ip1.1789034.xyz
+    path: /github.com/Alvin9999
+- alterId: 0
+  cipher: auto
+  name: HK38
+  port: 10031
+  server: dcumoz.cijhgvbm.xyz
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 42006f77-5c96-3f27-b059-983c064325cd
+- name: MY1
+  password: mXsN77YJtE
+  port: 50101
+  server: 194.50.224.128
+  skip-cert-verify: true
+  type: socks5
+  udp: true
+  username: koofranker
+- name: US106
+  network: ws
+  password: c94457e9-266b-3646-b1d1-2abe5fbe5c48
+  port: 443
+  server: www.visa.com.sg
+  skip-cert-verify: true
+  sni: klusr3.zhs.futbol
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: klusr3.zhs.futbol
+    path: /zhs?ed=2048
+- alterId: 0
+  cipher: auto
+  grpc-opts:
+    grpc-service-name: zhs
+  name: HK39
+  network: grpc
+  port: 30419
+  server: hklhjk.mry.best
+  servername: hklhjk.mry.best
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  udp: true
+  uuid: c94457e9-266b-3646-b1d1-2abe5fbe5c48
+- grpc-opts:
+    grpc-service-name: zhs
+  name: JP24
+  network: grpc
+  password: c94457e9-266b-3646-b1d1-2abe5fbe5c48
+  port: 40383
+  server: jprz3r.mry.best
+  skip-cert-verify: true
+  sni: jprz3r.mry.best
+  type: trojan
+  udp: true
+- grpc-opts:
+    grpc-service-name: zhs
+  name: JP25
+  network: grpc
+  password: c94457e9-266b-3646-b1d1-2abe5fbe5c48
+  port: 39331
+  server: jpxy9o.mry.best
+  skip-cert-verify: true
+  sni: jpxy9o.mry.best
+  type: trojan
+  udp: true
+- grpc-opts:
+    grpc-service-name: zhs
+  name: RU2
+  network: grpc
+  password: c94457e9-266b-3646-b1d1-2abe5fbe5c48
+  port: 443
+  server: ruhd1h.mry.best
+  skip-cert-verify: true
+  sni: ruhd1h.mry.best
+  type: trojan
+  udp: true
+- grpc-opts:
+    grpc-service-name: zhs
+  name: DE2
+  network: grpc
+  password: c94457e9-266b-3646-b1d1-2abe5fbe5c48
+  port: 59443
+  server: ukwlb6.mry.best
+  skip-cert-verify: true
+  sni: ukwlb6.mry.best
+  type: trojan
+  udp: true
+- grpc-opts:
+    grpc-service-name: zhs
+  name: US107
+  network: grpc
+  password: c94457e9-266b-3646-b1d1-2abe5fbe5c48
+  port: 50547
+  server: ussdh7.mry.best
+  skip-cert-verify: true
+  sni: ussdh7.mry.best
+  type: trojan
+  udp: true
+- name: HK40
+  network: ws
+  password: c94457e9-266b-3646-b1d1-2abe5fbe5c48
   port: 2083
-  server: 185.148.106.44
+  server: wzhkb3.mry.best
+  skip-cert-verify: true
+  sni: wzhkb3.mry.best
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: wzhkb3.mry.best
+    path: /zhs?ed=2048
+- grpc-opts:
+    grpc-service-name: zhs
+  name: HK41
+  network: grpc
+  password: c94457e9-266b-3646-b1d1-2abe5fbe5c48
+  port: 2053
+  server: wzhkb3.mry.best
+  skip-cert-verify: true
+  sni: wzhkb3.mry.best
+  type: trojan
+  udp: true
+- grpc-opts:
+    grpc-service-name: zhs
+  name: HK42
+  network: grpc
+  password: c94457e9-266b-3646-b1d1-2abe5fbe5c48
+  port: 52389
+  server: hkah9e.mry.best
+  skip-cert-verify: true
+  sni: hkah9e.mry.best
+  type: trojan
+  udp: true
+- grpc-opts:
+    grpc-service-name: zhs
+  name: HK43
+  network: grpc
+  password: c94457e9-266b-3646-b1d1-2abe5fbe5c48
+  port: 2083
+  server: kjr1hk.mry.best
+  skip-cert-verify: true
+  sni: kjr1hk.mry.best
+  type: trojan
+  udp: true
+- grpc-opts:
+    grpc-service-name: zhs
+  name: JP26
+  network: grpc
+  password: c94457e9-266b-3646-b1d1-2abe5fbe5c48
+  port: 32331
+  server: jpxy9o.mry.best
+  skip-cert-verify: true
+  sni: jpxy9o.mry.best
+  type: trojan
+  udp: true
+- alterId: 0
+  cipher: auto
+  grpc-opts:
+    grpc-service-name: zhs
+  name: JP27
+  network: grpc
+  port: 37810
+  server: hkbnx3.mry.best
+  servername: jpssv5.mry.best
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  udp: true
+  uuid: c94457e9-266b-3646-b1d1-2abe5fbe5c48
+- grpc-opts:
+    grpc-service-name: zhs
+  name: TW11
+  network: grpc
+  password: c94457e9-266b-3646-b1d1-2abe5fbe5c48
+  port: 37808
+  server: hkbnx3.mry.best
+  skip-cert-verify: true
+  sni: n3twz3.mry.best
+  type: trojan
+  udp: true
+- grpc-opts:
+    grpc-service-name: zhs
+  name: TW12
+  network: grpc
+  password: c94457e9-266b-3646-b1d1-2abe5fbe5c48
+  port: 2096
+  server: n3twz3.mry.best
+  skip-cert-verify: true
+  sni: n3twz3.mry.best
+  type: trojan
+  udp: true
+- grpc-opts:
+    grpc-service-name: zhs
+  name: TW13
+  network: grpc
+  password: c94457e9-266b-3646-b1d1-2abe5fbe5c48
+  port: 2053
+  server: gxr1tw.mry.best
+  skip-cert-verify: true
+  sni: gxr1tw.mry.best
+  type: trojan
+  udp: true
+- alterId: 0
+  cipher: auto
+  grpc-opts:
+    grpc-service-name: zhs
+  name: US108
+  network: grpc
+  port: 52938
+  server: ussxhh.mry.best
+  servername: ussxhh.mry.best
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  udp: true
+  uuid: c94457e9-266b-3646-b1d1-2abe5fbe5c48
+- alterId: 0
+  cipher: auto
+  grpc-opts:
+    grpc-service-name: zhs
+  name: US109
+  network: grpc
+  port: 60439
+  server: ussdh7.mry.best
+  servername: ussdh7.mry.best
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  udp: true
+  uuid: c94457e9-266b-3646-b1d1-2abe5fbe5c48
+- name: TW14
+  password: c94457e9-266b-3646-b1d1-2abe5fbe5c48
+  port: 2053
+  server: n3twz3.mry.best
+  skip-cert-verify: true
+  sni: n3twz3.mry.best
+  type: trojan
+  udp: true
+- alterId: 0
+  cipher: auto
+  grpc-opts:
+    grpc-service-name: zhs
+  name: BR1
+  network: grpc
+  port: 443
+  server: cf.0sm.com
+  servername: frbl3v.mry.best
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  udp: true
+  uuid: c94457e9-266b-3646-b1d1-2abe5fbe5c48
+- grpc-opts:
+    grpc-service-name: zhs
+  name: HK44
+  network: grpc
+  password: c94457e9-266b-3646-b1d1-2abe5fbe5c48
+  port: 8443
+  server: qyz1hk.mry.best
+  skip-cert-verify: true
+  sni: qyz1hk.mry.best
+  type: trojan
+  udp: true
+- grpc-opts:
+    grpc-service-name: zhs
+  name: JP28
+  network: grpc
+  password: c94457e9-266b-3646-b1d1-2abe5fbe5c48
+  port: 37801
+  server: hkbnx3.mry.best
+  skip-cert-verify: true
+  sni: jphfy2.mry.best
+  type: trojan
+  udp: true
+- grpc-opts:
+    grpc-service-name: zhs
+  name: JP29
+  network: grpc
+  password: c94457e9-266b-3646-b1d1-2abe5fbe5c48
+  port: 2087
+  server: jphfy2.mry.best
+  skip-cert-verify: true
+  sni: jphfy2.mry.best
+  type: trojan
+  udp: true
+- grpc-opts:
+    grpc-service-name: zhs
+  name: JP30
+  network: grpc
+  password: c94457e9-266b-3646-b1d1-2abe5fbe5c48
+  port: 38390
+  server: 122.188.71.15
+  skip-cert-verify: true
+  sni: jpdhn3.mry.best
+  type: trojan
+  udp: true
+- grpc-opts:
+    grpc-service-name: zhs
+  name: JP31
+  network: grpc
+  password: c94457e9-266b-3646-b1d1-2abe5fbe5c48
+  port: 443
+  server: cf.0sm.com
+  skip-cert-verify: true
+  sni: jpdhn3.mry.best
+  type: trojan
+  udp: true
+- grpc-opts:
+    grpc-service-name: zhs
+  name: JP32
+  network: grpc
+  password: c94457e9-266b-3646-b1d1-2abe5fbe5c48
+  port: 2087
+  server: jpdhn3.mry.best
+  skip-cert-verify: true
+  sni: jpdhn3.mry.best
+  type: trojan
+  udp: true
+- alterId: 0
+  cipher: auto
+  grpc-opts:
+    grpc-service-name: zhs
+  name: JP33
+  network: grpc
+  port: 37809
+  server: hkbnx3.mry.best
+  servername: jpknh5.mry.best
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  udp: true
+  uuid: c94457e9-266b-3646-b1d1-2abe5fbe5c48
+- alterId: 0
+  cipher: auto
+  grpc-opts:
+    grpc-service-name: zhs
+  name: JP34
+  network: grpc
+  port: 32087
+  server: jpknh5.mry.best
+  servername: jpknh5.mry.best
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  udp: true
+  uuid: c94457e9-266b-3646-b1d1-2abe5fbe5c48
+- alterId: 0
+  cipher: auto
+  grpc-opts:
+    grpc-service-name: zhs
+  name: SG17
+  network: grpc
+  port: 38114
+  server: 122.188.71.15
+  servername: sgali-rd6.mry.best
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  udp: true
+  uuid: c94457e9-266b-3646-b1d1-2abe5fbe5c48
+- alterId: 0
+  cipher: auto
+  grpc-opts:
+    grpc-service-name: zhs
+  name: SG18
+  network: grpc
+  port: 37807
+  server: hkbnx3.mry.best
+  servername: sgali-rd6.mry.best
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  udp: true
+  uuid: c94457e9-266b-3646-b1d1-2abe5fbe5c48
+- grpc-opts:
+    grpc-service-name: zhs
+  name: TR1
+  network: grpc
+  password: c94457e9-266b-3646-b1d1-2abe5fbe5c48
+  port: 39107
+  server: hkbnx3.mry.best
+  skip-cert-verify: true
+  sni: trglnt.mry.best
+  type: trojan
+  udp: true
+- grpc-opts:
+    grpc-service-name: zhs
+  name: TR2
+  network: grpc
+  password: c94457e9-266b-3646-b1d1-2abe5fbe5c48
+  port: 2096
+  server: trglnt.mry.best
+  skip-cert-verify: true
+  sni: trglnt.mry.best
+  type: trojan
+  udp: true
+- alterId: 0
+  cipher: auto
+  grpc-opts:
+    grpc-service-name: zhs
+  name: TW15
+  network: grpc
+  port: 39003
+  server: hkbnx3.mry.best
+  servername: twbdis.mry.best
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  udp: true
+  uuid: c94457e9-266b-3646-b1d1-2abe5fbe5c48
+- alterId: 0
+  cipher: auto
+  grpc-opts:
+    grpc-service-name: zhs
+  name: TW16
+  network: grpc
+  port: 8443
+  server: twbdis.mry.best
+  servername: twbdis.mry.best
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  udp: true
+  uuid: c94457e9-266b-3646-b1d1-2abe5fbe5c48
+- alterId: 0
+  cipher: auto
+  grpc-opts:
+    grpc-service-name: zhs
+  name: TW17
+  network: grpc
+  port: 37802
+  server: hkbnx3.mry.best
+  servername: zht3tw.mry.best
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  udp: true
+  uuid: c94457e9-266b-3646-b1d1-2abe5fbe5c48
+- alterId: 0
+  cipher: auto
+  grpc-opts:
+    grpc-service-name: zhs
+  name: TW18
+  network: grpc
+  port: 38113
+  server: 122.188.71.15
+  servername: zht3tw.mry.best
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  udp: true
+  uuid: c94457e9-266b-3646-b1d1-2abe5fbe5c48
+- alterId: 0
+  cipher: auto
+  grpc-opts:
+    grpc-service-name: zhs
+  name: TW19
+  network: grpc
+  port: 2087
+  server: zht3tw.mry.best
+  servername: zht3tw.mry.best
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  udp: true
+  uuid: c94457e9-266b-3646-b1d1-2abe5fbe5c48
+- alterId: 0
+  cipher: auto
+  grpc-opts:
+    grpc-service-name: zhs
+  name: TW20
+  network: grpc
+  port: 39120
+  server: 120.241.47.247
+  servername: tytwm0.mry.best
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  udp: true
+  uuid: c94457e9-266b-3646-b1d1-2abe5fbe5c48
+- alterId: 0
+  cipher: auto
+  grpc-opts:
+    grpc-service-name: zhs
+  name: TW21
+  network: grpc
+  port: 38936
+  server: 122.188.71.15
+  servername: tytwm0.mry.best
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  udp: true
+  uuid: c94457e9-266b-3646-b1d1-2abe5fbe5c48
+- alterId: 0
+  cipher: auto
+  grpc-opts:
+    grpc-service-name: zhs
+  name: TW22
+  network: grpc
+  port: 2083
+  server: tytwm0.mry.best
+  servername: tytwm0.mry.best
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  udp: true
+  uuid: c94457e9-266b-3646-b1d1-2abe5fbe5c48
+- alterId: 0
+  cipher: auto
+  grpc-opts:
+    grpc-service-name: zhs
+  name: TW23
+  network: grpc
+  port: 39106
+  server: 120.241.47.247
+  servername: gxr1tw.mry.best
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  udp: true
+  uuid: c94457e9-266b-3646-b1d1-2abe5fbe5c48
+- alterId: 0
+  cipher: auto
+  grpc-opts:
+    grpc-service-name: zhs
+  name: TW24
+  network: grpc
+  port: 2086
+  server: gxr1tw.mry.best
+  servername: gxr1tw.mry.best
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  udp: true
+  uuid: c94457e9-266b-3646-b1d1-2abe5fbe5c48
+- grpc-opts:
+    grpc-service-name: zhs
+  name: US110
+  network: grpc
+  password: c94457e9-266b-3646-b1d1-2abe5fbe5c48
+  port: 443
+  server: speed.marisalnc.com
+  skip-cert-verify: true
+  sni: jzb6us.mry.best
+  type: trojan
+  udp: true
+- alterId: 0
+  cipher: auto
+  grpc-opts:
+    grpc-service-name: zhs
+  name: US111
+  network: grpc
+  port: 38394
+  server: 122.188.71.15
+  servername: oints3.mry.best
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  udp: true
+  uuid: c94457e9-266b-3646-b1d1-2abe5fbe5c48
+- alterId: 0
+  cipher: auto
+  grpc-opts:
+    grpc-service-name: zhs
+  name: US112
+  network: grpc
+  port: 2083
+  server: oints3.mry.best
+  servername: oints3.mry.best
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  udp: true
+  uuid: c94457e9-266b-3646-b1d1-2abe5fbe5c48
+- name: US113
+  network: ws
+  password: c94457e9-266b-3646-b1d1-2abe5fbe5c48
+  port: 8443
+  server: hgus4g.mry.best
+  skip-cert-verify: true
+  sni: hgus4g.mry.best
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: hgus4g.mry.best
+    path: /zhs?ed=2048
+- alterId: 0
+  cipher: auto
+  name: HK45
+  network: ws
+  port: 2087
+  server: wzhkb3.mry.best
+  servername: wzhkb3.mry.best
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  udp: true
+  uuid: c94457e9-266b-3646-b1d1-2abe5fbe5c48
+  ws-opts:
+    headers:
+      Host: wzhkb3.mry.best
+    path: /zhs?ed=2048
+- grpc-opts:
+    grpc-service-name: zhs
+  name: HK46
+  network: grpc
+  password: c94457e9-266b-3646-b1d1-2abe5fbe5c48
+  port: 39117
+  server: 120.241.47.247
+  skip-cert-verify: true
+  sni: wzhki6.mry.best
+  type: trojan
+  udp: true
+- grpc-opts:
+    grpc-service-name: zhs
+  name: HK47
+  network: grpc
+  password: c94457e9-266b-3646-b1d1-2abe5fbe5c48
+  port: 38111
+  server: 122.188.71.15
+  skip-cert-verify: true
+  sni: hkbnjl0.mry.best
+  type: trojan
+  udp: true
+- grpc-opts:
+    grpc-service-name: zhs
+  name: HK48
+  network: grpc
+  password: c94457e9-266b-3646-b1d1-2abe5fbe5c48
+  port: 32096
+  server: hkbnjl0.mry.best
+  skip-cert-verify: true
+  sni: hkbnjl0.mry.best
+  type: trojan
+  udp: true
+- grpc-opts:
+    grpc-service-name: zhs
+  name: TW25
+  network: grpc
+  password: c94457e9-266b-3646-b1d1-2abe5fbe5c48
+  port: 39112
+  server: 120.241.47.247
+  skip-cert-verify: true
+  sni: hkbnx3.mry.best
+  type: trojan
+  udp: true
+- grpc-opts:
+    grpc-service-name: zhs
+  name: TW26
+  network: grpc
+  password: c94457e9-266b-3646-b1d1-2abe5fbe5c48
+  port: 38112
+  server: 122.188.71.15
+  skip-cert-verify: true
+  sni: hkbnx3.mry.best
+  type: trojan
+  udp: true
+- grpc-opts:
+    grpc-service-name: zhs
+  name: TW27
+  network: grpc
+  password: c94457e9-266b-3646-b1d1-2abe5fbe5c48
+  port: 52053
+  server: hkbnx3.mry.best
+  skip-cert-verify: true
+  sni: hkbnx3.mry.best
+  type: trojan
+  udp: true
+- grpc-opts:
+    grpc-service-name: zhs
+  name: HK49
+  network: grpc
+  password: c94457e9-266b-3646-b1d1-2abe5fbe5c48
+  port: 39121
+  server: 120.241.47.247
+  skip-cert-verify: true
+  sni: qyz1hk.mry.best
+  type: trojan
+  udp: true
+- grpc-opts:
+    grpc-service-name: zhs
+  name: HK50
+  network: grpc
+  password: c94457e9-266b-3646-b1d1-2abe5fbe5c48
+  port: 2086
+  server: qyz1hk.mry.best
+  skip-cert-verify: true
+  sni: qyz1hk.mry.best
+  type: trojan
+  udp: true
+- grpc-opts:
+    grpc-service-name: zhs
+  name: HK51
+  network: grpc
+  password: c94457e9-266b-3646-b1d1-2abe5fbe5c48
+  port: 39115
+  server: 120.241.47.247
+  skip-cert-verify: true
+  sni: hkbl3n.mry.best
+  type: trojan
+  udp: true
+- grpc-opts:
+    grpc-service-name: zhs
+  name: HK52
+  network: grpc
+  password: c94457e9-266b-3646-b1d1-2abe5fbe5c48
+  port: 55843
+  server: hkbl3n.mry.best
+  skip-cert-verify: true
+  sni: hkbl3n.mry.best
+  type: trojan
+  udp: true
+- grpc-opts:
+    grpc-service-name: zhs
+  name: JP35
+  network: grpc
+  password: c94457e9-266b-3646-b1d1-2abe5fbe5c48
+  port: 38389
+  server: 122.188.71.15
+  skip-cert-verify: true
+  sni: wzjpk9.mry.best
+  type: trojan
+  udp: true
+- grpc-opts:
+    grpc-service-name: zhs
+  name: JP36
+  network: grpc
+  password: c94457e9-266b-3646-b1d1-2abe5fbe5c48
+  port: 2087
+  server: wzjpk9.mry.best
+  skip-cert-verify: true
+  sni: wzjpk9.mry.best
+  type: trojan
+  udp: true
+- alterId: 0
+  cipher: auto
+  grpc-opts:
+    grpc-service-name: zhs
+  name: TW28
+  network: grpc
+  port: 39119
+  server: 120.241.47.247
+  servername: wztwb6.mry.best
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  udp: true
+  uuid: c94457e9-266b-3646-b1d1-2abe5fbe5c48
+- alterId: 0
+  cipher: auto
+  grpc-opts:
+    grpc-service-name: zhs
+  name: TW29
+  network: grpc
+  port: 38391
+  server: 122.188.71.15
+  servername: wztwb6.mry.best
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  udp: true
+  uuid: c94457e9-266b-3646-b1d1-2abe5fbe5c48
+- alterId: 0
+  cipher: auto
+  grpc-opts:
+    grpc-service-name: zhs
+  name: TW30
+  network: grpc
+  port: 2053
+  server: wztwb6.mry.best
+  servername: wztwb6.mry.best
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  udp: true
+  uuid: c94457e9-266b-3646-b1d1-2abe5fbe5c48
+- alterId: 0
+  cipher: auto
+  grpc-opts:
+    grpc-service-name: zhs
+  name: TW31
+  network: grpc
+  port: 38935
+  server: 122.188.71.15
+  servername: twtb9n.mry.best
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  udp: true
+  uuid: c94457e9-266b-3646-b1d1-2abe5fbe5c48
+- alterId: 0
+  cipher: auto
+  grpc-opts:
+    grpc-service-name: zhs
+  name: TW32
+  network: grpc
+  port: 2087
+  server: twtb9n.mry.best
+  servername: twtb9n.mry.best
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  udp: true
+  uuid: c94457e9-266b-3646-b1d1-2abe5fbe5c48
+- alterId: 0
+  cipher: auto
+  grpc-opts:
+    grpc-service-name: zhs
+  name: TW33
+  network: grpc
+  port: 39103
+  server: 120.241.47.247
+  servername: zht3tw.mry.best
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  udp: true
+  uuid: c94457e9-266b-3646-b1d1-2abe5fbe5c48
+- alterId: 0
+  cipher: auto
+  grpc-opts:
+    grpc-service-name: zhs
+  name: TW34
+  network: grpc
+  port: 8443
+  server: zht3tw.mry.best
+  servername: zht3tw.mry.best
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  udp: true
+  uuid: c94457e9-266b-3646-b1d1-2abe5fbe5c48
+- alterId: 0
+  cipher: auto
+  grpc-opts:
+    grpc-service-name: zhs
+  name: US114
+  network: grpc
+  port: 38381
+  server: 122.188.71.15
+  servername: jzb6us.mry.best
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  udp: true
+  uuid: c94457e9-266b-3646-b1d1-2abe5fbe5c48
+- alterId: 0
+  cipher: auto
+  grpc-opts:
+    grpc-service-name: zhs
+  name: US115
+  network: grpc
+  port: 8443
+  server: uswlwz.mry.best
+  servername: uswlwz.mry.best
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  udp: true
+  uuid: c94457e9-266b-3646-b1d1-2abe5fbe5c48
+- alterId: 0
+  cipher: auto
+  grpc-opts:
+    grpc-service-name: zhs
+  name: US116
+  network: grpc
+  port: 38380
+  server: 122.188.71.15
+  servername: ussxm9.mry.best
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  udp: true
+  uuid: c94457e9-266b-3646-b1d1-2abe5fbe5c48
+- alterId: 0
+  cipher: auto
+  grpc-opts:
+    grpc-service-name: zhs
+  name: US117
+  network: grpc
+  port: 49683
+  server: ussxm9.mry.best
+  servername: ussxm9.mry.best
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  udp: true
+  uuid: c94457e9-266b-3646-b1d1-2abe5fbe5c48
+- name: TW35
+  password: c94457e9-266b-3646-b1d1-2abe5fbe5c48
+  port: 1433
+  server: wztwb6.mry.best
+  skip-cert-verify: true
+  sni: wztwb6.mry.best
+  type: trojan
+  udp: true
+- alterId: 0
+  cipher: auto
+  name: HK53
+  network: ws
+  port: 38393
+  server: 122.188.71.15
+  servername: hkbnjl0.mry.best
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  udp: true
+  uuid: c94457e9-266b-3646-b1d1-2abe5fbe5c48
+  ws-opts:
+    headers:
+      Host: hkbnjl0.mry.best
+    path: /zhs?ed=2048
+- alterId: 0
+  cipher: auto
+  name: HK54
+  network: ws
+  port: 32087
+  server: hkbnjl0.mry.best
+  servername: hkbnjl0.mry.best
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  udp: true
+  uuid: c94457e9-266b-3646-b1d1-2abe5fbe5c48
+  ws-opts:
+    headers:
+      Host: hkbnjl0.mry.best
+    path: /zhs?ed=2048
+- alterId: 0
+  cipher: auto
+  name: TW36
+  network: ws
+  port: 39101
+  server: 120.241.47.247
+  servername: wztwb6.mry.best
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  udp: true
+  uuid: c94457e9-266b-3646-b1d1-2abe5fbe5c48
+  ws-opts:
+    headers:
+      Host: wztwb6.mry.best
+    path: /zhs?ed=2048
+- alterId: 0
+  cipher: auto
+  name: TW37
+  network: ws
+  port: 38116
+  server: 122.188.71.15
+  servername: wztwb6.mry.best
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  udp: true
+  uuid: c94457e9-266b-3646-b1d1-2abe5fbe5c48
+  ws-opts:
+    headers:
+      Host: wztwb6.mry.best
+    path: /zhs?ed=2048
+- alterId: 0
+  cipher: auto
+  name: TW38
+  network: ws
+  port: 1443
+  server: wztwb6.mry.best
+  servername: wztwb6.mry.best
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  udp: true
+  uuid: c94457e9-266b-3646-b1d1-2abe5fbe5c48
+  ws-opts:
+    headers:
+      Host: wztwb6.mry.best
+    path: /zhs?ed=2048
+- alterId: 0
+  cipher: auto
+  name: TW39
+  network: ws
+  port: 2096
+  server: twbdis.mry.best
+  servername: twbdis.mry.best
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  udp: true
+  uuid: c94457e9-266b-3646-b1d1-2abe5fbe5c48
+  ws-opts:
+    headers:
+      Host: twbdis.mry.best
+    path: /zhs?ed=2048
+- client-fingerprint: chrome
+  name: US118
+  network: ws
+  port: 80
+  server: 94.140.0.0
+  servername: a.ssll.gay
+  skip-cert-verify: true
+  tfo: false
+  tls: false
+  type: vless
+  udp: true
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+  ws-opts:
+    headers:
+      Host: a.ssll.gay
+    path: /Twitterfreecodesfp=chrome
+- name: AT1
+  network: ws
+  port: 443
+  server: 94.177.8.43
+  servername: xq.ylks.xyz
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 48198295-b7ba-4b5c-8d85-085d55a6c869
+  ws-opts:
+    headers:
+      Host: xq.ylks.xyz
+    path: /?proxyip=proxyiq.oracle.fxxk.dedyq.io
+- name: CA2
+  network: ws
+  password: 95b
+  port: 443
+  server: 15.235.48.70
+  skip-cert-verify: true
+  sni: 8582b6f2-7192-4da8-a4cb-c480b71e6c58.e8e54e0f-6317-448a-9999-95f6e16f7117.ooguy.com
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: 8582b6f2-7192-4da8-a4cb-c480b71e6c58.e8e54e0f-6317-448a-9999-95f6e16f7117.ooguy.com
+    path: /trojan-6qo.pages.dev/?ed=2560?ed=2560
+- alterId: -1
+  cipher: rc4-md5
+  client-fingerprint: chrome
+  name: JP37
+  obfs: plain
+  obfs-param: cd5ed74592.6602b8463464108506.microsoft.com
+  password: ENZ52K
+  port: 40201
+  protocol: auth_aes128_md5
+  protocol-param: 74592:o4fbeopsgcf
+  server: 95b1cd85a0968ff2.cdn.jiashule.com
+  skip-cert-verify: true
+  type: ssr
+  udp: true
+- client-fingerprint: chrome
+  name: CN1
+  port: 7890
+  server: 123.135.77.197
+  skip-cert-verify: true
+  tls: false
+  type: http
+  udp: true
+- client-fingerprint: chrome
+  name: KR40
+  port: 7890
+  server: 182.92.216.171
+  skip-cert-verify: true
+  tls: false
+  type: http
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: HK55
+  password: 70747514-fb14-4f31-8390-e1f0453eff6d
+  port: 20003
+  server: 14.215.169.69
+  skip-cert-verify: true
+  type: ss
+  udp: true
+- alterId: 64
+  cipher: auto
+  name: HK56
+  port: 40972
+  server: 120.232.153.71
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 770ee730-2450-4e3c-a6c6-3932bd32afbd
+- cipher: chacha20-ietf-poly1305
+  name: HK57
+  password: 70747514-fb14-4f31-8390-e1f0453eff6d
+  port: 20003
+  server: tw5.mhw7e2.online
+  skip-cert-verify: true
+  type: ss
+  udp: true
+- client-fingerprint: chrome
+  name: SG19
+  port: 7890
+  server: 121.199.164.40
+  skip-cert-verify: true
+  tls: false
+  type: http
+  udp: true
+- alterId: -1
+  cipher: rc4-md5
+  client-fingerprint: chrome
+  name: JP38
+  obfs: plain
+  obfs-param: cd5ed74592.6602b8463464108506.microsoft.com
+  password: ENZ52K
+  port: 40220
+  protocol: auth_aes128_md5
+  protocol-param: 74592:o4fbeopsgcf
+  server: 7438974b54cf5c57.cdn.jiashule.com
+  skip-cert-verify: true
+  type: ssr
+  udp: true
+- client-fingerprint: chrome
+  name: KR41
+  port: 7890
+  server: 27.11.66.242
+  skip-cert-verify: true
+  tls: false
+  type: http
+  udp: true
+- cipher: rc4-md5
+  name: US119
+  obfs: plain
+  obfs-param: cd5ed74592.6602b8463464108506.microsoft.com
+  password: ENZ52K
+  port: 40216
+  protocol: auth_aes128_md5
+  protocol-param: 74592:o4fbeopsgcf
+  server: 7438974b54cf5c57.cdn.jiashule.com
+  skip-cert-verify: true
+  type: ssr
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: US120
+  password: 70747514-fb14-4f31-8390-e1f0453eff6d
+  port: 20018
+  server: hk2.mhw7e2.online
+  skip-cert-verify: true
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: AU1
+  password: 36fdc73d-0bff-4d66-9759-e81c63de16b6
+  port: 10813
+  server: yd1.qianggewangluo.buzz
+  skip-cert-verify: true
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: US121
+  password: 70747514-fb14-4f31-8390-e1f0453eff6d
+  port: 20018
+  server: jp1.mhw7e2.online
+  skip-cert-verify: true
+  type: ss
+  udp: true
+- alterId: 0
+  cipher: auto
+  name: AU2
+  network: tcp
+  port: 3214
+  server: iplc01.my1188.org
+  servername: hkt3-cdn.tencent.best
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  udp: true
+  uuid: fe0346d9-a972-3d8a-bac7-310604fa108f
+- cipher: chacha20-ietf-poly1305
+  name: US122
+  password: 70747514-fb14-4f31-8390-e1f0453eff6d
+  port: 20018
+  server: tw3.mhw7e2.online
+  skip-cert-verify: true
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: CA3
+  password: 70747514-fb14-4f31-8390-e1f0453eff6d
+  port: 20023
+  server: tw5.mhw7e2.online
+  skip-cert-verify: true
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: CA4
+  password: 70747514-fb14-4f31-8390-e1f0453eff6d
+  port: 20023
+  server: sg1.mhw7e2.online
+  skip-cert-verify: true
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: ES1
+  password: 70747514-fb14-4f31-8390-e1f0453eff6d
+  port: 20027
+  server: tw5.mhw7e2.online
+  skip-cert-verify: true
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: FR3
+  password: 70747514-fb14-4f31-8390-e1f0453eff6d
+  port: 20028
+  server: hk1.mhw7e2.online
+  skip-cert-verify: true
+  type: ss
+  udp: true
+- alterId: 0
+  cipher: auto
+  name: JP39
+  network: tcp
+  port: 12928
+  server: z6.fragranceninja.com
+  servername: z6.fragranceninja.com
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  udp: true
+  uuid: a32313ad-5e39-4f9a-9cad-512041790050
+- cipher: chacha20-ietf-poly1305
+  name: US123
+  password: 70747514-fb14-4f31-8390-e1f0453eff6d
+  port: 20017
+  server: hk5.mhw7e2.online
+  skip-cert-verify: true
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: US124
+  password: 70747514-fb14-4f31-8390-e1f0453eff6d
+  port: 20017
+  server: sg5.mhw7e2.online
+  skip-cert-verify: true
+  type: ss
+  udp: true
+- alterId: 0
+  cipher: auto
+  name: KR42
+  port: 12951
+  server: z6.fragranceninja.com
+  servername: z6.fragranceninja.com
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  udp: true
+  uuid: a32313ad-5e39-4f9a-9cad-512041790050
+- cipher: chacha20-ietf-poly1305
+  name: TR3
+  password: 70747514-fb14-4f31-8390-e1f0453eff6d
+  port: 20029
+  server: tw2.mhw7e2.online
+  skip-cert-verify: true
+  type: ss
+  udp: true
+- alterId: 0
+  cipher: auto
+  name: FR4
+  port: 12950
+  server: z6.fragranceninja.com
+  servername: z6.fragranceninja.com
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  udp: true
+  uuid: a32313ad-5e39-4f9a-9cad-512041790050
+- cipher: chacha20-ietf-poly1305
+  name: US125
+  password: 70747514-fb14-4f31-8390-e1f0453eff6d
+  port: 20016
+  server: 14.215.169.69
+  skip-cert-verify: true
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: US126
+  password: 70747514-fb14-4f31-8390-e1f0453eff6d
+  port: 20016
+  server: tw5.mhw7e2.online
+  skip-cert-verify: true
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: US127
+  password: 70747514-fb14-4f31-8390-e1f0453eff6d
+  port: 20015
+  server: tw4.mhw7e2.online
+  skip-cert-verify: true
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: CN2
+  password: 70747514-fb14-4f31-8390-e1f0453eff6d
+  port: 20002
+  server: 14.215.169.69
+  skip-cert-verify: true
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: US128
+  password: 70747514-fb14-4f31-8390-e1f0453eff6d
+  port: 20015
+  server: 14.215.169.69
+  skip-cert-verify: true
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: TR4
+  password: 70747514-fb14-4f31-8390-e1f0453eff6d
+  port: 20029
+  server: hk5.mhw7e2.online
+  skip-cert-verify: true
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: CN3
+  password: 70747514-fb14-4f31-8390-e1f0453eff6d
+  port: 20002
+  server: tw5.mhw7e2.online
+  skip-cert-verify: true
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: US129
+  password: 70747514-fb14-4f31-8390-e1f0453eff6d
+  port: 20016
+  server: tw2.mhw7e2.online
+  skip-cert-verify: true
+  type: ss
+  udp: true
+- alterId: 0
+  cipher: auto
+  name: US130
+  network: ws
+  port: 12933
+  server: z6.fragranceninja.com
+  servername: z6.fragranceninja.com
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  udp: true
+  uuid: a32313ad-5e39-4f9a-9cad-512041790050
+  ws-opts:
+    headers:
+      Host: z6.fragranceninja.com
+    path: /
+- cipher: chacha20-ietf-poly1305
+  name: UA3
+  password: 70747514-fb14-4f31-8390-e1f0453eff6d
+  port: 20025
+  server: jp5.mhw7e2.online
+  skip-cert-verify: true
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: ES2
+  password: 70747514-fb14-4f31-8390-e1f0453eff6d
+  port: 20027
+  server: sg5.mhw7e2.online
+  skip-cert-verify: true
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: ES3
+  password: 70747514-fb14-4f31-8390-e1f0453eff6d
+  port: 20027
+  server: jp2.mhw7e2.online
+  skip-cert-verify: true
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: NL2
+  password: 70747514-fb14-4f31-8390-e1f0453eff6d
+  port: 20030
+  server: tw5.mhw7e2.online
+  skip-cert-verify: true
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: ES4
+  password: 70747514-fb14-4f31-8390-e1f0453eff6d
+  port: 20027
+  server: tw4.mhw7e2.online
+  skip-cert-verify: true
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: FR5
+  password: 70747514-fb14-4f31-8390-e1f0453eff6d
+  port: 20028
+  server: hk5.mhw7e2.online
+  skip-cert-verify: true
+  type: ss
+  udp: true
+- alterId: 0
+  cipher: auto
+  name: US131
+  network: ws
+  port: 12946
+  server: z6.fragranceninja.com
+  servername: z6.fragranceninja.com
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  udp: true
+  uuid: a32313ad-5e39-4f9a-9cad-512041790050
+  ws-opts:
+    headers:
+      Host: z6.fragranceninja.com
+    path: /
+- cipher: chacha20-ietf-poly1305
+  name: CA5
+  password: 70747514-fb14-4f31-8390-e1f0453eff6d
+  port: 20023
+  server: jp2.mhw7e2.online
+  skip-cert-verify: true
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: FR6
+  password: 70747514-fb14-4f31-8390-e1f0453eff6d
+  port: 20028
+  server: tw5.mhw7e2.online
+  skip-cert-verify: true
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: FR7
+  password: 70747514-fb14-4f31-8390-e1f0453eff6d
+  port: 20028
+  server: tw4.mhw7e2.online
+  skip-cert-verify: true
+  type: ss
+  udp: true
+- alterId: 0
+  cipher: auto
+  name: TW40
+  network: ws
+  port: 12943
+  server: z6.fragranceninja.com
+  servername: z6.fragranceninja.com
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  udp: true
+  uuid: a32313ad-5e39-4f9a-9cad-512041790050
+  ws-opts:
+    path: /
+- cipher: chacha20-ietf-poly1305
+  name: NL3
+  password: 70747514-fb14-4f31-8390-e1f0453eff6d
+  port: 20030
+  server: hk5.mhw7e2.online
+  skip-cert-verify: true
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: ES5
+  password: 70747514-fb14-4f31-8390-e1f0453eff6d
+  port: 20027
+  server: hk5.mhw7e2.online
+  skip-cert-verify: true
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: FR8
+  password: 70747514-fb14-4f31-8390-e1f0453eff6d
+  port: 20028
+  server: jp2.mhw7e2.online
+  skip-cert-verify: true
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: FR9
+  password: 70747514-fb14-4f31-8390-e1f0453eff6d
+  port: 20028
+  server: sg5.mhw7e2.online
+  skip-cert-verify: true
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: TR5
+  password: 70747514-fb14-4f31-8390-e1f0453eff6d
+  port: 20029
+  server: tw5.mhw7e2.online
+  skip-cert-verify: true
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: TR6
+  password: 70747514-fb14-4f31-8390-e1f0453eff6d
+  port: 20029
+  server: tw4.mhw7e2.online
+  skip-cert-verify: true
+  type: ss
+  udp: true
+- alterId: 0
+  cipher: auto
+  name: ES6
+  network: ws
+  port: 12903
+  server: z6.fragranceninja.com
+  servername: z6.fragranceninja.com
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  udp: true
+  uuid: a32313ad-5e39-4f9a-9cad-512041790050
+  ws-opts:
+    path: /
+- name: US132
+  network: ws
+  port: 80
+  server: 45.80.110.209
+  servername: a.ssll.gay
+  skip-cert-verify: true
+  type: vless
+  udp: true
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+  ws-opts:
+    headers:
+      Host: a.ssll.gay
+    path: /Twitterfreecodes
+- alpn:
+  - http/1.1
+  alterId: 0
+  cipher: auto
+  client-fingerprint: chrome
+  name: PL2
+  network: ws
+  port: 443
+  server: 146.59.55.50
+  servername: wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  udp: true
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  ws-opts:
+    headers:
+      Host: o.metuji.com
+    path: /linkvws
+- name: HK58
+  network: ws
+  port: 443
+  server: 219.76.13.164
+  servername: global2.ccdd.site
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: e8899a8e-729a-43bc-aebf-95e12c6c6db6
+  ws-opts:
+    headers:
+      Host: global2.ccdd.site
+    path: /?ed=2560
+- name: HK59
+  network: ws
+  password: 95b
+  port: 443
+  server: aliyun.2096.us.kg
+  skip-cert-verify: true
+  sni: 68123106-3e43-4958-b75a-b06e81eabf79.50d88e28-a870-497d-bf87-c20fb6802871.camdvr.org
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: 68123106-3e43-4958-b75a-b06e81eabf79.50d88e28-a870-497d-bf87-c20fb6802871.camdvr.org
+    path: /trojan-6qo.pages.dev/?ed=2560?ed=2560
+- name: HK60
+  network: ws
+  port: 47575
+  server: 43.247.134.147
+  servername: a.ssll.gay
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+  ws-opts:
+    headers:
+      Host: a.ssll.gay
+    path: /Telegram🇨🇳+@WangCai2+/?ed=2048
+- name: HK61
+  network: ws
+  port: 12345
+  server: 42.98.167.229
+  servername: global2.ccdd.site
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: e8899a8e-729a-43bc-aebf-95e12c6c6db6
+  ws-opts:
+    headers:
+      Host: global2.ccdd.site
+    path: /?ed=2560
+- name: JP40
+  network: ws
+  port: 8443
+  server: 141.11.139.211
+  servername: a.ssll.gay
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+  ws-opts:
+    headers:
+      Host: a.ssll.gay
+    path: /Telegram🇨🇳+@WangCai2+/?ed=2048
+- name: JP41
+  network: ws
+  port: 443
+  server: 154.64.226.138
+  servername: global2.ccdd.site
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: e8899a8e-729a-43bc-aebf-95e12c6c6db6
+  ws-opts:
+    headers:
+      Host: global2.ccdd.site
+    path: /?ed=2560
+- name: JP42
+  network: ws
+  port: 34237
+  server: 132.226.5.189
+  servername: a.ssll.gay
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+  ws-opts:
+    headers:
+      Host: a.ssll.gay
+    path: /Telegram🇨🇳+@WangCai2+/?ed=2048
+- name: JP43
+  network: ws
+  port: 80
+  server: 155.248.178.58
+  servername: a.ssll.gay
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+  ws-opts:
+    headers:
+      Host: a.ssll.gay
+    path: /Telegram🇨🇳+@WangCai2+/?ed=2048
+- name: JP44
+  network: ws
+  port: 35810
+  server: 124.80.75.68
+  servername: a.ssll.gay
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+  ws-opts:
+    headers:
+      Host: a.ssll.gay
+    path: /?ed=2048
+- name: KR43
+  network: ws
+  port: 10001
+  server: 124.153.214.6
+  servername: xq.ylks.xyz
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 48198295-b7ba-4b5c-8d85-085d55a6c869
+  ws-opts:
+    headers:
+      Host: xq.ylks.xyz
+    path: /?proxyip=proxyiq.kr.fxxk.dedyq.io
+- name: KR44
+  network: ws
+  port: 10065
+  server: 175.206.233.78
+  servername: xq.ylks.xyz
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 48198295-b7ba-4b5c-8d85-085d55a6c869
+  ws-opts:
+    headers:
+      Host: xq.ylks.xyz
+    path: /blue
+- name: KR45
+  network: ws
+  port: 8443
+  server: 185.214.103.3
+  servername: a.ssll.gay
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+  ws-opts:
+    headers:
+      Host: a.ssll.gay
+    path: /Telegram🇨🇳+@WangCai2+/?ed=2048
+- name: KR46
+  network: ws
+  port: 12000
+  server: 115.143.93.241
+  servername: xq.ylks.xyz
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 48198295-b7ba-4b5c-8d85-085d55a6c869
+  ws-opts:
+    headers:
+      Host: xq.ylks.xyz
+    path: /?proxyip=proxyiq.kr.fxxk.dedyq.io
+- name: KR47
+  network: ws
+  port: 26001
+  server: 152.67.201.202
+  servername: a.ssll.gay
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+  ws-opts:
+    headers:
+      Host: a.ssll.gay
+    path: /Telegram🇨🇳+@WangCai2+/?ed=2048
+- name: KR48
+  network: ws
+  port: 36355
+  server: 129.154.48.176
+  servername: a.ssll.gay
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+  ws-opts:
+    headers:
+      Host: a.ssll.gay
+    path: /Telegram🇨🇳+@WangCai2+/?ed=2048
+- name: JP45
+  network: ws
+  password: 95b
+  port: 29708
+  server: 117.123.234.199
+  skip-cert-verify: true
+  sni: 547c921f-c9b1-4d57-bb25-ff5c79749783.a09c5a67-316e-45c6-a051-e6066737fd47.theworkpc.com
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: 547c921f-c9b1-4d57-bb25-ff5c79749783.a09c5a67-316e-45c6-a051-e6066737fd47.theworkpc.com
+    path: /trojan-6qo.pages.dev/?ed=2560?ed=2560
+- name: KR49
+  network: ws
+  password: 95b
+  port: 2186
+  server: 146.56.110.217
+  skip-cert-verify: true
+  sni: a17cabb5-3f13-4056-b0ce-476143491d4b.blackbeautifulman.cloudns.org
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: a17cabb5-3f13-4056-b0ce-476143491d4b.blackbeautifulman.cloudns.org
+    path: /trojan-6qo.pages.dev/?ed=2560?ed=2560
+- name: KR50
+  network: ws
+  password: 95b
+  port: 6443
+  server: 150.230.255.146
+  skip-cert-verify: true
+  sni: e8b99cbe-9ebd-4a20-a497-38f4b29f2c98.83b11782-ecae-411f-90c3-2a01bb33260a.gleeze.com
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: e8b99cbe-9ebd-4a20-a497-38f4b29f2c98.83b11782-ecae-411f-90c3-2a01bb33260a.gleeze.com
+    path: /trojan-6qo.pages.dev/?ed=2560?ed=2560
+- name: GB10
+  network: ws
+  port: 443
+  server: 194.76.18.189
+  servername: xq.ylks.xyz
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 48198295-b7ba-4b5c-8d85-085d55a6c869
+  ws-opts:
+    headers:
+      Host: xq.ylks.xyz
+    path: /
+- name: HK62
+  network: ws
+  port: 443
+  server: 8.223.39.101
+  servername: a.ssll.gay
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+  ws-opts:
+    headers:
+      Host: a.ssll.gay
+    path: /Telegram🇨🇳+@WangCai2+/?ed=2048
+- client-fingerprint: chrome
+  name: TW41
+  network: ws
+  port: 80
+  server: 34.160.118.77
+  skip-cert-verify: true
+  tfo: false
+  tls: false
+  type: vless
+  udp: true
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+  ws-opts:
+    headers:
+      Host: a.ssll.gay
+    path: /Telegram🇨🇳
+- name: TW42
+  network: ws
+  port: 80
+  server: 34.36.183.121
+  skip-cert-verify: true
+  type: vless
+  udp: true
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+  ws-opts:
+    headers:
+      Host: a.ssll.gay
+    path: /Telegram🇨🇳
+- client-fingerprint: chrome
+  name: TW43
+  network: ws
+  port: 80
+  server: 34.111.135.19
+  skip-cert-verify: true
+  tfo: false
+  tls: false
+  type: vless
+  udp: true
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+  ws-opts:
+    headers:
+      Host: a.ssll.gay
+    path: /Telegram🇨🇳
+- name: US133
+  network: ws
+  port: 443
+  server: 43.153.103.203
+  servername: a.ssll.gay
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+  ws-opts:
+    headers:
+      Host: a.ssll.gay
+    path: /?ed=2048
+- name: GB11
+  network: ws
+  port: 2096
+  server: 130.250.137.70
+  servername: a.ssll.gay
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+  ws-opts:
+    headers:
+      Host: a.ssll.gay
+    path: /?ed
+- name: US134
+  network: ws
+  port: 443
+  server: 69.84.182.196
+  servername: xq.ylks.xyz
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 48198295-b7ba-4b5c-8d85-085d55a6c869
+  ws-opts:
+    headers:
+      Host: xq.ylks.xyz
+    path: /?proxyip=proxyiq.us.fxxk.dedyq.io
+- name: US135
+  network: ws
+  port: 443
+  server: 69.84.182.218
+  servername: xq.ylks.xyz
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 48198295-b7ba-4b5c-8d85-085d55a6c869
+  ws-opts:
+    headers:
+      Host: xq.ylks.xyz
+    path: /blue
+- name: US136
+  network: ws
+  port: 443
+  server: 69.84.182.138
+  servername: xq.ylks.xyz
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 48198295-b7ba-4b5c-8d85-085d55a6c869
+  ws-opts:
+    headers:
+      Host: xq.ylks.xyz
+    path: /?proxyip=proxyiq.us.fxxk.dedyq.io
+- name: US137
+  network: ws
+  port: 443
+  server: 198.62.62.91
+  servername: xq.ylks.xyz
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 48198295-b7ba-4b5c-8d85-085d55a6c869
+  ws-opts:
+    headers:
+      Host: xq.ylks.xyz
+    path: /?proxyip=proxyiq.us.fxxk.dedyq.io
+- name: US138
+  network: ws
+  port: 443
+  server: 198.62.62.70
+  servername: xq.ylks.xyz
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 48198295-b7ba-4b5c-8d85-085d55a6c869
+  ws-opts:
+    headers:
+      Host: xq.ylks.xyz
+    path: /?proxyip=proxyiq.us.fxxk.dedyq.io
+- name: US139
+  network: ws
+  port: 443
+  server: 198.62.62.183
+  servername: xq.ylks.xyz
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 48198295-b7ba-4b5c-8d85-085d55a6c869
+  ws-opts:
+    headers:
+      Host: xq.ylks.xyz
+    path: /blue
+- name: US140
+  network: ws
+  port: 443
+  server: 198.62.62.6
+  servername: xq.ylks.xyz
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 48198295-b7ba-4b5c-8d85-085d55a6c869
+  ws-opts:
+    headers:
+      Host: xq.ylks.xyz
+    path: /?proxyip=proxyiq.us.fxxk.dedyq.io
+- name: US141
+  network: ws
+  port: 443
+  server: 69.84.182.172
+  servername: xq.ylks.xyz
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 48198295-b7ba-4b5c-8d85-085d55a6c869
+  ws-opts:
+    headers:
+      Host: xq.ylks.xyz
+    path: /blue
+- name: GB12
+  network: ws
+  port: 443
+  server: 160.79.105.38
+  servername: xq.ylks.xyz
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 48198295-b7ba-4b5c-8d85-085d55a6c869
+  ws-opts:
+    headers:
+      Host: xq.ylks.xyz
+    path: /?proxyip=proxyiq.us.fxxk.dedyq.io
+- name: GB13
+  network: ws
+  port: 443
+  server: 63.141.128.219
+  servername: xq.ylks.xyz
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 48198295-b7ba-4b5c-8d85-085d55a6c869
+  ws-opts:
+    headers:
+      Host: xq.ylks.xyz
+    path: /?proxyip=proxyiq.us.fxxk.dedyq.io
+- name: DE3
+  network: ws
+  port: 443
+  server: 66.81.247.16
+  servername: toujiediansigema.5112233.xyz
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: e4e7b149-8bd8-4266-8cbb-0987604dbc87
+  ws-opts:
+    headers:
+      Host: toujiediansigema.5112233.xyz
+    path: /tg@juzibaipiao偷节点死吗
+- name: US142
+  network: ws
+  port: 80
+  server: 91.149.239.198
+  skip-cert-verify: true
+  type: vless
+  udp: true
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+  ws-opts:
+    headers:
+      Host: a.ssll.gay
+    path: /Telegram🇨🇳+@WangCai2+/?ed=2048
+- name: US143
+  network: ws
+  port: 80
+  server: 91.149.239.252
+  skip-cert-verify: true
+  type: vless
+  udp: true
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+  ws-opts:
+    headers:
+      Host: a.ssll.gay
+    path: /Telegram🇨🇳+@WangCai2+/?ed=2048
+- name: US144
+  network: ws
+  port: 443
+  server: 198.62.62.243
+  servername: xq.ylks.xyz
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 48198295-b7ba-4b5c-8d85-085d55a6c869
+  ws-opts:
+    headers:
+      Host: xq.ylks.xyz
+    path: /?proxyip=proxyiq.us.fxxk.dedyq.io
+- name: US145
+  network: ws
+  port: 443
+  server: 69.84.182.179
+  servername: xq.ylks.xyz
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 48198295-b7ba-4b5c-8d85-085d55a6c869
+  ws-opts:
+    headers:
+      Host: xq.ylks.xyz
+    path: /blue
+- name: US146
+  network: ws
+  port: 80
+  server: 91.149.239.72
+  skip-cert-verify: true
+  type: vless
+  udp: true
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+  ws-opts:
+    headers:
+      Host: a.ssll.gay
+    path: /Telegram🇨🇳+@WangCai2+/?ed=2048
+- name: US147
+  network: ws
+  port: 80
+  server: 91.149.239.70
+  skip-cert-verify: true
+  type: vless
+  udp: true
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+  ws-opts:
+    headers:
+      Host: a.ssll.gay
+    path: /Telegram🇨🇳+@WangCai2+/?ed=2048
+- name: US148
+  network: ws
+  port: 80
+  server: 91.149.239.238
+  skip-cert-verify: true
+  type: vless
+  udp: true
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+  ws-opts:
+    headers:
+      Host: a.ssll.gay
+    path: /Telegram🇨🇳+@WangCai2+/?ed=2048
+- name: US149
+  network: ws
+  port: 80
+  server: 91.149.239.145
+  skip-cert-verify: true
+  type: vless
+  udp: true
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+  ws-opts:
+    headers:
+      Host: a.ssll.gay
+    path: /Telegram🇨🇳+@WangCai2+/?ed=2048
+- name: US150
+  network: ws
+  port: 52415
+  server: 104.234.102.72
+  servername: a.ssll.gay
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+  ws-opts:
+    headers:
+      Host: a.ssll.gay
+    path: /Telegram🇨🇳+@WangCai2+/?ed=2048
+- client-fingerprint: chrome
+  name: US151
+  network: ws
+  port: 443
+  server: 69.84.182.102
+  servername: a.ssll.gay
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+  ws-opts:
+    headers:
+      Host: a.ssll.gay
+    path: /Telegram🇨🇳 @WangCai_8 /?ed=2048
+- client-fingerprint: chrome
+  name: US152
+  network: ws
+  password: 95b
+  port: 10511
+  server: 65.75.194.43
+  skip-cert-verify: true
+  sni: 2022585a-86a7-4231-b3a0-eeda14f77f4d.8f18237c-8e5f-4ffb-a434-1b2948c87be3.ddnsfree.com
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: 2022585a-86a7-4231-b3a0-eeda14f77f4d.8f18237c-8e5f-4ffb-a434-1b2948c87be3.ddnsfree.com
+    path: /trojan-6qo.pages.dev/?ed=2560?ed=2560
+- delay: 1265
+  name: US153
+  network: ws
+  port: 2096
+  server: 45.80.111.38
   servername: juzibaipiao.5112233.xyz
   skip-cert-verify: true
   tls: true
@@ -4028,7 +5862,53 @@ proxies:
   ws-opts:
     headers:
       Host: juzibaipiao.5112233.xyz
-    path: /
+    path: /?ed=2048
+- delay: 1805
+  name: US154
+  network: ws
+  port: 80
+  server: 45.80.110.130
+  servername: a.ssll.gay
+  skip-cert-verify: true
+  type: vless
+  udp: true
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+  ws-opts:
+    headers:
+      Host: a.ssll.gay
+    path: /Twitterfreecodes
+- client-fingerprint: chrome
+  delay: 1138
+  name: US155
+  network: ws
+  port: 443
+  server: 167.68.11.95
+  servername: cfed.tgzdyz2.top
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 2cd6ed0f-636e-4e6c-9449-5a263d7a0fa5
+  ws-opts:
+    headers:
+      Host: cfed.tgzdyz2.top
+    path: /tg@zdyz2fp=chromefp=chrome
+- client-fingerprint: chrome
+  delay: 1231
+  name: US156
+  network: ws
+  port: 443
+  server: 205.233.181.28
+  servername: cfed.tgzdyz2.top
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 2cd6ed0f-636e-4e6c-9449-5a263d7a0fa5
+  ws-opts:
+    headers:
+      Host: cfed.tgzdyz2.top
+    path: /tg@zdyz2fp=chrome
 proxy-groups:
 - hidden: false
   icon: https://fastly.jsdelivr.net/gh/clash-verge-rev/clash-verge-rev.github.io@main/docs/assets/icons/adjust.svg
@@ -4085,6 +5965,7 @@ proxy-groups:
   - SG16
   - SG17
   - SG18
+  - SG19
   timeout: 3000
   tolerance: 100
   type: url-test
@@ -4135,6 +6016,17 @@ proxy-groups:
   - KR37
   - KR38
   - KR39
+  - KR40
+  - KR41
+  - KR42
+  - KR43
+  - KR44
+  - KR45
+  - KR46
+  - KR47
+  - KR48
+  - KR49
+  - KR50
   timeout: 3000
   tolerance: 100
   type: url-test
@@ -4272,6 +6164,36 @@ proxy-groups:
   - US124
   - US125
   - US126
+  - US127
+  - US128
+  - US129
+  - US130
+  - US131
+  - US132
+  - US133
+  - US134
+  - US135
+  - US136
+  - US137
+  - US138
+  - US139
+  - US140
+  - US141
+  - US142
+  - US143
+  - US144
+  - US145
+  - US146
+  - US147
+  - US148
+  - US149
+  - US150
+  - US151
+  - US152
+  - US153
+  - US154
+  - US155
+  - US156
   timeout: 3000
   tolerance: 100
   type: url-test
@@ -4321,6 +6243,30 @@ proxy-groups:
   - HK36
   - HK37
   - HK38
+  - HK39
+  - HK40
+  - HK41
+  - HK42
+  - HK43
+  - HK44
+  - HK45
+  - HK46
+  - HK47
+  - HK48
+  - HK49
+  - HK50
+  - HK51
+  - HK52
+  - HK53
+  - HK54
+  - HK55
+  - HK56
+  - HK57
+  - HK58
+  - HK59
+  - HK60
+  - HK61
+  - HK62
   timeout: 3000
   tolerance: 100
   type: url-test
@@ -4355,6 +6301,28 @@ proxy-groups:
   - JP21
   - JP22
   - JP23
+  - JP24
+  - JP25
+  - JP26
+  - JP27
+  - JP28
+  - JP29
+  - JP30
+  - JP31
+  - JP32
+  - JP33
+  - JP34
+  - JP35
+  - JP36
+  - JP37
+  - JP38
+  - JP39
+  - JP40
+  - JP41
+  - JP42
+  - JP43
+  - JP44
+  - JP45
   timeout: 3000
   tolerance: 100
   type: url-test
@@ -4376,6 +6344,39 @@ proxy-groups:
   - TW8
   - TW9
   - TW10
+  - TW11
+  - TW12
+  - TW13
+  - TW14
+  - TW15
+  - TW16
+  - TW17
+  - TW18
+  - TW19
+  - TW20
+  - TW21
+  - TW22
+  - TW23
+  - TW24
+  - TW25
+  - TW26
+  - TW27
+  - TW28
+  - TW29
+  - TW30
+  - TW31
+  - TW32
+  - TW33
+  - TW34
+  - TW35
+  - TW36
+  - TW37
+  - TW38
+  - TW39
+  - TW40
+  - TW41
+  - TW42
+  - TW43
   timeout: 3000
   tolerance: 100
   type: url-test
