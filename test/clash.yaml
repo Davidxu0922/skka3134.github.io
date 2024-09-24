@@ -662,14 +662,6 @@ proxies:
     headers:
       Host: ip1.1789034.xyz
     path: /github.com/Alvin9999
-- cipher: chacha20-ietf-poly1305
-  name: US35
-  password: 5cp9Z3iWnJZ2
-  port: 443
-  server: 205.134.180.151
-  skip-cert-verify: true
-  type: ss
-  udp: true
 - alterId: 0
   cipher: auto
   name: FR1
@@ -685,28 +677,8 @@ proxies:
     headers:
       Host: s1c.v2.v001sss.xyz
     path: /
-- cipher: chacha20-ietf-poly1305
-  client-fingerprint: chrome
-  delay: 731
-  name: CN1
-  password: 7efd4673-1d09-4be0-858b-7ee5d8b33dcd
-  port: 41370
-  server: gdyddx500.xiyunchen.cn
-  skip-cert-verify: true
-  tfo: false
-  type: ss
-  udp: true
-- country: 🇹🇼 TW
-  delay: 613
-  name: TW1
-  password: 464d3eff-ddd0-4622-991b-9cf42ba6c9c9
-  port: 6678
-  server: 111.250.100.69
-  skip-cert-verify: true
-  type: trojan
-  udp: true
 - delay: 523
-  name: TW2
+  name: TW1
   network: ws
   port: 81
   server: 118.163.37.32
@@ -721,7 +693,7 @@ proxies:
       Host: a.ssll.gay
     path: /Telegram🇨🇳+@WangCai2+/?ed=2048
 - delay: 640
-  name: TW3
+  name: TW2
   network: ws
   port: 10004
   server: 114.34.202.224
@@ -736,7 +708,7 @@ proxies:
       Host: a.ssll.gay
     path: /Telegram🇨🇳+@WangCai2+/?ed=2048
 - delay: 1091
-  name: TW4
+  name: TW3
   network: ws
   port: 81
   server: 220.135.37.112
@@ -751,7 +723,7 @@ proxies:
       Host: a.ssll.gay
     path: /Telegram🇨🇳+@WangCai2+/?ed=2048
 - delay: 443
-  name: TW5
+  name: TW4
   network: ws
   password: 95b
   port: 81
@@ -765,7 +737,7 @@ proxies:
       Host: 8582b6f2-7192-4da8-a4cb-c480b71e6c58.e8e54e0f-6317-448a-9999-95f6e16f7117.ooguy.com
     path: /trojan-6qo.pages.dev/?ed=2560?ed=2560
 - delay: 672
-  name: SG1
+  name: HK1
   network: ws
   port: 23278
   server: 161.81.234.137
@@ -780,7 +752,7 @@ proxies:
       Host: global2.ccdd.site
     path: /?ed=2560
 - delay: 863
-  name: HK1
+  name: HK2
   network: ws
   port: 32378
   server: 161.81.233.147
@@ -795,7 +767,7 @@ proxies:
       Host: global2.ccdd.site
     path: /?ed=2560
 - delay: 1814
-  name: HK2
+  name: HK3
   network: ws
   port: 23555
   server: 112.119.49.206
@@ -810,7 +782,7 @@ proxies:
       Host: a.ssll.gay
     path: /Telegram🇨🇳+@WangCai2+/?ed=2048
 - delay: 866
-  name: HK3
+  name: HK4
   network: ws
   port: 30002
   server: 83.229.124.185
@@ -825,7 +797,7 @@ proxies:
       Host: a.ssll.gay
     path: /Telegram🇨🇳+@WangCai2+/?ed=2048
 - delay: 302
-  name: HK4
+  name: HK5
   network: ws
   port: 19527
   server: 45.87.103.78
@@ -840,7 +812,7 @@ proxies:
       Host: a.ssll.gay
     path: /Telegram🇨🇳+@WangCai2+/?ed=2048
 - delay: 596
-  name: HK5
+  name: HK6
   network: ws
   port: 32633
   server: 223.122.233.66
@@ -858,22 +830,11 @@ proxies:
   cipher: auto
   delay: 2053
   disable-sni: true
-  name: HK6
+  name: HK7
   network: tcp
   port: 31778
   server: 183.236.48.161
   servername: ''
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- alterId: 64
-  cipher: auto
-  delay: 1276
-  name: HK7
-  port: 45020
-  server: 183.236.51.23
   skip-cert-verify: true
   tls: false
   type: vmess
@@ -899,7 +860,7 @@ proxies:
   udp: true
 - cipher: chacha20-ietf-poly1305
   delay: 285
-  name: SG2
+  name: SG1
   password: 70747514-fb14-4f31-8390-e1f0453eff6d
   port: 20009
   server: 14.215.169.69
@@ -1005,23 +966,8 @@ proxies:
     headers:
       Host: a.ssll.gay
     path: /Telegram🇨🇳+@WangCai2+/?ed=2048
-- delay: 1067
-  name: JP8
-  network: ws
-  port: 57956
-  server: 176.119.148.14
-  servername: a.ssll.gay
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-  ws-opts:
-    headers:
-      Host: a.ssll.gay
-    path: /Telegram🇨🇳+@WangCai2+/?ed=2048
 - delay: 1113
-  name: JP9
+  name: JP8
   network: ws
   port: 10000
   server: 14.48.49.133
@@ -1036,7 +982,7 @@ proxies:
       Host: global2.ccdd.site
     path: /?ed=2560
 - delay: 1147
-  name: JP10
+  name: JP9
   network: ws
   port: 20202
   server: 175.199.146.29
@@ -1051,7 +997,7 @@ proxies:
       Host: a.ssll.gay
     path: /Telegram🇨🇳+@WangCai2+/?ed=2048
 - delay: 1133
-  name: JP11
+  name: JP10
   network: ws
   port: 19100
   server: 121.181.128.153
@@ -1074,23 +1020,8 @@ proxies:
   skip-cert-verify: true
   type: ss
   udp: true
-- delay: 1017
-  name: US36
-  network: ws
-  port: 9443
-  server: 154.40.32.15
-  servername: a.ssll.gay
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-  ws-opts:
-    headers:
-      Host: a.ssll.gay
-    path: /Telegram🇨🇳+@WangCai2+/?ed=2048
 - delay: 919
-  name: US37
+  name: US35
   network: ws
   port: 50003
   server: 23.165.40.187
@@ -1104,23 +1035,8 @@ proxies:
     headers:
       Host: a.ssll.gay
     path: /Telegram🇨🇳+@WangCai2+/?ed=2048
-- delay: 1074
-  name: US38
-  network: ws
-  port: 22389
-  server: 23.165.248.56
-  servername: a.ssll.gay
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-  ws-opts:
-    headers:
-      Host: a.ssll.gay
-    path: /Telegram🇨🇳+@WangCai2+/?ed=2048
 - delay: 1041
-  name: US39
+  name: US36
   network: ws
   port: 34237
   server: 23.236.68.152
@@ -1135,7 +1051,7 @@ proxies:
       Host: a.ssll.gay
     path: /Telegram🇨🇳+@WangCai2+/?ed=2048
 - delay: 1046
-  name: US40
+  name: US37
   network: ws
   port: 23391
   server: 154.17.21.37
@@ -1151,7 +1067,7 @@ proxies:
     path: /Telegram🇨🇳+@WangCai2+/?ed=2048
 - alterId: 0
   delay: 1046
-  name: US41
+  name: US38
   network: ws
   password: Watashi_VPN
   port: 2053
@@ -1163,7 +1079,7 @@ proxies:
   ws-opts:
     path: /
 - delay: 1024
-  name: US42
+  name: US39
   network: ws
   port: 38908
   server: 45.59.184.16
@@ -1209,7 +1125,7 @@ proxies:
       Host: a.ssll.gay
     path: /?ed=2048
 - delay: 870
-  name: US43
+  name: US40
   network: ws
   port: 2095
   server: 188.114.96.3
@@ -1352,22 +1268,8 @@ proxies:
     headers:
       Host: a.ssll.gay
     path: /Telegram🇨🇳+@WangCai2+/?ed=2048
-- delay: 948
-  name: KR8
-  network: ws
-  password: 95b
-  port: 30061
-  server: 124.80.55.214
-  skip-cert-verify: true
-  sni: 30388d70-6f5c-4d7c-8daa-9d3df7c5c526.9150e878-8296-4798-a172-c3fe66b8dee5.ddnsgeek.com
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: 30388d70-6f5c-4d7c-8daa-9d3df7c5c526.9150e878-8296-4798-a172-c3fe66b8dee5.ddnsgeek.com
-    path: /trojan-6qo.pages.dev/?ed=2560?ed=2560
 - delay: 1275
-  name: KR9
+  name: KR8
   network: ws
   port: 32202
   server: 211.196.226.172
@@ -1382,7 +1284,7 @@ proxies:
       Host: global2.ccdd.site
     path: /?ed=2560
 - delay: 1149
-  name: KR10
+  name: KR9
   network: ws
   port: 16053
   server: 118.33.22.133
@@ -1396,23 +1298,8 @@ proxies:
     headers:
       Host: a.ssll.gay
     path: /Telegram🇨🇳+@WangCai2+/?ed=2048
-- delay: 1379
-  name: KR11
-  network: ws
-  port: 30011
-  server: 124.80.55.214
-  servername: a.ssll.gay
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-  ws-opts:
-    headers:
-      Host: a.ssll.gay
-    path: /Telegram🇨🇳+@WangCai2+/?ed=2048
 - delay: 1250
-  name: KR12
+  name: KR10
   network: ws
   port: 34237
   server: 61.111.251.245
@@ -1427,7 +1314,7 @@ proxies:
       Host: a.ssll.gay
     path: /Telegram🇨🇳+@WangCai2+/?ed=2048
 - delay: 1136
-  name: KR13
+  name: KR11
   network: ws
   port: 30046
   server: 125.133.233.48
@@ -1442,7 +1329,7 @@ proxies:
       Host: a.ssll.gay
     path: /Telegram🇨🇳+@WangCai2+/?ed=2048
 - delay: 1322
-  name: KR14
+  name: KR12
   network: ws
   port: 10911
   server: 183.98.53.177
@@ -1457,7 +1344,7 @@ proxies:
       Host: a.ssll.gay
     path: /Telegram🇨🇳+@WangCai2+/?ed=2048
 - delay: 1072
-  name: KR15
+  name: KR13
   network: ws
   port: 18016
   server: 118.130.23.168
@@ -1472,7 +1359,7 @@ proxies:
       Host: global2.ccdd.site
     path: /?ed=2560
 - delay: 1424
-  name: KR16
+  name: KR14
   network: ws
   port: 12198
   server: 158.180.69.78
@@ -1487,7 +1374,7 @@ proxies:
       Host: a.ssll.gay
     path: /Telegram🇨🇳+@WangCai2+/?ed=2048
 - delay: 1322
-  name: KR17
+  name: KR15
   network: ws
   port: 27017
   server: 121.165.36.130
@@ -1502,7 +1389,7 @@ proxies:
       Host: a.ssll.gay
     path: /Telegram🇨🇳+@WangCai2+/?ed=2048
 - delay: 1333
-  name: KR18
+  name: KR16
   network: ws
   port: 10018
   server: 211.248.216.119
@@ -1517,7 +1404,7 @@ proxies:
       Host: a.ssll.gay
     path: /Telegram🇨🇳+@WangCai2+/?ed=2048
 - delay: 1534
-  name: KR19
+  name: KR17
   network: ws
   port: 35389
   server: 114.199.156.104
@@ -1532,7 +1419,7 @@ proxies:
       Host: global2.ccdd.site
     path: /?ed=2560
 - delay: 1195
-  name: KR20
+  name: KR18
   network: ws
   port: 30032
   server: 115.88.75.154
@@ -1548,7 +1435,7 @@ proxies:
     path: /?ed=2560
 - alterId: 0
   cipher: auto
-  name: US44
+  name: US41
   network: ws
   port: 2095
   server: 104.19.45.220
@@ -1563,7 +1450,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: US45
+  name: US42
   network: ws
   port: 2095
   server: 104.19.45.34
@@ -1578,7 +1465,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: KR21
+  name: KR19
   network: ws
   port: 8080
   server: 104.19.44.151
@@ -1593,7 +1480,7 @@ proxies:
     path: /?ed=2048&Telegram🇨🇳 @WangCai_8
 - alterId: 64
   cipher: auto
-  name: US46
+  name: US43
   port: 35601
   server: 120.232.153.40
   skip-cert-verify: true
@@ -1603,22 +1490,7 @@ proxies:
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - alterId: 0
   cipher: auto
-  name: US47
-  network: ws
-  port: 2095
-  server: 104.19.45.33
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 7a737f41-b792-4260-94ff-3d864da67b80
-  ws-opts:
-    headers:
-      Host: onea.flha.ru
-    path: /
-- alterId: 0
-  cipher: auto
-  name: US48
+  name: US44
   network: ws
   port: 2095
   server: 104.19.45.204
@@ -1633,7 +1505,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: US49
+  name: US45
   network: ws
   port: 2095
   server: 104.19.45.196
@@ -1647,7 +1519,7 @@ proxies:
       Host: onea.flha.ru
     path: /
 - client-fingerprint: random
-  name: JP12
+  name: JP11
   network: ws
   port: 12212
   server: 45.159.48.192
@@ -1662,7 +1534,7 @@ proxies:
       Host: toujiediansigema.666888.lol
     path: /TG@mianfeicf
 - client-fingerprint: random
-  name: JP13
+  name: JP12
   network: ws
   port: 50001
   server: 140.245.67.101
@@ -1676,7 +1548,7 @@ proxies:
     headers:
       Host: toujiediansigema.666888.lol
     path: /TG@mianfeicf
-- name: TW6
+- name: TW5
   network: ws
   port: 46832
   server: 103.137.63.5
@@ -1699,7 +1571,7 @@ proxies:
   type: ss
   udp: true
 - client-fingerprint: random
-  name: KR22
+  name: KR20
   network: ws
   port: 12199
   server: 152.69.234.137
@@ -1714,7 +1586,7 @@ proxies:
       Host: toujiediansigema.666888.lol
     path: /TG@mianfeicf
 - client-fingerprint: random
-  name: KR23
+  name: KR21
   network: ws
   port: 12199
   server: 158.179.194.146
@@ -1729,7 +1601,7 @@ proxies:
       Host: toujiediansigema.666888.lol
     path: /TG@mianfeicf
 - client-fingerprint: random
-  name: KR24
+  name: KR22
   network: ws
   port: 50051
   server: 150.230.252.47
@@ -1758,23 +1630,8 @@ proxies:
     headers:
       Host: toujiediansigema.666888.lol
     path: /TG@mianfeicf
-- client-fingerprint: random
-  name: GB3
-  network: ws
-  port: 44340
-  server: 185.217.108.162
-  servername: toujiediansigema.666888.lol
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 4f42d8f7-8beb-47e1-9465-8f390c6d658d
-  ws-opts:
-    headers:
-      Host: toujiediansigema.666888.lol
-    path: /TG@mianfeicf
 - cipher: aes-256-cfb
-  name: JP14
+  name: JP13
   password: amazonskr05
   port: 443
   server: 18.183.174.153
@@ -1782,7 +1639,7 @@ proxies:
   type: ss
   udp: true
 - client-fingerprint: random
-  name: SG3
+  name: SG2
   network: ws
   port: 42235
   server: 13.229.72.179
@@ -1796,7 +1653,7 @@ proxies:
     headers:
       Host: toujiediansigema.666888.lol
     path: /TG@mianfeicf
-- name: JP15
+- name: JP14
   network: ws
   port: 17658
   server: 117.123.234.199
@@ -1813,7 +1670,7 @@ proxies:
 - alpn:
   - h3
   client-fingerprint: random
-  name: KR25
+  name: KR23
   network: ws
   port: 30042
   server: 210.91.8.234
@@ -1828,7 +1685,7 @@ proxies:
       Host: TG.CMLiussss.giize.com
     path: /?proxyip=proxyip.kr.fxxk.dedyn.io
 - cipher: aes-256-cfb
-  name: US50
+  name: US46
   password: amazonskr05
   port: 443
   server: 34.222.136.21
@@ -1836,7 +1693,7 @@ proxies:
   type: ss
   udp: true
 - client-fingerprint: random
-  name: GB4
+  name: GB3
   network: ws
   port: 2053
   server: 51.91.215.11
@@ -1850,7 +1707,7 @@ proxies:
     headers:
       Host: toujiediansigema.666888.lol
     path: /TG@mianfeicf
-- name: US51
+- name: US47
   network: ws
   password: FLorg
   port: 36342
@@ -1863,7 +1720,7 @@ proxies:
     headers:
       Host: trojan.tcorg.filegear-sg.me
     path: /?ed=2048
-- name: US52
+- name: US48
   network: ws
   password: FLorg
   port: 15110
@@ -1876,7 +1733,7 @@ proxies:
     headers:
       Host: trojan.tcorg.filegear-sg.me
     path: /?ed=2048
-- name: US53
+- name: US49
   network: ws
   password: FLorg
   port: 39562
@@ -1890,7 +1747,7 @@ proxies:
       Host: trojan.tcorg.filegear-sg.me
     path: /?ed=2048
 - client-fingerprint: random
-  name: US54
+  name: US50
   network: ws
   port: 2087
   server: 172.67.74.9
@@ -1905,7 +1762,7 @@ proxies:
       Host: toujiediansigema.666888.lol
     path: /TG@mianfeicf
 - cipher: rc4-md5
-  name: US55
+  name: US51
   password: 14fFPrbezE3HDZzsMOr6
   port: 8080
   server: 98.98.79.197
@@ -1913,7 +1770,7 @@ proxies:
   type: ss
   udp: true
 - cipher: aes-256-cfb
-  name: US56
+  name: US52
   password: amazonskr05
   port: 443
   server: 35.93.49.236
@@ -1932,32 +1789,15 @@ proxies:
   ws-opts:
     path: /
 - cipher: aes-256-cfb
-  name: JP16
+  name: JP15
   password: amazonskr05
   port: 443
   server: 35.77.104.14
   skip-cert-verify: true
   type: ss
   udp: true
-- alpn:
-  - http%2F1.1
-  client-fingerprint: random
-  name: KR26
-  network: ws
-  port: 30061
-  server: 124.80.55.214
-  servername: pages.dnsorg.filegear-sg.me
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 95a7daa2-a76c-4ecb-9c84-1948c4e92666
-  ws-opts:
-    headers:
-      Host: pages.dnsorg.filegear-sg.me
-    path: /?ed=2048
 - cipher: aes-256-cfb
-  name: KR27
+  name: KR24
   password: qwerREWQ@@
   port: 19647
   server: p220.panda001.net
@@ -1965,7 +1805,7 @@ proxies:
   type: ss
   udp: true
 - cipher: aes-256-cfb
-  name: KR28
+  name: KR25
   password: qwerREWQ@@
   port: 61080
   server: p110.panda001.net
@@ -1981,7 +1821,7 @@ proxies:
   type: ss
   udp: true
 - client-fingerprint: random
-  name: GB5
+  name: GB4
   network: ws
   port: 32335
   server: 185.217.111.103
@@ -1996,7 +1836,7 @@ proxies:
       Host: toujiediansigema.666888.lol
     path: /TG@mianfeicf
 - cipher: aes-256-cfb
-  name: KR29
+  name: KR26
   password: amazonskr05
   port: 443
   server: 3.38.212.89
@@ -2004,7 +1844,7 @@ proxies:
   type: ss
   udp: true
 - cipher: aes-256-cfb
-  name: US57
+  name: US53
   password: amazonskr05
   port: 443
   server: 35.166.208.40
@@ -2012,7 +1852,7 @@ proxies:
   type: ss
   udp: true
 - cipher: aes-256-cfb
-  name: KR30
+  name: KR27
   password: amazonskr05
   port: 443
   server: 3.38.255.233
@@ -2020,7 +1860,7 @@ proxies:
   type: ss
   udp: true
 - cipher: aes-256-cfb
-  name: US58
+  name: US54
   password: amazonskr05
   port: 443
   server: 34.221.180.94
@@ -2028,7 +1868,7 @@ proxies:
   type: ss
   udp: true
 - cipher: aes-256-cfb
-  name: US59
+  name: US55
   password: amazonskr05
   port: 443
   server: 52.32.13.25
@@ -2038,27 +1878,10 @@ proxies:
 - alpn:
   - http%2F1.1
   client-fingerprint: random
-  name: JP17
+  name: JP16
   network: ws
   port: 58723
   server: 172.84.92.152
-  servername: pages.dnsorg.filegear-sg.me
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 95a7daa2-a76c-4ecb-9c84-1948c4e92666
-  ws-opts:
-    headers:
-      Host: pages.dnsorg.filegear-sg.me
-    path: /?ed=2048
-- alpn:
-  - http%2F1.1
-  client-fingerprint: random
-  name: JP18
-  network: ws
-  port: 12999
-  server: 103.20.199.118
   servername: pages.dnsorg.filegear-sg.me
   skip-cert-verify: true
   tls: true
@@ -2086,7 +1909,7 @@ proxies:
   type: ss
   udp: true
 - cipher: aes-256-cfb
-  name: SG4
+  name: SG3
   password: amazonskr05
   port: 443
   server: 13.229.232.1
@@ -2094,30 +1917,8 @@ proxies:
   type: ss
   udp: true
 - alterId: 0
-  cipher: none
-  name: AU1
-  network: ws
-  port: 443
-  server: n1723960458.ryjml.cn
-  servername: n1723960458.ryjml.cn
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  udp: true
-  uuid: 77bcad64-8bb9-47a8-81f5-9086c6040b63
-  ws-opts:
-    path: /
-- cipher: chacha20-ietf-poly1305
-  name: HK9
-  password: 7efd4673-1d09-4be0-858b-7ee5d8b33dcd
-  port: 59096
-  server: gdyddx500.xiyunchen.cn
-  skip-cert-verify: true
-  type: ss
-  udp: true
-- alterId: 0
   cipher: auto
-  name: US60
+  name: US56
   network: ws
   port: 2095
   server: 104.19.45.172
@@ -2132,7 +1933,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: US61
+  name: US57
   network: ws
   port: 2095
   server: 104.19.45.129
@@ -2147,7 +1948,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: US62
+  name: US58
   network: ws
   port: 2095
   server: 104.19.45.13
@@ -2160,14 +1961,7 @@ proxies:
     headers:
       Host: onea.flha.ru
     path: /
-- name: FR3
-  password: 5c7941b5-c393-4eea-a76d-d44b59baf8a0
-  port: 2053
-  server: 185.234.64.146
-  skip-cert-verify: true
-  type: trojan
-  udp: true
-- name: HK10
+- name: HK9
   network: ws
   port: 2087
   server: visa.cn
@@ -2182,17 +1976,8 @@ proxies:
     headers:
       Host: global2.ccdd.site
     path: /?ed=2560
-- country: 🇹🇼 TW
-  delay: 1516
-  name: TW7
-  password: 464d3eff-ddd0-4622-991b-9cf42ba6c9c9
-  port: 703
-  server: 118.167.11.28
-  skip-cert-verify: true
-  type: trojan
-  udp: true
 - delay: 1010
-  name: TW8
+  name: TW6
   network: ws
   port: 7
   server: 203.198.16.91
@@ -2207,7 +1992,7 @@ proxies:
       Host: a.ssll.gay
     path: /Telegram🇨🇳+@WangCai2+/?ed=2048
 - delay: 654
-  name: TW9
+  name: TW7
   network: ws
   port: 7
   server: 112.120.127.246
@@ -2223,7 +2008,7 @@ proxies:
     path: /Telegram🇨🇳+@WangCai2+/?ed=2048
 - country: 🇨🇳 CN
   delay: 2054
-  name: HK11
+  name: HK10
   password: lNOcIAxy
   port: 36442
   server: 36.151.192.239
@@ -2241,7 +2026,7 @@ proxies:
   type: ss
   udp: true
 - delay: 858
-  name: JP19
+  name: JP17
   network: ws
   port: 12233
   server: 106.240.98.130
@@ -2255,16 +2040,6 @@ proxies:
     headers:
       Host: global2.ccdd.site
     path: /?ed=2560
-- cipher: chacha20-ietf-poly1305
-  country: 🇷🇺 RU
-  delay: 717
-  name: FR4
-  password: pBlVQa3yBhazZUpGTAXMRq
-  port: 51476
-  server: 46.226.167.36
-  skip-cert-verify: true
-  type: ss
-  udp: true
 - delay: 1504
   name: PL1
   network: ws
@@ -2280,22 +2055,8 @@ proxies:
     headers:
       Host: global2.ccdd.site
     path: /?ed=2560
-- delay: 829
-  name: US63
-  network: ws
-  password: 95b
-  port: 37070
-  server: 45.91.81.45
-  skip-cert-verify: true
-  sni: a17cabb5-3f13-4056-b0ce-476143491d4b.blackbeautifulman.cloudns.org
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: a17cabb5-3f13-4056-b0ce-476143491d4b.blackbeautifulman.cloudns.org
-    path: /trojan-6qo.pages.dev/?ed=2560?ed=2560
 - delay: 944
-  name: GB6
+  name: GB5
   network: ws
   port: 443
   server: 217.163.76.75
@@ -2310,7 +2071,7 @@ proxies:
       Host: cfed.tgzdyz2.top
     path: /tg@zdyz2
 - delay: 1042
-  name: KR31
+  name: KR28
   network: ws
   port: 34599
   server: 118.130.241.44
@@ -2324,23 +2085,9 @@ proxies:
     headers:
       Host: global2.ccdd.site
     path: /?ed=2560
-- delay: 557
-  name: KR32
-  network: ws
-  password: CMLiu
-  port: 443
-  server: 59.3.3.161
-  skip-cert-verify: true
-  sni: aliorg.filegear-sg.me
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: aliorg.filegear-sg.me
-    path: /
 - alterId: 64
   cipher: auto
-  name: HK12
+  name: HK11
   port: 42055
   server: 120.232.153.37
   skip-cert-verify: true
@@ -2350,7 +2097,7 @@ proxies:
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - alterId: 0
   cipher: auto
-  name: KR33
+  name: KR29
   network: ws
   port: 8080
   server: 104.19.44.174
@@ -2365,7 +2112,7 @@ proxies:
     path: /?ed=2048
 - alterId: 0
   cipher: auto
-  name: US64
+  name: US59
   network: ws
   port: 2095
   server: 104.19.45.150
@@ -2380,7 +2127,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: US65
+  name: US60
   network: ws
   port: 2095
   server: 104.19.45.205
@@ -2395,22 +2142,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: US66
-  network: ws
-  port: 2095
-  server: 104.19.45.114
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 7a737f41-b792-4260-94ff-3d864da67b80
-  ws-opts:
-    headers:
-      Host: onea.flha.ru
-    path: /
-- alterId: 0
-  cipher: auto
-  name: US67
+  name: US61
   network: ws
   port: 2095
   server: 104.19.45.176
@@ -2425,7 +2157,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: US68
+  name: US62
   network: ws
   port: 2095
   server: 104.19.45.14
@@ -2440,7 +2172,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: US69
+  name: US63
   network: ws
   port: 2095
   server: 104.19.45.178
@@ -2455,7 +2187,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: US70
+  name: US64
   network: ws
   port: 2095
   server: 104.19.45.191
@@ -2468,24 +2200,9 @@ proxies:
     headers:
       Host: onea.flha.ru
     path: /
-- alterId: 0
-  cipher: auto
-  name: US71
-  network: ws
-  port: 2095
-  server: 104.19.45.175
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 7a737f41-b792-4260-94ff-3d864da67b80
-  ws-opts:
-    headers:
-      Host: onea.flha.ru
-    path: /
 - client-fingerprint: ios
   flow: xtls-rprx-vision
-  name: US72
+  name: US65
   network: tcp
   port: 60001
   reality-opts:
@@ -2500,7 +2217,7 @@ proxies:
   uuid: 96dbdda4-5efc-4f0e-bb6f-2d122fd4695f
 - client-fingerprint: safari
   flow: xtls-rprx-vision
-  name: US73
+  name: US66
   network: tcp
   port: 60001
   reality-opts:
@@ -2515,7 +2232,7 @@ proxies:
   uuid: 96dbdda4-5efc-4f0e-bb6f-2d122fd4695f
 - client-fingerprint: firefox
   flow: xtls-rprx-vision
-  name: US74
+  name: US67
   network: tcp
   port: 60001
   reality-opts:
@@ -2530,7 +2247,7 @@ proxies:
   uuid: 96dbdda4-5efc-4f0e-bb6f-2d122fd4695f
 - client-fingerprint: firefox
   flow: xtls-rprx-vision
-  name: US75
+  name: US68
   network: tcp
   port: 60001
   reality-opts:
@@ -2545,7 +2262,7 @@ proxies:
   uuid: 96dbdda4-5efc-4f0e-bb6f-2d122fd4695f
 - client-fingerprint: firefox
   flow: xtls-rprx-vision
-  name: JP20
+  name: JP18
   network: tcp
   port: 60001
   reality-opts:
@@ -2560,7 +2277,7 @@ proxies:
   uuid: 96dbdda4-5efc-4f0e-bb6f-2d122fd4695f
 - client-fingerprint: qq
   flow: xtls-rprx-vision
-  name: JP21
+  name: JP19
   network: tcp
   port: 60001
   reality-opts:
@@ -2573,39 +2290,9 @@ proxies:
   type: vless
   udp: true
   uuid: 96dbdda4-5efc-4f0e-bb6f-2d122fd4695f
-- client-fingerprint: safari
-  flow: xtls-rprx-vision
-  name: JP22
-  network: tcp
-  port: 60001
-  reality-opts:
-    public-key: lglDb7wrttqBOUTfZilyGbiSwFqBlHtCMciMu9VCxjM
-    short-id: 778f6556
-  server: jp3.helloco.xyz
-  servername: python.org
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 96dbdda4-5efc-4f0e-bb6f-2d122fd4695f
-- client-fingerprint: safari
-  flow: xtls-rprx-vision
-  name: JP23
-  network: tcp
-  port: 60001
-  reality-opts:
-    public-key: zIw3P1C9fGjbQSXNLjyAshZa9rw33_agfe3AldfKhC4
-    short-id: dbab5b3d
-  server: jp4.helloco.xyz
-  servername: python.org
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 96dbdda4-5efc-4f0e-bb6f-2d122fd4695f
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: KR34
+  name: KR30
   network: tcp
   port: 60001
   reality-opts:
@@ -2620,7 +2307,7 @@ proxies:
   uuid: 96dbdda4-5efc-4f0e-bb6f-2d122fd4695f
 - client-fingerprint: safari
   flow: xtls-rprx-vision
-  name: KR35
+  name: KR31
   network: tcp
   port: 60001
   reality-opts:
@@ -2635,7 +2322,7 @@ proxies:
   uuid: 96dbdda4-5efc-4f0e-bb6f-2d122fd4695f
 - client-fingerprint: safari
   flow: xtls-rprx-vision
-  name: HK13
+  name: HK12
   network: tcp
   port: 60001
   reality-opts:
@@ -2650,7 +2337,7 @@ proxies:
   uuid: 96dbdda4-5efc-4f0e-bb6f-2d122fd4695f
 - client-fingerprint: edge
   flow: xtls-rprx-vision
-  name: HK14
+  name: HK13
   network: tcp
   port: 60001
   reality-opts:
@@ -2665,7 +2352,7 @@ proxies:
   uuid: 96dbdda4-5efc-4f0e-bb6f-2d122fd4695f
 - client-fingerprint: firefox
   flow: xtls-rprx-vision
-  name: HK15
+  name: HK14
   network: tcp
   port: 60001
   reality-opts:
@@ -2680,7 +2367,7 @@ proxies:
   uuid: 96dbdda4-5efc-4f0e-bb6f-2d122fd4695f
 - client-fingerprint: qq
   flow: xtls-rprx-vision
-  name: HK16
+  name: HK15
   network: tcp
   port: 60001
   reality-opts:
@@ -2695,7 +2382,7 @@ proxies:
   uuid: 96dbdda4-5efc-4f0e-bb6f-2d122fd4695f
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: SG5
+  name: SG4
   network: tcp
   port: 60001
   reality-opts:
@@ -2710,7 +2397,7 @@ proxies:
   uuid: 96dbdda4-5efc-4f0e-bb6f-2d122fd4695f
 - client-fingerprint: firefox
   flow: xtls-rprx-vision
-  name: GB7
+  name: GB6
   network: tcp
   port: 60001
   reality-opts:
@@ -2725,7 +2412,7 @@ proxies:
   uuid: 96dbdda4-5efc-4f0e-bb6f-2d122fd4695f
 - client-fingerprint: qq
   flow: xtls-rprx-vision
-  name: GB8
+  name: GB7
   network: tcp
   port: 60001
   reality-opts:
@@ -2740,7 +2427,7 @@ proxies:
   uuid: 96dbdda4-5efc-4f0e-bb6f-2d122fd4695f
 - alterId: 0
   cipher: auto
-  name: US76
+  name: US69
   network: ws
   port: 2095
   server: 104.19.45.82
@@ -2754,7 +2441,7 @@ proxies:
       Host: onea.flha.ru
     path: /
 - client-fingerprint: random
-  name: SG6
+  name: HK16
   network: ws
   port: 443
   server: 219.76.13.177
@@ -2770,7 +2457,7 @@ proxies:
     path: /TG@ZDYZ2?ed=2560
 - alterId: 0
   cipher: auto
-  name: US77
+  name: US70
   network: ws
   port: 2095
   server: 104.19.45.135
@@ -2785,7 +2472,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: US78
+  name: US71
   network: ws
   port: 2095
   server: 104.19.45.117
@@ -2800,22 +2487,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: US79
-  network: ws
-  port: 2095
-  server: 104.19.45.16
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 7a737f41-b792-4260-94ff-3d864da67b80
-  ws-opts:
-    headers:
-      Host: onea.flha.ru
-    path: /
-- alterId: 0
-  cipher: auto
-  name: US80
+  name: US72
   network: ws
   port: 2095
   server: 104.19.45.36
@@ -2830,25 +2502,10 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: US81
+  name: US73
   network: ws
   port: 2095
   server: 104.19.45.8
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 7a737f41-b792-4260-94ff-3d864da67b80
-  ws-opts:
-    headers:
-      Host: onea.flha.ru
-    path: /
-- alterId: 0
-  cipher: auto
-  name: US82
-  network: ws
-  port: 2095
-  server: 104.19.45.112
   skip-cert-verify: true
   tls: false
   type: vmess
@@ -2874,7 +2531,7 @@ proxies:
       Host: subhiddify.mmdv2.host
     path: /?ed=2560
 - client-fingerprint: random
-  name: US83
+  name: US74
   network: ws
   port: 443
   server: qa.visamiddleeast.com
@@ -2888,7 +2545,7 @@ proxies:
     headers:
       Host: subhiddify.mmdv2.host
     path: /?ed=2560
-- name: SG7
+- name: HK18
   network: ws
   password: Trevely
   port: 443
@@ -2901,7 +2558,7 @@ proxies:
     headers:
       Host: trojan.trevely.us.kg
     path: /?ed=2560
-- name: HK18
+- name: HK19
   network: ws
   password: Trevely
   port: 12345
@@ -2914,7 +2571,7 @@ proxies:
     headers:
       Host: trojan.trevely.us.kg
     path: /?ed=2560
-- name: HK19
+- name: HK20
   network: ws
   password: Trevely
   port: 12185
@@ -2927,7 +2584,7 @@ proxies:
     headers:
       Host: trojan.trevely.us.kg
     path: /?ed=2560
-- name: HK20
+- name: HK21
   network: ws
   password: Trevely
   port: 119
@@ -2940,7 +2597,7 @@ proxies:
     headers:
       Host: trojan.trevely.us.kg
     path: /?ed=2560
-- name: HK21
+- name: HK22
   network: ws
   password: Trevely
   port: 9000
@@ -2953,7 +2610,7 @@ proxies:
     headers:
       Host: trojan.trevely.us.kg
     path: /?ed=2560
-- name: HK22
+- name: HK23
   network: ws
   password: Trevely
   port: 587
@@ -2966,7 +2623,7 @@ proxies:
     headers:
       Host: trojan.trevely.us.kg
     path: /?ed=2560
-- name: HK23
+- name: HK24
   network: ws
   password: Trevely
   port: 10002
@@ -2979,24 +2636,11 @@ proxies:
     headers:
       Host: trojan.trevely.us.kg
     path: /?ed=2560
-- name: HK24
+- name: HK25
   network: ws
   password: Trevely
   port: 30037
   server: 223.16.13.20
-  skip-cert-verify: true
-  sni: trojan.trevely.us.kg
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: trojan.trevely.us.kg
-    path: /?ed=2560
-- name: HK25
-  network: ws
-  password: Trevely
-  port: 25629
-  server: 46.3.105.223
   skip-cert-verify: true
   sni: trojan.trevely.us.kg
   type: trojan
@@ -3057,7 +2701,7 @@ proxies:
     headers:
       Host: trojan.trevely.us.kg
     path: /?ed=2560
-- name: JP24
+- name: JP20
   network: ws
   password: Trevely
   port: 555
@@ -3070,7 +2714,7 @@ proxies:
     headers:
       Host: trojan.trevely.us.kg
     path: /?ed=2560
-- name: SG8
+- name: SG5
   network: ws
   password: Trevely
   port: 12014
@@ -3122,7 +2766,7 @@ proxies:
     headers:
       Host: trojan.trevely.us.kg
     path: /?ed=2560
-- name: KR36
+- name: KR32
   network: ws
   password: Trevely
   port: 10162
@@ -3135,7 +2779,7 @@ proxies:
     headers:
       Host: trojan.trevely.us.kg
     path: /?ed=2560
-- name: KR37
+- name: KR33
   network: ws
   password: Trevely
   port: 37215
@@ -3148,20 +2792,7 @@ proxies:
     headers:
       Host: trojan.trevely.us.kg
     path: /?ed=2560
-- name: KR38
-  network: ws
-  password: Trevely
-  port: 587
-  server: 129.154.195.5
-  skip-cert-verify: true
-  sni: trojan.trevely.us.kg
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: trojan.trevely.us.kg
-    path: /?ed=2560
-- name: KR39
+- name: KR34
   network: ws
   password: Trevely
   port: 30012
@@ -3174,7 +2805,7 @@ proxies:
     headers:
       Host: trojan.trevely.us.kg
     path: /?ed=2560
-- name: KR40
+- name: KR35
   network: ws
   password: Trevely
   port: 18443
@@ -3187,7 +2818,7 @@ proxies:
     headers:
       Host: trojan.trevely.us.kg
     path: /?ed=2560
-- name: KR41
+- name: KR36
   network: ws
   password: Trevely
   port: 30012
@@ -3200,7 +2831,7 @@ proxies:
     headers:
       Host: trojan.trevely.us.kg
     path: /?ed=2560
-- name: KR42
+- name: KR37
   network: ws
   password: Trevely
   port: 10002
@@ -3213,7 +2844,7 @@ proxies:
     headers:
       Host: trojan.trevely.us.kg
     path: /?ed=2560
-- name: SG9
+- name: SG6
   network: ws
   password: Trevely
   port: 28
@@ -3227,7 +2858,7 @@ proxies:
       Host: trojan.trevely.us.kg
     path: /?ed=2560
 - cipher: aes-256-cfb
-  name: SG10
+  name: SG7
   password: amazonskr05
   port: 443
   server: 47.129.53.7
@@ -3254,7 +2885,7 @@ proxies:
   uuid: 6ea392c2-0636-3d4f-a6a2-f38a76e216d3
 - alterId: 0
   cipher: auto
-  name: US84
+  name: US75
   network: ws
   port: 2086
   server: www.visa.com
@@ -3267,14 +2898,6 @@ proxies:
     headers:
       Host: ip1.1789034.xyz
     path: /github.com/Alvin9999
-- cipher: aes-256-gcm
-  name: SG11
-  password: c3a87b84-6fc9-40e4-9d65-5e5866bab35a
-  port: 30982
-  server: gdyddx500.xiyunchen.cn
-  skip-cert-verify: true
-  type: ss
-  udp: true
 - cipher: chacha20-ietf-poly1305
   name: HK33
   password: 70747514-fb14-4f31-8390-e1f0453eff6d
@@ -3285,7 +2908,7 @@ proxies:
   udp: true
 - alterId: 0
   cipher: auto
-  name: US85
+  name: US76
   network: ws
   port: 2086
   server: 172.67.71.187
@@ -3300,22 +2923,7 @@ proxies:
     path: /github.com/Alvin9999
 - alterId: 0
   cipher: auto
-  name: US86
-  network: ws
-  port: 2086
-  server: 104.19.45.31
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
-  ws-opts:
-    headers:
-      Host: ip13.freegradely.xyz
-    path: /github.com/Alvin9999
-- alterId: 0
-  cipher: auto
-  name: US87
+  name: US77
   network: ws
   port: 2086
   server: 104.19.47.88
@@ -3330,22 +2938,7 @@ proxies:
     path: /github.com/Alvin9999
 - alterId: 0
   cipher: auto
-  name: US88
-  network: ws
-  port: 2095
-  server: onea.flha.ru
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 7a737f41-b792-4260-94ff-3d864da67b80
-  ws-opts:
-    headers:
-      Host: onea.flha.ru
-    path: /
-- alterId: 0
-  cipher: auto
-  name: US89
+  name: US78
   network: ws
   port: 2086
   server: 23.227.38.5
@@ -3360,37 +2953,7 @@ proxies:
     path: /github.com/Alvin9999
 - alterId: 0
   cipher: auto
-  name: US90
-  network: ws
-  port: 2086
-  server: 104.19.57.4
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
-  ws-opts:
-    headers:
-      Host: ip11.freegradely.xyz
-    path: /github.com/Alvin9999
-- alterId: 0
-  cipher: auto
-  name: US91
-  network: ws
-  port: 2086
-  server: 104.19.45.13
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
-  ws-opts:
-    headers:
-      Host: ip2.1457230.xyz
-    path: /github.com/Alvin9999
-- alterId: 0
-  cipher: auto
-  name: US92
+  name: US79
   network: ws
   port: 2086
   server: 104.19.46.103
@@ -3405,7 +2968,7 @@ proxies:
     path: /github.com/Alvin9999
 - alterId: 0
   cipher: auto
-  name: US93
+  name: US80
   network: ws
   port: 2095
   server: 104.19.45.70
@@ -3420,7 +2983,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: US94
+  name: US81
   network: ws
   port: 2095
   server: 104.19.45.85
@@ -3435,7 +2998,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: US95
+  name: US82
   network: ws
   port: 2095
   server: 104.19.45.104
@@ -3450,22 +3013,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: US96
-  network: ws
-  port: 2095
-  server: 104.19.45.51
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 7a737f41-b792-4260-94ff-3d864da67b80
-  ws-opts:
-    headers:
-      Host: onea.flha.ru
-    path: /
-- alterId: 0
-  cipher: auto
-  name: US97
+  name: US83
   network: ws
   port: 2095
   server: 104.19.45.212
@@ -3480,7 +3028,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: US98
+  name: US84
   network: ws
   port: 2095
   server: 104.19.45.171
@@ -3494,7 +3042,7 @@ proxies:
       Host: onea.flha.ru
     path: /
 - delay: 1463
-  name: TW10
+  name: TW8
   network: ws
   port: 81
   server: 210.61.97.241
@@ -3517,23 +3065,9 @@ proxies:
   skip-cert-verify: true
   type: ss
   udp: true
-- delay: 1050
-  name: CA2
-  network: ws
-  password: 95b
-  port: 80
-  server: 204.110.221.21
-  skip-cert-verify: true
-  sni: e130917c-1b58-4136-b2d9-76dc920e0add.add97ee8-0f14-48a3-b2cd-979c56742e64.loseyourip.com
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: e130917c-1b58-4136-b2d9-76dc920e0add.add97ee8-0f14-48a3-b2cd-979c56742e64.loseyourip.com
-    path: /trojan-6qo.pages.dev/?ed=2560?ed=2560
 - cipher: chacha20-ietf-poly1305
   delay: 434
-  name: SG12
+  name: SG8
   password: 70747514-fb14-4f31-8390-e1f0453eff6d
   port: 20009
   server: tw4.mhw7e2.online
@@ -3542,7 +3076,7 @@ proxies:
   udp: true
 - cipher: chacha20-ietf-poly1305
   delay: 872
-  name: SG13
+  name: SG9
   password: 70747514-fb14-4f31-8390-e1f0453eff6d
   port: 20009
   server: jp1.mhw7e2.online
@@ -3551,7 +3085,7 @@ proxies:
   udp: true
 - cipher: chacha20-ietf-poly1305
   delay: 732
-  name: SG14
+  name: SG10
   password: 70747514-fb14-4f31-8390-e1f0453eff6d
   port: 20009
   server: tw5.mhw7e2.online
@@ -3560,7 +3094,7 @@ proxies:
   udp: true
 - cipher: chacha20-ietf-poly1305
   delay: 520
-  name: SG15
+  name: SG11
   password: 70747514-fb14-4f31-8390-e1f0453eff6d
   port: 20009
   server: sg5.mhw7e2.online
@@ -3569,7 +3103,7 @@ proxies:
   udp: true
 - cipher: chacha20-ietf-poly1305
   delay: 584
-  name: SG16
+  name: SG12
   password: 70747514-fb14-4f31-8390-e1f0453eff6d
   port: 20009
   server: tw2.mhw7e2.online
@@ -3578,7 +3112,7 @@ proxies:
   udp: true
 - cipher: chacha20-ietf-poly1305
   delay: 835
-  name: SG17
+  name: SG13
   password: 70747514-fb14-4f31-8390-e1f0453eff6d
   port: 20009
   server: sg2.mhw7e2.online
@@ -3586,7 +3120,7 @@ proxies:
   type: ss
   udp: true
 - delay: 858
-  name: JP25
+  name: JP21
   network: ws
   port: 29708
   server: 117.123.234.199
@@ -3601,7 +3135,7 @@ proxies:
       Host: a.ssll.gay
     path: /Telegram🇨🇳+@WangCai2+/?ed=2048
 - delay: 1576
-  name: US99
+  name: US85
   network: ws
   port: 443
   server: 8.222.101.17
@@ -3615,24 +3149,9 @@ proxies:
     headers:
       Host: a.ssll.gay
     path: /Telegram🇨🇳+@WangCai2+/?ed=2048
-- delay: 1518
-  name: US100
-  network: ws
-  port: 443
-  server: 38.143.0.91
-  servername: a.ssll.gay
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-  ws-opts:
-    headers:
-      Host: a.ssll.gay
-    path: /Telegram🇨🇳+@WangCai2+/?ed=2048
 - cipher: chacha20-ietf-poly1305
   delay: 2192
-  name: US101
+  name: US86
   password: 70747514-fb14-4f31-8390-e1f0453eff6d
   port: 20018
   server: tw4.mhw7e2.online
@@ -3641,30 +3160,16 @@ proxies:
   udp: true
 - cipher: chacha20-ietf-poly1305
   delay: 1264
-  name: US102
+  name: US87
   password: 70747514-fb14-4f31-8390-e1f0453eff6d
   port: 20018
   server: 14.215.169.69
   skip-cert-verify: true
   type: ss
   udp: true
-- delay: 1653
-  name: US103
-  network: ws
-  port: 80
-  server: 45.80.110.161
-  servername: a.ssll.gay
-  skip-cert-verify: true
-  type: vless
-  udp: true
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-  ws-opts:
-    headers:
-      Host: a.ssll.gay
-    path: /Twitterfreecodesfp=chrome
 - client-fingerprint: chrome
   delay: 958
-  name: GB9
+  name: GB8
   network: ws
   port: 443
   server: 192.200.160.6
@@ -3679,7 +3184,7 @@ proxies:
       Host: a.ssll.gay
     path: /Telegram🇨🇳 @WangCai_8 /?ed=2048
 - delay: 951
-  name: US104
+  name: US88
   network: ws
   password: 95b
   port: 443
@@ -3694,13 +3199,836 @@ proxies:
     path: /trojan-6qo.pages.dev/?ed=2560?ed=2560
 - cipher: chacha20-ietf-poly1305
   delay: 2515
-  name: GB10
+  name: GB9
   password: 70747514-fb14-4f31-8390-e1f0453eff6d
   port: 20021
   server: sg5.mhw7e2.online
   skip-cert-verify: true
   type: ss
   udp: true
+- alterId: 0
+  cipher: auto
+  name: US89
+  network: ws
+  port: 2086
+  server: 104.18.57.111
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
+  ws-opts:
+    headers:
+      Host: ip11.freegradely.xyz
+    path: /github.com/Alvin9999
+- alterId: 0
+  cipher: auto
+  name: US90
+  network: ws
+  port: 2086
+  server: 104.19.123.11
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
+  ws-opts:
+    headers:
+      Host: ip2.1457230.xyz
+    path: /github.com/Alvin9999
+- alterId: 0
+  cipher: auto
+  name: US91
+  network: ws
+  port: 2086
+  server: 104.19.21.230
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
+  ws-opts:
+    headers:
+      Host: ip11.freegradely.xyz
+    path: /github.com/Alvin9999
+- alterId: 0
+  cipher: auto
+  name: US92
+  network: ws
+  port: 2086
+  server: 104.19.32.216
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
+  ws-opts:
+    headers:
+      Host: ip14.freegradely.xyz
+    path: /github.com/Alvin9999
+- alterId: 0
+  cipher: auto
+  name: US93
+  network: ws
+  port: 2086
+  server: 104.19.45.15
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
+  ws-opts:
+    headers:
+      Host: ip13.freegradely.xyz
+    path: /github.com/Alvin9999
+- alterId: 0
+  cipher: auto
+  name: US94
+  network: ws
+  port: 2086
+  server: 104.19.45.19
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
+  ws-opts:
+    headers:
+      Host: ip13.freegradely.xyz
+    path: /github.com/Alvin9999
+- alterId: 0
+  cipher: auto
+  name: US95
+  network: ws
+  port: 2086
+  server: 104.19.46.27
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
+  ws-opts:
+    headers:
+      Host: ip14.freegradely.xyz
+    path: /github.com/Alvin9999
+- alterId: 0
+  cipher: auto
+  name: US96
+  network: ws
+  port: 2086
+  server: 104.19.46.42
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
+  ws-opts:
+    headers:
+      Host: ip2.1457230.xyz
+    path: /github.com/Alvin9999
+- alterId: 0
+  cipher: auto
+  name: US97
+  network: ws
+  port: 2086
+  server: 104.19.46.59
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
+  ws-opts:
+    headers:
+      Host: ip1.1457230.xyz
+    path: /github.com/Alvin9999
+- alterId: 0
+  cipher: auto
+  name: US98
+  network: ws
+  port: 2086
+  server: 104.20.25.146
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
+  ws-opts:
+    headers:
+      Host: ip14.freegradely.xyz
+    path: /github.com/Alvin9999
+- alterId: 0
+  cipher: auto
+  name: US99
+  network: ws
+  port: 2086
+  server: 162.159.140.66
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
+  ws-opts:
+    headers:
+      Host: ip1.1789034.xyz
+    path: /github.com/Alvin9999
+- alterId: 0
+  cipher: auto
+  name: US100
+  network: ws
+  port: 2086
+  server: 162.159.140.93
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
+  ws-opts:
+    headers:
+      Host: ip1.1789034.xyz
+    path: /github.com/Alvin9999
+- alterId: 0
+  cipher: auto
+  name: US101
+  network: ws
+  port: 2086
+  server: 172.64.167.10
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
+  ws-opts:
+    headers:
+      Host: ip2.1457230.xyz
+    path: /github.com/Alvin9999
+- alterId: 0
+  cipher: auto
+  name: US102
+  network: ws
+  port: 2086
+  server: 172.64.167.35
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
+  ws-opts:
+    headers:
+      Host: ip2.1457230.xyz
+    path: /github.com/Alvin9999
+- alterId: 0
+  cipher: auto
+  name: US103
+  network: ws
+  port: 2086
+  server: 172.64.167.8
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
+  ws-opts:
+    headers:
+      Host: ip2.1457230.xyz
+    path: /github.com/Alvin9999
+- alterId: 0
+  cipher: auto
+  name: US104
+  network: ws
+  port: 2086
+  server: ip.sb
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
+  ws-opts:
+    headers:
+      Host: ip1.1789034.xyz
+    path: /github.com/Alvin9999
+- alterId: 0
+  cipher: auto
+  name: US105
+  network: ws
+  port: 2086
+  server: malaysia.com
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
+  ws-opts:
+    headers:
+      Host: ip1.1789034.xyz
+    path: /github.com/Alvin9999
+- alterId: 0
+  cipher: auto
+  name: US106
+  network: ws
+  port: 2086
+  server: russia.com
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
+  ws-opts:
+    headers:
+      Host: ip1.1789034.xyz
+    path: /github.com/Alvin9999
+- alterId: 0
+  cipher: auto
+  name: US107
+  network: ws
+  port: 2086
+  server: 172.64.194.76
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
+  ws-opts:
+    headers:
+      Host: ip14.freegradely.xyz
+    path: /github.com/Alvin9999
+- alterId: 0
+  cipher: auto
+  name: US108
+  network: ws
+  port: 2086
+  server: 104.19.21.71
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
+  ws-opts:
+    headers:
+      Host: ip11.freegradely.xyz
+    path: /github.com/Alvin9999
+- cipher: chacha20-ietf
+  name: HK34
+  obfs: plain
+  obfs-param: 93314254902.microsoft.com
+  password: bxsnucrgk6hfish
+  port: 5950
+  protocol: auth_aes128_sha1
+  protocol-param: 254902:0916Psc4_lei
+  server: yd-01.paofunlink.com
+  skip-cert-verify: true
+  type: ssr
+  udp: true
+- cipher: chacha20-ietf
+  name: HK35
+  obfs: plain
+  obfs-param: 93314254902.microsoft.com
+  password: bxsnucrgk6hfish
+  port: 5955
+  protocol: auth_aes128_sha1
+  protocol-param: 254902:0916Psc4_lei
+  server: yd-06.paofunlink.com
+  skip-cert-verify: true
+  type: ssr
+  udp: true
+- cipher: chacha20-ietf
+  name: HK36
+  obfs: plain
+  obfs-param: 93314254902.microsoft.com
+  password: bxsnucrgk6hfish
+  port: 5951
+  protocol: auth_aes128_sha1
+  protocol-param: 254902:0916Psc4_lei
+  server: yd-01.paofunlink.com
+  skip-cert-verify: true
+  type: ssr
+  udp: true
+- cipher: chacha20-ietf
+  name: HK37
+  obfs: plain
+  obfs-param: 93314254902.microsoft.com
+  password: bxsnucrgk6hfish
+  port: 5952
+  protocol: auth_aes128_sha1
+  protocol-param: 254902:0916Psc4_lei
+  server: yd-01.paofunlink.com
+  skip-cert-verify: true
+  type: ssr
+  udp: true
+- cipher: chacha20-ietf
+  name: TW9
+  obfs: plain
+  obfs-param: 93314254902.microsoft.com
+  password: bxsnucrgk6hfish
+  port: 1075
+  protocol: auth_aes128_sha1
+  protocol-param: 254902:0916Psc4_lei
+  server: yd-03.paofunlink.com
+  skip-cert-verify: true
+  type: ssr
+  udp: true
+- cipher: chacha20-ietf
+  name: TW10
+  obfs: plain
+  obfs-param: 93314254902.microsoft.com
+  password: bxsnucrgk6hfish
+  port: 1076
+  protocol: auth_aes128_sha1
+  protocol-param: 254902:0916Psc4_lei
+  server: yd-03.paofunlink.com
+  skip-cert-verify: true
+  type: ssr
+  udp: true
+- cipher: chacha20-ietf
+  name: SG14
+  obfs: plain
+  obfs-param: 93314254902.microsoft.com
+  password: bxsnucrgk6hfish
+  port: 1095
+  protocol: auth_aes128_sha1
+  protocol-param: 254902:0916Psc4_lei
+  server: yd-03.paofunlink.com
+  skip-cert-verify: true
+  type: ssr
+  udp: true
+- cipher: chacha20-ietf
+  name: SG15
+  obfs: plain
+  obfs-param: 93314254902.microsoft.com
+  password: bxsnucrgk6hfish
+  port: 1096
+  protocol: auth_aes128_sha1
+  protocol-param: 254902:0916Psc4_lei
+  server: yd-03.paofunlink.com
+  skip-cert-verify: true
+  type: ssr
+  udp: true
+- cipher: chacha20-ietf
+  name: US109
+  obfs: plain
+  obfs-param: 93314254902.microsoft.com
+  password: bxsnucrgk6hfish
+  port: 1056
+  protocol: auth_aes128_sha1
+  protocol-param: 254902:0916Psc4_lei
+  server: yd-03.paofunlink.com
+  skip-cert-verify: true
+  type: ssr
+  udp: true
+- cipher: chacha20-ietf
+  name: US110
+  obfs: plain
+  obfs-param: 93314254902.microsoft.com
+  password: bxsnucrgk6hfish
+  port: 1057
+  protocol: auth_aes128_sha1
+  protocol-param: 254902:0916Psc4_lei
+  server: yd-03.paofunlink.com
+  skip-cert-verify: true
+  type: ssr
+  udp: true
+- cipher: chacha20-ietf
+  name: US111
+  obfs: plain
+  obfs-param: 93314254902.microsoft.com
+  password: bxsnucrgk6hfish
+  port: 1087
+  protocol: auth_aes128_sha1
+  protocol-param: 254902:0916Psc4_lei
+  server: yd-03.paofunlink.com
+  skip-cert-verify: true
+  type: ssr
+  udp: true
+- cipher: chacha20-ietf
+  name: US112
+  obfs: plain
+  obfs-param: 93314254902.microsoft.com
+  password: bxsnucrgk6hfish
+  port: 1083
+  protocol: auth_aes128_sha1
+  protocol-param: 254902:0916Psc4_lei
+  server: yd-02.paofunlink.com
+  skip-cert-verify: true
+  type: ssr
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: TH1
+  password: 64421ec7-3b9f-4faf-a9b0-ee1b12d12771
+  port: 27275
+  server: gtm1.ktmwan.com
+  skip-cert-verify: true
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: VN1
+  password: 64421ec7-3b9f-4faf-a9b0-ee1b12d12771
+  port: 27277
+  server: gtm1.ktmwan.com
+  skip-cert-verify: true
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: JP22
+  password: 36fdc73d-0bff-4d66-9759-e81c63de16b6
+  port: 10809
+  server: yd1.qianggewangluo.buzz
+  skip-cert-verify: true
+  type: ss
+  udp: true
+- alterId: 0
+  cipher: auto
+  name: US113
+  network: ws
+  port: 2086
+  server: 104.19.38.12
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
+  ws-opts:
+    headers:
+      Host: ip2.1457230.xyz
+    path: /github.com/Alvin9999
+- alterId: 0
+  cipher: auto
+  name: US114
+  network: ws
+  port: 2086
+  server: 104.22.37.243
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
+  ws-opts:
+    headers:
+      Host: ip1.1789034.xyz
+    path: /github.com/Alvin9999
+- alterId: 0
+  cipher: auto
+  name: US115
+  network: ws
+  port: 2095
+  server: 104.19.45.7
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 7a737f41-b792-4260-94ff-3d864da67b80
+  ws-opts:
+    headers:
+      Host: onea.flha.ru
+    path: /
+- alterId: 0
+  cipher: auto
+  name: US116
+  network: ws
+  port: 2086
+  server: 104.19.21.63
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
+  ws-opts:
+    headers:
+      Host: ip11.freegradely.xyz
+    path: /github.com/Alvin9999
+- alterId: 0
+  cipher: auto
+  name: US117
+  network: ws
+  port: 2086
+  server: 104.19.32.88
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
+  ws-opts:
+    headers:
+      Host: ip5-4.freegradely.xyz
+    path: /github.com/Alvin9999
+- alterId: 0
+  cipher: auto
+  name: US118
+  network: ws
+  port: 2095
+  server: 104.19.45.128
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 7a737f41-b792-4260-94ff-3d864da67b80
+  ws-opts:
+    headers:
+      Host: onea.flha.ru
+    path: /
+- alterId: 0
+  cipher: auto
+  name: US119
+  network: ws
+  port: 2086
+  server: 104.20.17.186
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
+  ws-opts:
+    headers:
+      Host: ip11.freegradely.xyz
+    path: /github.com/Alvin9999
+- alterId: 0
+  cipher: auto
+  name: US120
+  network: ws
+  port: 2095
+  server: 104.19.45.83
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 7a737f41-b792-4260-94ff-3d864da67b80
+  ws-opts:
+    headers:
+      Host: onea.flha.ru
+    path: /
+- alterId: 0
+  cipher: auto
+  name: US121
+  network: ws
+  port: 2095
+  server: 104.19.45.226
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 7a737f41-b792-4260-94ff-3d864da67b80
+  ws-opts:
+    headers:
+      Host: onea.flha.ru
+    path: /
+- client-fingerprint: edge
+  flow: xtls-rprx-vision
+  name: SG16
+  network: tcp
+  port: 24021
+  reality-opts:
+    public-key: RpeUUI-GjeFRNOOUBauRNYvvM7yVk5yihRI9Tig4jxc
+    short-id: 23aae802
+  server: sg.maple.icu
+  servername: www.apple.com
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 83512b4a-64a9-4058-80df-53d95e2fbaa0
+- client-fingerprint: edge
+  flow: xtls-rprx-vision
+  name: KR38
+  network: tcp
+  port: 24021
+  reality-opts:
+    public-key: XfkuAyN_XfbUJ8qwmp5ILy4rfXcafsie9C-SYxdyKhQ
+    short-id: 0ab19147
+  server: kr.maple.icu
+  servername: www.apple.com
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 83512b4a-64a9-4058-80df-53d95e2fbaa0
+- client-fingerprint: ios
+  flow: xtls-rprx-vision
+  name: US122
+  network: tcp
+  port: 24021
+  reality-opts:
+    public-key: kKB-jjAA58dRdROFi4JrB5i0ETHIOyHK1HwYbff8lnk
+    short-id: afb60060
+  server: us3.maple.icu
+  servername: www.apple.com
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 83512b4a-64a9-4058-80df-53d95e2fbaa0
+- alterId: 0
+  cipher: auto
+  name: DE3
+  network: ws
+  port: 2095
+  server: ydtxwbcvb_cdn.hfhfb.homes
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: b001ee28-2dbf-4076-9227-a3faff40a217
+  ws-opts:
+    headers:
+      Host: decdn.fask511.cfd
+    path: /?ed=1024
+- alterId: 0
+  cipher: auto
+  name: US123
+  network: ws
+  port: 2095
+  server: afgsdvxcv_cdn.hfhfb.homes
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: b001ee28-2dbf-4076-9227-a3faff40a217
+  ws-opts:
+    headers:
+      Host: mgcdn.hfhfb.homes
+    path: /?ed=1024
+- alterId: 0
+  cipher: auto
+  name: JP23
+  network: ws
+  port: 2086
+  server: aqerdsf_cdn.hfhfb.homes
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: b001ee28-2dbf-4076-9227-a3faff40a217
+  ws-opts:
+    headers:
+      Host: rbcdn.fask511.cfd
+    path: /?ed=1024
+- alterId: 0
+  cipher: auto
+  name: AE1
+  network: ws
+  port: 2095
+  server: rvxcstxwbcvb_cdn.hfhfb.homes
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: b001ee28-2dbf-4076-9227-a3faff40a217
+  ws-opts:
+    headers:
+      Host: kialq.hfhfb.homes
+    path: /?ed=1024
+- alterId: 0
+  cipher: auto
+  name: KR39
+  network: ws
+  port: 2095
+  server: qxcstxwbcvb_cdn.hfhfb.homes
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: b001ee28-2dbf-4076-9227-a3faff40a217
+  ws-opts:
+    headers:
+      Host: krcdn.fask511.cfd
+    path: /?ed=1024
+- alterId: 0
+  cipher: auto
+  name: SG17
+  network: ws
+  port: 2095
+  server: apivgbndf_cdn.hfhfb.homes
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: b001ee28-2dbf-4076-9227-a3faff40a217
+  ws-opts:
+    headers:
+      Host: sgcdn.fask511.cfd
+    path: /?ed=1024
+- alterId: 0
+  cipher: auto
+  name: IT1
+  network: ws
+  port: 2095
+  server: sdhdffjblkgfh_cdn.hfhfb.homes
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: b001ee28-2dbf-4076-9227-a3faff40a217
+  ws-opts:
+    headers:
+      Host: itcdn.fask511.cfd
+    path: /?ed=1024
+- name: SG18
+  password: cf8c51d3-e692-46a6-b351-4c5ef0b5efc3
+  port: 13033
+  server: naiu-sg.05vr9nyqg5.download
+  skip-cert-verify: true
+  sni: naiu-sg.05vr9nyqg5.download
+  type: trojan
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  delay: 2055
+  name: HK38
+  password: 70747514-fb14-4f31-8390-e1f0453eff6d
+  port: 20005
+  server: hk2.mhw7e2.online
+  skip-cert-verify: true
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  delay: 1582
+  name: UA2
+  password: 70747514-fb14-4f31-8390-e1f0453eff6d
+  port: 20025
+  server: 14.215.169.69
+  skip-cert-verify: true
+  type: ss
+  udp: true
+- delay: 1480
+  name: US124
+  network: ws
+  port: 80
+  server: 45.80.110.201
+  servername: a.ssll.gay
+  skip-cert-verify: true
+  type: vless
+  udp: true
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+  ws-opts:
+    headers:
+      Host: a.ssll.gay
+    path: /Twitterfreecodesfp=chrome
+- delay: 2143
+  name: US125
+  network: ws
+  port: 80
+  server: 45.80.110.175
+  servername: a.ssll.gay
+  skip-cert-verify: true
+  type: vless
+  udp: true
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+  ws-opts:
+    headers:
+      Host: a.ssll.gay
+    path: /Twitterfreecodesfp=chrome
+- client-fingerprint: chrome
+  delay: 1799
+  name: US126
+  network: ws
+  port: 2083
+  server: 185.148.106.44
+  servername: juzibaipiao.5112233.xyz
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: f775978b-6e22-41a8-ae5e-5f9779e6745f
+  ws-opts:
+    headers:
+      Host: juzibaipiao.5112233.xyz
+    path: /
 proxy-groups:
 - hidden: false
   icon: https://fastly.jsdelivr.net/gh/clash-verge-rev/clash-verge-rev.github.io@main/docs/assets/icons/adjust.svg
@@ -3709,15 +4037,15 @@ proxy-groups:
   max-failed-times: 3
   name: 节点选择
   proxies:
+  - 新加坡自动
+  - 韩国自动
+  - 美国自动
+  - 香港自动
+  - 日本自动
+  - 台湾自动
   - 故障转移
   - 负载均衡(散列)
   - 负载均衡(轮询)
-  - 新加坡节点
-  - 韩国节点
-  - 美国节点
-  - 香港节点
-  - 日本节点
-  - 台湾节点
   - 手动选择
   timeout: 3000
   type: select
@@ -3737,18 +4065,7 @@ proxy-groups:
   interval: 300
   lazy: true
   max-failed-times: 3
-  name: 全局直连
-  proxies:
-  - DIRECT
-  timeout: 3000
-  type: select
-  url: https://www.google.com/generate_204
-- hidden: false
-  icon: https://fastly.jsdelivr.net/gh/clash-verge-rev/clash-verge-rev.github.io@main/docs/assets/icons/link.svg
-  interval: 300
-  lazy: true
-  max-failed-times: 3
-  name: 新加坡节点
+  name: 新加坡自动
   proxies:
   - SG1
   - SG2
@@ -3767,6 +4084,7 @@ proxy-groups:
   - SG15
   - SG16
   - SG17
+  - SG18
   timeout: 3000
   tolerance: 100
   type: url-test
@@ -3776,18 +4094,47 @@ proxy-groups:
   interval: 300
   lazy: true
   max-failed-times: 3
-  name: 台湾节点
+  name: 韩国自动
   proxies:
-  - TW1
-  - TW2
-  - TW3
-  - TW4
-  - TW5
-  - TW6
-  - TW7
-  - TW8
-  - TW9
-  - TW10
+  - KR1
+  - KR2
+  - KR3
+  - KR4
+  - KR5
+  - KR6
+  - KR7
+  - KR8
+  - KR9
+  - KR10
+  - KR11
+  - KR12
+  - KR13
+  - KR14
+  - KR15
+  - KR16
+  - KR17
+  - KR18
+  - KR19
+  - KR20
+  - KR21
+  - KR22
+  - KR23
+  - KR24
+  - KR25
+  - KR26
+  - KR27
+  - KR28
+  - KR29
+  - KR30
+  - KR31
+  - KR32
+  - KR33
+  - KR34
+  - KR35
+  - KR36
+  - KR37
+  - KR38
+  - KR39
   timeout: 3000
   tolerance: 100
   type: url-test
@@ -3797,43 +4144,7 @@ proxy-groups:
   interval: 300
   lazy: true
   max-failed-times: 3
-  name: 日本节点
-  proxies:
-  - JP1
-  - JP2
-  - JP3
-  - JP4
-  - JP5
-  - JP6
-  - JP7
-  - JP8
-  - JP9
-  - JP10
-  - JP11
-  - JP12
-  - JP13
-  - JP14
-  - JP15
-  - JP16
-  - JP17
-  - JP18
-  - JP19
-  - JP20
-  - JP21
-  - JP22
-  - JP23
-  - JP24
-  - JP25
-  timeout: 3000
-  tolerance: 100
-  type: url-test
-  url: https://www.google.com/generate_204
-- hidden: false
-  icon: https://fastly.jsdelivr.net/gh/clash-verge-rev/clash-verge-rev.github.io@main/docs/assets/icons/link.svg
-  interval: 300
-  lazy: true
-  max-failed-times: 3
-  name: 美国节点
+  name: 美国自动
   proxies:
   - US1
   - US2
@@ -3939,6 +4250,28 @@ proxy-groups:
   - US102
   - US103
   - US104
+  - US105
+  - US106
+  - US107
+  - US108
+  - US109
+  - US110
+  - US111
+  - US112
+  - US113
+  - US114
+  - US115
+  - US116
+  - US117
+  - US118
+  - US119
+  - US120
+  - US121
+  - US122
+  - US123
+  - US124
+  - US125
+  - US126
   timeout: 3000
   tolerance: 100
   type: url-test
@@ -3948,60 +4281,7 @@ proxy-groups:
   interval: 300
   lazy: true
   max-failed-times: 3
-  name: 韩国节点
-  proxies:
-  - KR1
-  - KR2
-  - KR3
-  - KR4
-  - KR5
-  - KR6
-  - KR7
-  - KR8
-  - KR9
-  - KR10
-  - KR11
-  - KR12
-  - KR13
-  - KR14
-  - KR15
-  - KR16
-  - KR17
-  - KR18
-  - KR19
-  - KR20
-  - KR21
-  - KR22
-  - KR23
-  - KR24
-  - KR25
-  - KR26
-  - KR27
-  - KR28
-  - KR29
-  - KR30
-  - KR31
-  - KR32
-  - KR33
-  - KR34
-  - KR35
-  - KR36
-  - KR37
-  - KR38
-  - KR39
-  - KR40
-  - KR41
-  - KR42
-  timeout: 3000
-  tolerance: 100
-  type: url-test
-  url: https://www.google.com/generate_204
-- hidden: false
-  icon: https://fastly.jsdelivr.net/gh/clash-verge-rev/clash-verge-rev.github.io@main/docs/assets/icons/link.svg
-  interval: 300
-  lazy: true
-  max-failed-times: 3
-  name: 香港节点
+  name: 香港自动
   proxies:
   - HK1
   - HK2
@@ -4036,6 +4316,66 @@ proxy-groups:
   - HK31
   - HK32
   - HK33
+  - HK34
+  - HK35
+  - HK36
+  - HK37
+  - HK38
+  timeout: 3000
+  tolerance: 100
+  type: url-test
+  url: https://www.google.com/generate_204
+- hidden: false
+  icon: https://fastly.jsdelivr.net/gh/clash-verge-rev/clash-verge-rev.github.io@main/docs/assets/icons/link.svg
+  interval: 300
+  lazy: true
+  max-failed-times: 3
+  name: 日本自动
+  proxies:
+  - JP1
+  - JP2
+  - JP3
+  - JP4
+  - JP5
+  - JP6
+  - JP7
+  - JP8
+  - JP9
+  - JP10
+  - JP11
+  - JP12
+  - JP13
+  - JP14
+  - JP15
+  - JP16
+  - JP17
+  - JP18
+  - JP19
+  - JP20
+  - JP21
+  - JP22
+  - JP23
+  timeout: 3000
+  tolerance: 100
+  type: url-test
+  url: https://www.google.com/generate_204
+- hidden: false
+  icon: https://fastly.jsdelivr.net/gh/clash-verge-rev/clash-verge-rev.github.io@main/docs/assets/icons/link.svg
+  interval: 300
+  lazy: true
+  max-failed-times: 3
+  name: 台湾自动
+  proxies:
+  - TW1
+  - TW2
+  - TW3
+  - TW4
+  - TW5
+  - TW6
+  - TW7
+  - TW8
+  - TW9
+  - TW10
   timeout: 3000
   tolerance: 100
   type: url-test
@@ -4071,6 +4411,17 @@ proxy-groups:
   strategy: round-robin
   timeout: 3000
   type: load-balance
+  url: https://www.google.com/generate_204
+- hidden: false
+  icon: https://fastly.jsdelivr.net/gh/clash-verge-rev/clash-verge-rev.github.io@main/docs/assets/icons/link.svg
+  interval: 300
+  lazy: true
+  max-failed-times: 3
+  name: 全局直连
+  proxies:
+  - DIRECT
+  timeout: 3000
+  type: select
   url: https://www.google.com/generate_204
 - hidden: false
   icon: https://fastly.jsdelivr.net/gh/clash-verge-rev/clash-verge-rev.github.io@main/docs/assets/icons/fish.svg
