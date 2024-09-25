@@ -2,9 +2,10 @@
 <blockquote>
 <p style="text-align: center;"><a href="https://t.me/skka3134C">点击加入 Telegram 电报交流群</a></p>
 </blockquote> 
-<h2>部分节点展示：</h2>
+![image](https://github.com/user-attachments/assets/171a2caa-3289-49f6-8de9-d65e9590555d)
 
-![image](https://github.com/user-attachments/assets/a57443de-5ceb-497d-ba85-135f1b8c59a6)
+<h2>部分节点展示：</h2>
+![image](https://github.com/user-attachments/assets/116e2008-a7b7-43eb-a494-d0e7e631822c)
 <h2>客户端下载</h2>
 <h4>V2Ray</h4>
 <figure class="wp-block-table alignwide is-style-stripes">
